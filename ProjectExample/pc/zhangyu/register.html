@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>章鱼网</title>
+<!--公共css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--公共css/js部分 end-->
+<!--私有css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/log_reg.css">
+<!--监控窗口高度 js-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监控窗口高度 end js-->
+<!--登录注册 js-->
+<script type="text/javascript" src="js/log_reg.js"></script>
+<!--登录注册 end js-->
+<!--layer js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--layer js end-->
+<!--正则表达式-->
+<script>
+$(function(){
+	$(".btn_submit").click(function(){
+		var mobile = $("#mobile").val();
+		var code = $("#code").val();
+		var name = $("#name").val();
+		var password = $("#password").val();
+		var repassword = $("#repassword").val();
+		if(mobile==""){
+			layer.msg('请填写手机号码');
+		}
+		else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+		}
+		else if(code==""){
+			layer.msg('请填写验证码');
+		}
+		else if(name==""){
+			layer.msg('请填写用户名');
+		}
+		else if(password==""){
+			layer.msg('请填写登录密码');
+		}
+		else if(password.length<6){
+			layer.msg('请填写6位及以上登录密码');
+		}
+		else if(repassword!=password){
+			layer.msg('两次输入密码不一致');
+		}
+		else{
+			layer.msg('注册成功');
+			delay();
+		}
+	});	
+	$("#btn_code").click(function(){
+		var validCode=true;
+		var time=60;
+		var mobile = $("#mobile").val();
+		var code = $("#code").val();
+		if(mobile==""){
+			layer.msg('请填写手机号码');
+			return false;
+		}
+		else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+			return false;
+		}
+		if (validCode) {
+			validCode=false;
+			$("#btn_code").addClass("btn_coding");
+			$("#btn_code").attr("disabled",true);
+			$("#mobile").attr("readonly",true);
+			var t=setInterval(function  () {
+				time--;
+				$("#btn_code").html(time+"s");
+				if (time==0) {
+					clearInterval(t);
+					$("#btn_code").html("重新获取");
+					$("#btn_code").attr("disabled",false);
+					$("#mobile").attr("readonly",false);
+					validCode=true;
+					$("#btn_code").removeClass("btn_coding");					
+				}
+			},1000)
+		}
+	});
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+</script>
+<!--正则表达式 end-->
+<!--私有css/js部分 end-->
+</head>
+
+<body>
+	<div class="contain">
+		<!--top-->
+		<div class="top_lgbox">
+			<div class="top_widthbox">
+				<div class="top_widthleft">
+					<img src="images/logo.png" width="270" height="60">
+				</div>
+				<div class="top_widthright">
+					<a href="index.html"><div id="home"></div></a>
+					<a href="app.html"><div id="app"></div></a>
+					<a href="help.html"><div id="help"></div></a>
+				</div>
+			</div>
+		</div>
+		<!--top end-->
+		<div class="logreg_bg">
+			<div class="logreg_box">
+				<div class="logreg_top">
+					<p>新用户注册</p>
+					<a href="login.html"><span>已有帐号登录>></span></a>
+				</div>
+				<form id="form_submit" action="login.html">
+				<div class="logreg_center">
+					<input type="text" class="textinput" id="mobile" value="" placeholder="手机号"  style="float: left;width: 188px;">
+					<button type="button" id="btn_code">发送验证码</button>
+					<input type="text" class="textinput" id="code" placeholder="输入验证码" >
+					<input type="text" class="textinput" id="name" placeholder="输入用户名" >
+					<input type="password" class="textinput" id="password" placeholder="设置密码" >
+					<input type="password" class="textinput" id="repassword" placeholder="再次输入密码" >
+				</div>
+				<button type="button" class="btn_submit" style="margin-top: 20px;">确认</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>写字楼</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/map.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--筛选房源-->
+<script type="text/javascript" src="js/filter_wx.js"></script>
+<!--筛选房源 end-->
+</head>
+
+<body bgcolor="#f4f4f4">
+	<div class="contain">
+		<form id="form_submit">
+		<div class="map_top">
+			<div class="top_search">
+				<input required class="search_input" placeholder="请输入小区名或地址" value="">
+                <button type="submit" class="search_button">搜索</button>
+                
+				<div class="top_select">
+					
+					<li class="select_first select_css">区域
+						<div class="area cancel">
+							<ul>
+								<a><li class="area_cur">不限</li></a>
+								<a><li>附近</li></a>
+								<a><li>黄浦区</li></a>
+								<a><li>卢湾区</li></a>
+								<a><li>金山区</li></a>
+								<a><li>徐汇区</li></a>
+								<a><li>长宁区</li></a>
+								<a><li>静安区</li></a>
+								<a><li>普陀区</li></a>
+								<a><li>闸北区</li></a>
+								<a><li>虹口区</li></a>
+								<a><li>杨浦区</li></a>
+								<a><li>闵行区</li></a>
+								<a><li>宝山区</li></a>
+								<a><li>嘉定区</li></a>
+								<a><li>浦东新区</li></a>
+								<a><li>松江区</li></a>
+								<a><li>青浦区</li></a>
+								<a><li>南汇区</li></a>
+								<a><li>奉贤区</li></a>
+								<a><li>崇明县</li></a>
+							</ul>
+						</div>
+					</li>
+					<input type="hidden" value="不限" class="hidden_input">
+					
+					<li class="select_second select_css">交通
+                    	<div class="traffic cancel">
+                        	<ul>
+                            	<a><li class="area_cur">不限</li></a>
+                                <a><li>附近</li></a>
+                                <a><li>1号线</li></a>
+                                <a><li>2号线</li></a>
+                                <a><li>3号线</li></a>
+                                <a><li>4号线</li></a>
+                                <a><li>5号线</li></a>
+                                <a><li>6号线</li></a>
+                                <a><li>7号线</li></a>
+                                <a><li>8号线</li></a>
+                                <a><li>9号线</li></a>
+                                <a><li>10号线</li></a>
+                                <a><li>11号线</li></a>
+                                <a><li>12号线</li></a>
+                                <a><li>13号线</li></a>
+                                <a><li>16号线</li></a>
+                          	</ul>
+                        </div>
+                    </li>
+                    <input type="hidden" value="不限" class="hidden_input">
+					
+					<li class="select_thrid select_css">商圈
+                    	<div class="business cancel">
+                        	<ul>
+                            	<a><li class="area_cur">不限</li></a>
+                                <a><li>附近</li></a>
+                                <a><li>南京西路商圈</li></a>
+                                <a><li>徐家汇商圈</li></a>
+                                <a><li>淮海路商圈</li></a>
+                                <a><li>陆家嘴商圈</li></a>
+                                <a><li>南京东路商圈</li></a>
+                                <a><li>虹桥商圈</li></a>
+                                <a><li>五角场商圈</li></a>
+                                <a><li>中山公园商圈</li></a>
+                                <a><li>四川北路商圈</li></a>
+                          	</ul>
+                        </div>
+                    </li>
+                    <input type="hidden" value="不限" class="hidden_input">
+                    	
+                    <li class="select_fourth select_css">面积
+                    	<div class="size cancel">
+                        	<ul>
+                            	<a><li class="area_cur">不限</li></a>
+                                <a><li>60平米以下</li></a>
+                                <a><li>60-80平米</li></a>
+                                <a><li>80-100平米</li></a>
+                                <a><li>100-120平米</li></a>
+                                <a><li>120-140平米</li></a>
+                                <a><li>140-160平米</li></a>
+                                <a><li>160-180平米</li></a>
+                                <a><li>180-200平米</li></a>
+                                <a><li>200平米以上</li></a>
+                          	</ul>
+                        </div>
+                    </li>
+                    <input type="hidden" value="不限" class="hidden_input">
+                    	
+                    <li class="select_fourth select_css">特色
+                    	<div class="feature cancel">
+                        	<ul>
+                            	<a><li class="area_cur">不限</li></a>
+                                <a><li>地铁附近</li></a>
+                                <a><li>学区房</li></a>
+                                <a><li>江景房</li></a>
+                                <a><li>新房</li></a>
+                                <a><li>二手房</li></a>
+                                <a><li>科技宅</li></a>
+                          	</ul>
+                        </div>
+                    </li>
+                    <input type="hidden" value="不限" class="hidden_input">
+                    	
+				</div>
+           		
+           	</div>
+		</div>
+		</form>
+		
+		<div class="map_left">
+			
+			<div class="recommend">
+				<p>房源推荐</p>
+			</div>
+			
+			<a href="office_info.html">
+        	<div class="suite_each">
+            	<div class="suite_left">
+            		<div class="suite_img" style="background-image:url(images/index_upload.png)"></div>
+                    <div class="sub_tip1">
+                		<p>写字楼</p>
+                	</div>
+                </div>
+                <div class="suite_mid">
+                    <div class="suite_title">
+                        <p>宝山 · 创明鸟复式办公楼</p>
+                    </div>
+                    <div class="suite_label">
+                        <p>学区房</p>
+                        <p>新房</p>
+                    </div>
+                    <div class="suite_info">
+                        <p>面积：210 m<sup>2</sup></p>
+                        <p>地址：宝山区 顾北路1022号 宝欣苑大厦</p>
+                    </div>
+                </div>
+                <div class="suite_right">
+            		<p><strong>￥36000</strong> 元/m<sup>2</sup></p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="house_info.html">
+        	<div class="suite_each">
+            	<div class="suite_left">
+            		<div class="suite_img" style="background-image:url(images/index_upload.png)"></div>
+                    <div class="sub_tip2">
+                		<p>住宅</p>
+                	</div>
+                </div>
+                <div class="suite_mid">
+                    <div class="suite_title">
+                        <p>宝山 · 创明鸟复式办公楼</p>
+                    </div>
+                    <div class="suite_label">
+                        <p>学区房</p>
+                        <p>新房</p>
+                    </div>
+                    <div class="suite_info">
+                        <p>面积：210 m<sup>2</sup></p>
+                        <p>地址：宝山区 顾北路1022号 宝欣苑大厦</p>
+                    </div>
+                </div>
+                <div class="suite_right">
+            		<p><strong>￥36000</strong> 元/m<sup>2</sup></p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="office_info.html">
+        	<div class="suite_each">
+            	<div class="suite_left">
+            		<div class="suite_img" style="background-image:url(images/index_upload.png)"></div>
+                    <div class="sub_tip1">
+                		<p>写字楼</p>
+                	</div>
+                </div>
+                <div class="suite_mid">
+                    <div class="suite_title">
+                        <p>宝山 · 创明鸟复式办公楼</p>
+                    </div>
+                    <div class="suite_label">
+                        <p>学区房</p>
+                        <p>新房</p>
+                    </div>
+                    <div class="suite_info">
+                        <p>面积：210 m<sup>2</sup></p>
+                        <p>地址：宝山区 顾北路1022号 宝欣苑大厦</p>
+                    </div>
+                </div>
+                <div class="suite_right">
+            		<p><strong>￥36000</strong> 元/m<sup>2</sup></p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="house_info.html">
+        	<div class="suite_each">
+            	<div class="suite_left">
+            		<div class="suite_img" style="background-image:url(images/index_upload.png)"></div>
+                    <div class="sub_tip2">
+                		<p>住宅</p>
+                	</div>
+                </div>
+                <div class="suite_mid">
+                    <div class="suite_title">
+                        <p>宝山 · 创明鸟复式办公楼</p>
+                    </div>
+                    <div class="suite_label">
+                        <p>学区房</p>
+                        <p>新房</p>
+                    </div>
+                    <div class="suite_info">
+                        <p>面积：210 m<sup>2</sup></p>
+                        <p>地址：宝山区 顾北路1022号 宝欣苑大厦</p>
+                    </div>
+                </div>
+                <div class="suite_right">
+            		<p><strong>￥36000</strong> 元/m<sup>2</sup></p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="house_info.html">
+        	<div class="suite_each">
+            	<div class="suite_left">
+            		<div class="suite_img" style="background-image:url(images/index_upload.png)"></div>
+                    <div class="sub_tip2">
+                		<p>住宅</p>
+                	</div>
+                </div>
+                <div class="suite_mid">
+                    <div class="suite_title">
+                        <p>宝山 · 创明鸟复式办公楼</p>
+                    </div>
+                    <div class="suite_label">
+                        <p>学区房</p>
+                        <p>新房</p>
+                    </div>
+                    <div class="suite_info">
+                        <p>面积：210 m<sup>2</sup></p>
+                        <p>地址：宝山区 顾北路1022号 宝欣苑大厦</p>
+                    </div>
+                </div>
+                <div class="suite_right">
+            		<p><strong>￥36000</strong> 元/m<sup>2</sup></p>
+                </div>
+            </div>
+            </a>
+            
+		</div>
+		
+	</div>
+</body>
+</html>

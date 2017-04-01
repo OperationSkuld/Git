@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>写字楼详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/info.css">
+<link rel="stylesheet" href="touchTouch/touchTouch.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--banner-->
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="js/info_banner.js"></script>
+<!--banner end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--弹窗js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--弹窗js end-->
+<!--map tab js-->
+<script type="text/javascript" src="js/tab.js"></script>
+<!--map tab js end-->
+<!--图片预览-->
+<script src="touchTouch/touchTouch.jquery.js"></script>
+<!--图片预览 end-->
+<!--加入收藏/取消收藏-->
+<script type="text/javascript" src="js/collect.js"></script>
+<!--加入收藏/取消收藏 end-->
+<!--表单验证js-->
+<script>
+$(function(){
+	$(".btn_submit").click(function(){
+	layer.confirm('您确定预约此房吗？', {
+    		btn: ['确定','取消'] //按钮
+		}, function(){
+    		layer.msg('预约成功', {
+        		time: 2000, //2s后自动关闭			
+			});
+		});
+	})
+})
+
+</script>
+<!--表单验证js end-->
+</head>
+
+<body bgcolor="#f4f4f4">
+	<div class="contain">
+    	
+        <!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item cur"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style="display: block; left: 0px;"></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"><img src="images/user_default.png" width="35"></a>
+                    <div class="login">
+                    	<a><p>登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+        
+        <div class="info_topbox">
+        	<!--banner-->
+            <div class="index_focus">
+            <a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+            <a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+        
+            <div class="bd">
+                <ul>
+                    <li class="pic" style="background-image:url(images/banner1.png)"></li>
+                    <li class="pic" style="background-image:url(images/info_img.png)"></li>
+                    <li class="pic" style="background-image:url(images/banner1.png)"></li>
+                </ul>
+            </div>
+            
+            </div>
+    		<!--banner end-->
+            <form id="form_submit">
+            <div class="info_topright">
+            	<div class="info_title">
+                	<p>创明鸟 · 上海 复式办公楼创明鸟</p>
+                </div>
+                <div class="info_price">
+                	<p>¥66000元/m<sup>2</sup></p>
+                </div>
+                <div class="info_label">
+                    <p>学区房</p>
+                    <p>新房</p>
+                </div>
+                <div class="info_list">
+                	<ul>
+                    	<li>区域：静安区</li>
+                        <li>交通：二号线</li>
+                        <li>商圈：静安寺</li>
+                        <li>面积：300m<sup>2</sup></li>
+                        <li>楼盘均价：60000（元/m<sup>2</sup>）</li>
+                    </ul>
+                </div>
+                <button type="button" class="btn_submit">预约看房</button>
+                <div class="info_collect">
+                	<div id="star_bg"></div>
+                </div>
+            </div>
+            </form>
+        </div>
+        
+        <div class="info_tab">
+        	<ul>
+            	<a href="#floor1"><li>楼盘介绍</li></a>
+                <a href="#floor2"><li>周边配套</li></a>
+                <a href="#floor3"><li>宣传视频</li></a>
+                <a href="#floor4"><li>最新活动</li></a>
+                <a href="#floor5"><li>名店入驻</li></a>
+                <a href="#floor6"><li>用户评价</li></a>
+            </ul>
+        </div>
+        
+        <!--floor 1-->
+        <a name="floor1"></a>
+        <div class="floor1">
+        	<div class="floor_title">
+            	<p>楼盘介绍</p>
+            </div>
+            <div class="floor_word">
+            	<p>2016年2月26日讯：万科翡翠江湾尾盘在售，均价60000元/㎡，主推190-350㎡房源。项目坐落于杨浦区的原机场用地之上，总建筑面积达900.230平方米，包括900套住宅单元。总建筑面积超过740.000㎡的商业开发，其中包括A级办公园区，A級办公大楼，SOHO居住办公区域，服务式公寓，酒店，零售商铺以及文娱设施场所。详情请咨询售楼处。</p>
+            </div>
+            <div class="floor_discount">
+            	<p>最新优惠</p>
+                <span>这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。这里显示最新优惠的内容。</span>
+            </div>
+        </div>
+        <!--floor 1 end-->
+        
+        <!--floor 2-->
+        <a name="floor2"></a>
+        <div class="floor2">
+        	<div class="floor_title">
+            	<p>周边配套</p>
+            </div>
+            <div class="floor_tab">
+            	<ul>
+                	<a><li class="point">学校</li></a>
+                    <a><li>医院</li></a>
+                    <a><li>银行</li></a>
+                    <a><li>餐饮</li></a>
+                </ul>
+            </div>
+            <!--学校map-->
+            <div class="floor_map">
+            	<img src="images/map.png" width="100%" height="370">
+            </div>
+            <!--学校map end-->
+            <!--医院map-->
+            <div class="floor_map" style="display:none">
+            	<img src="images/map.png" width="100%" height="370">
+            </div>
+            <!--医院map end-->
+            <!--银行map-->
+            <div class="floor_map" style="display:none">
+            	<img src="images/map.png" width="100%" height="370">
+            </div>
+            <!--学校map end-->
+            <!--医院map-->
+            <div class="floor_map" style="display:none">
+            	<img src="images/map.png" width="100%" height="370">
+            </div>
+            <!--医院map end-->
+        </div>
+        <!--floor 2 end-->
+        
+        <!--floor 3-->
+        <a name="floor3"></a>
+        <div class="floor3">
+        	<div class="floor_title">
+            	<p>宣传视频</p>
+            </div>
+            <div class="activity_box">    
+            	<a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_player"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>
+                    <div class="activity_player"></div>		
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a> 
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_player"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>             
+            </div>
+            
+            
+        </div>
+        <!--floor 3 end-->
+        
+        <!--floor 4-->
+        <a name="floor4"></a>
+        <div class="floor4">
+        	<div class="floor_title">
+            	<p>最新活动</p>
+            </div>
+            <div class="activity_box">    
+            	<a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a> 
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>		
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>    
+                
+                <div class="activity_past">
+                	<p>----------　　　往期活动　　　----------</p>	
+                </div>
+                <div class="floor_tab">
+	            	<ul>
+	                	<a><li class="point">学校</li></a>
+	                    <a><li>医院</li></a>
+	                    <a><li>银行</li></a>
+	                    <a><li>餐饮</li></a>
+	                </ul>
+            	</div>
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a> 
+                
+                <a href="">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>		
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a> 
+                
+                <div class="more">
+                	<a href="activity_more.html"><p>查看更多</p></a>
+                </div>
+                              
+            </div>      
+        </div>
+        <!--floor 4 end-->
+        
+        <!--floor 5-->
+        <a name="floor5"></a>
+        <div class="floor5">
+        	<div class="floor_title">
+            	<p>名店入驻</p>
+            </div>
+            <div class="floor_band">
+            	<div class="multipleColumn">
+                <div class="hd">
+                    <a class="next"></a>
+                    <a class="prev"></a>
+                </div>
+                <div class="bd">
+    
+                    <div class="ulWrap">
+    
+                            <ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+                                <li>
+                                    <div class="pic"><img src="images/band_logo1.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo2.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo3.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo1.png" /></div>
+                                </li>
+                            </ul>
+    
+                            <ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+                                <li>
+                                    <div class="pic"><img src="images/band_logo1.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo2.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo3.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo1.png" /></div>
+                                </li>
+                            </ul>
+    
+                            <ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+                                <li>
+                                    <div class="pic"><img src="images/band_logo1.png" /></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><img src="images/band_logo2.png" /></div>
+                                </li>
+                            </ul>
+    
+    
+                    </div><!-- ulWrap End -->
+                </div><!-- bd End -->
+            	</div><!-- multipleColumn End -->
+            </div>    
+        </div>
+        <!--floor 5 end-->
+        
+        <!--floor 6-->
+        <a name="floor6"></a>
+        <div class="floor6">
+        	<div class="floor_title">
+            	<p>用户评价</p>
+            </div>
+            
+            <div class="floor_comment">
+            	<div class="floor_img" style="background-image:url(images/user_photo.png)"></div>
+                <div class="floor_right">
+                	<div class="floor_user">
+                    	<p>Edison</p>
+                        <span>2016-01-10 14:00</span>
+                    </div>
+                    <div class="floor_evalute">
+                		<p>这里是看过房子的用户所写的评价，还有配图。这里是看过房子的用户所写的评价，还有配图。这里是看 过房子的用户所写的评价，还有配图。</p>
+                        <img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_off.png" width="16">
+                    </div>
+                    <div class="ev_images" id="thumbs">
+                    	<ul>
+                        	<li><a href="images/banner1.png" style="background-image:url(images/banner1.png)"></a></li>
+                            <li><a href="images/bottom_img.png" style="background-image:url(images/bottom_img.png)"></a></li>
+                            <li><a href="images/index_upload.png" style="background-image:url(images/index_upload.png)"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="floor_comment">
+            	<div class="floor_img" style="background-image:url(images/user_photo.png)"></div>
+                <div class="floor_right">
+                	<div class="floor_user">
+                    	<p>Edison</p>
+                        <span>2016-01-10 14:00</span>
+                    </div>
+                    <div class="floor_evalute">
+                		<p>这里是看过房子的用户所写的评价，还有配图。这里是看过房子的用户所写的评价，还有配图。这里是看过房子的用户所写的评价，还有配图。</p>
+                        <img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_off.png" width="16">
+                    </div>
+                    <div class="ev_images" id="thumbs">
+                    	<ul>
+                        	<li><a href="images/banner1.png" style="background-image:url(images/banner1.png)"></a></li>
+                            <li><a href="images/bottom_img.png" style="background-image:url(images/bottom_img.png)"></a></li>
+                            <li><a href="images/index_upload.png" style="background-image:url(images/index_upload.png)"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="floor_comment">
+            	<div class="floor_img" style="background-image:url(images/user_photo.png)"></div>
+                <div class="floor_right">
+                	<div class="floor_user">
+                    	<p>Edison</p>
+                        <span>2016-01-10 14:00</span>
+                    </div>
+                    <div class="floor_evalute">
+                		<p>这里是看过房子的用户所写的评价，还有配图。这里是看过房子的用户所写的评价，还有配图。这里是看过房子的用户所写的评价，还有配图。</p>
+                        <img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_on.png" width="16">
+                    	<img src="images/star_off.png" width="16">
+                    </div>
+                    <div class="ev_images" id="thumbs">
+                    	<ul>
+                        	<li><a href="images/banner1.png" style="background-image:url(images/banner1.png)"></a></li>
+                            <li><a href="images/bottom_img.png" style="background-image:url(images/bottom_img.png)"></a></li>
+                            <li><a href="images/index_upload.png" style="background-image:url(images/index_upload.png)"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more" style="margin-top:20px;">
+                <a href="comment_more.html"><p>查看更多</p></a>
+            </div>
+            
+        </div>
+        <!--floor 6 end-->
+        
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+        
+    </div>
+</body>
+</html>

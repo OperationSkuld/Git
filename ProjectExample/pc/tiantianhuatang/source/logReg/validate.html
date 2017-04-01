@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit">
+	<title>天天画堂</title>
+	<!--公共css样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--公共css样式-->
+    <!--私有css样式-->	
+	<link rel="stylesheet" type="text/css" href="css/logReg.css">
+	<!--私有css样式-->
+</head>
+
+<body>
+	<div class="contain">
+		<div class="logreg_bg">
+			<div class="logreg_box" style="width: 420px;">
+				<div class="logreg-logo">
+					<img src="img/logo.png" width="120" alt="" />
+				</div>
+				<div class="logreg-line" style="width: 100%;">
+					<div class="cut-line"></div>
+					<p style="width: 90px;">重置密码</p>
+				</div>
+				<div class="logreg-word">
+					<p>验证邮件已经发送到&nbsp;<span>29542403@qq.com</span>，请&nbsp;<a href="">点击查收邮件</a>&nbsp;重置密码。</p>
+					<p>没有收到验证邮件？请耐心等待，或者&nbsp;<button type="button" id="btnCode">重新发送</button></p>
+				</div>
+				<div class="logreg-back" style="width: 100%;text-align: center;">
+					<a href="login.html" style="float: none;color: #990000;">&#171;&nbsp;返回登录页</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--公用js-->
+	<script src="../../js/jquery-1.9.1.min.js"></script>	
+	<!--公用js-->
+	<!--私有js-->	
+	<!--监控窗口高度 js-->
+	<script type="text/javascript" src="js/monitor.js"></script>
+	<!--监控窗口高度 js end -->
+	<!--验证码倒计时-->
+	<script type="text/javascript">
+	$("#btnCode").click(function(){
+		var validCode=true;
+		var time=60;
+		if (validCode) {
+			validCode=false;
+			$("#btnCode").attr("disabled",true);
+			var t=setInterval(function(){
+				time--;
+				$("#btnCode").html("重新发送 "+time+"s");
+				if (time==0) {
+					clearInterval(t);
+					$("#btnCode").html("重新发送");
+					$("#btnCode").attr("disabled",false);
+					validCode=true;				
+				}
+			},1000)
+		}
+	});
+	</script>
+	<!--验证码倒计时 end-->
+	<!--私有js-->
+	
+</body>
+</html>

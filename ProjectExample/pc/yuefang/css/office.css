@@ -1,0 +1,232 @@
+/*筛选框样式*/
+.filter{
+	margin-left:auto;
+	margin-right:auto;
+	width:1060px;
+	margin-top:20px;
+	background:#FFF;
+	padding:10px 20px;
+	overflow:hidden;
+	border:1px solid #d8d8d8;
+	border-radius:10px;	
+}
+.filter_area,.filter_traffic,.filter_business,.filter_size,.filter_feature{
+	overflow:hidden;
+	position:relative;
+	border-bottom:1px dashed #d8d8d8;
+}	
+.area_title,.traffic_title,.business_title,.size_title,.feature_title{
+	width:40px;
+	height:35px;
+	line-height:35px;
+	float:left;
+}	
+.area_title p,.traffic_title p,.business_title p,.size_title p,.feature_title p{
+	color:#999;
+	font-size:12px;	
+}
+.area_list,.traffic_list,.business_list,.size_list,.feature_list{
+	float:right;
+	width:1020px;
+}
+.area_list ul li,.traffic_list ul li,.business_list ul li,.size_list ul li,.feature_list ul li{
+	float:left;
+	height:35px;
+	line-height:35px;
+	color:#333;
+	font-size:12px;	
+	padding:0 7.5px;
+}
+.cur{
+	color:#ff7b00 !important;	
+}
+.area_list a:hover li,.traffic_list a:hover li,.business_list a:hover li,.size_list a:hover li,.feature_list a:hover li{
+	color:#ff7b00	
+}
+.hidden_input{
+	height:35px;
+	line-height:35px;
+	width:60px;
+	position:absolute;
+	left:0;	
+	outline:0;
+}
+.filter_show{
+	margin-left:auto;
+	margin-right:auto;
+	width:1060px;
+	margin-top:20px;
+	background:#FFF;
+	padding:10px 20px;
+	overflow:hidden;
+	border:1px solid #d8d8d8;
+	border-radius:10px;
+	overflow:hidden;	
+}
+.filter_title{
+	width:50px;
+	height:35px;
+	line-height:35px;
+	float:left;
+}	
+.filter_title p{
+	color:#999;
+	font-size:12px;	
+}
+.filter_list{
+}
+.filter_list ul li{
+	float:left;
+	height:35px;
+	line-height:35px;
+	font-size:12px;	
+	margin:0 10px 0 5px;
+	padding-right:15px;
+	padding-left:15px;
+	color:#FFF;
+	background:#ff7b00;
+	border-radius:15px;
+}
+.filter_list p{
+	height:35px;
+	line-height:35px;
+	font-size:12px;
+	color:#0091ff;
+	display:none;
+	float:left;
+}
+.filter_search{
+	float:right;
+	position:relative;
+	margin-top:3px;	
+}
+.input_search{
+	height:25px;
+	line-height:25px;
+	width:255px;
+	border-radius:40px;	
+	outline:0;
+	padding-left:25px;
+	font-size:12px;
+	color:#333;
+	background:#e2e2e2;
+	position:relative;
+	border:1px solid #e2e2e2;
+}
+.btn_search{
+	height:25px;
+	width:70px;
+	position:absolute;
+	top:1px;
+	right:1px;
+	outline:0;
+	font-size:12px;
+	color:#333;
+	background-color:#FFF;
+	border-radius:40px;
+}
+/*筛选框样式 end*/
+
+/*房源列表*/
+.suite_box{
+	background:#FFF;
+	width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	overflow:hidden;
+	border-radius:10px;	
+	padding:5px 0;
+}
+.suite_each{
+	padding:20px;
+	overflow:hidden;
+	width:1050px;
+	margin:0 auto;	
+}
+.suite_left{
+	float:left;
+	padding:10px;
+	border:1px solid #cccccc;
+	position:relative;
+}
+.suite_img{
+	float:left;
+	width:130px;
+	height:130px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;	
+}
+.suite_mid{
+	overflow:hidden;
+	float:left;	
+	margin-left:25px;
+	width:680px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.suite_title{
+	height:30px;
+	line-height:30px;
+	margin-top:5px;
+}
+.suite_title p{
+	font-size:18px;
+	color:#333;
+	font-weight:bold;	
+}
+.suite_label{
+	margin-top:15px;
+}
+.suite_label p{
+	display:inline-block;
+	padding:3px 15px;
+	color:#ff7b00;
+	font-size:12px;
+	border:1px solid #d8d8d8;
+	border-radius:20px;	
+	letter-spacing:1px;
+	margin-right:10px;
+}
+.suite_info{
+	margin-top:25px;	
+}
+.suite_info p{
+	color:#333;
+	font-size:14px;
+	line-height:1.5;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.suite_right{
+	float:right;
+	height:150px;
+	line-height:150px;	
+}
+.suite_right p{
+	font-size:20px;
+	color:#999;
+	font-weight:bold;
+}
+.suite_right p strong{
+	font-size:30px;
+	color:#ff7b00;	
+}
+.suite_box a:hover .suite_each{
+	/*background:#d8d8d8;*/
+	/*border-shadow:1px solid #d8d8d8;*/
+	box-shadow:0px 0px 5px #ffae62;
+}
+
+/*房源列表 end*/
+
+/*laypage*/
+#page{
+	width:1100px;
+	margin:30px auto 50px;;
+	text-align:center;	
+}
+/*laypage end*/

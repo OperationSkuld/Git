@@ -1,0 +1,66 @@
+/*确认付款页*/
+.buyBox{width: 1000px;overflow: hidden;}
+.buyTopBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;margin-top: 20px;}
+.buyTitle{padding: 20px;}
+.buyTitle p{font-size: 16px;font-weight: bold;color: #666;letter-spacing: 1px;}
+.buyList{height: 55px;background: #eeeeee;overflow: hidden;}
+.buyList p{float: left;margin-left: 20px;font-size: 12px;color: #666;line-height: 55px;}
+.buyLi{padding: 20px 0;overflow: hidden;border-bottom: 1px solid #dedede;}
+.buyLi > p{float: left;margin-left: 20px;font-size: 14px;color: #333;line-height: 120px;}
+.buyLi > strong{float: left;margin-left: 20px;font-size: 14px;color: #ff964b;line-height: 120px;}
+.buyLiInfo{float: left;margin-left: 20px;}
+.buyLiImg{width: 120px;height: 120px;border-radius: 3px;background-repeat: no-repeat;background-size: cover;background-position: center;float: left;}
+.buyLiContent{float: left;margin-left: 20px;width: 450px;height: 120px;overflow: hidden;}
+.buyLiContent p{font-size: 14px;color: #333;font-weight: bold;}
+.buyLiContent span{color: #333;font-size: 12px;margin-top: 10px;display: block;}
+.buyTotal{margin: 25px 20px;float: right;}
+.buyTotal p{color: #ff6760;font-size: 16px;font-weight: bold;}
+.buyBottomBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;margin-top: 15px;}
+.buyWayBox{margin: 20px auto 30px auto;width: 480px;overflow: hidden;}
+.buyWay{width: 120px;}
+.buyWay p{color: #666;font-size: 14px;text-align: center;margin-top: 5px;}
+.radioBox{float:left;background-image: url(../img/icon_Radio.png);background-repeat: no-repeat;background-position: -16px 0;width:16px;height:16px;margin-top:10px;margin-left:52px;position: relative;}
+.on {background-position: 0 0;background-image: url(../img/icon_Radio.png);}
+.radioClass {cursor: pointer;position:absolute;width:16px;height:16px;opacity:0;}
+.btnBox{text-align: center;margin-bottom: 30px;}
+.btnSubmit{height: 30px;width: 120px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;}
+
+/*扫码支付页*/
+.qrcodeBox{width: 998px;overflow: hidden;background: #FFF;margin-top: 20px;border: 1px solid #dedede;border-radius: 3px;}
+.qrcode{margin: 150px auto;overflow: hidden;width: 300px;}
+.qrcodeTitle{text-align: center;}
+.qrcodeTitle p{color: #333;font-size: 16px;}
+.qrcodeImg{width: 250px;height: 250px;margin: 20px 25px;background-repeat: no-repeat;background-size: cover;background-position: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

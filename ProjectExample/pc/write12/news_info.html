@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--nav+bg-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<!--nav+bg end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--导航滑动模块-->
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:120/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--导航滑动模块 end-->
+<!--tab切换-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".news_info_list").bind("click",function(){
+		var index=$(".news_info_list").index(this);
+		var lilength =$(".news_info_list").length;
+		for(var i=0;i<lilength;i++){
+			if(i==index){
+				$(".news_info_list").eq(i).css({"background":"#FFF"});
+				$(".news_tab_textall").eq(i).show();
+				}
+			else{
+				$(".news_info_list").eq(i).css({"background":"#f4f4f4"});
+				$(".news_tab_textall").eq(i).hide();
+				}
+		}
+	});
+
+	$(".news_tab_text").bind("click",function(){
+		var index=$(".news_tab_text").index(this);
+		var lilength =$(".news_tab_text").length;
+		for(var i=0;i<lilength;i++){
+			if(i==index){
+				$(".news_tab_text").eq(i).css({"background":"#f4f4f4"});
+				$(".news_box_infom").hide();
+				$(".news_box_info").eq(i).show();
+				}
+			else{
+				$(".news_tab_text").eq(i).css({"background":"#FFF"});
+				$(".news_box_info").eq(i).hide();
+				}
+		}
+	});
+
+});
+</script>
+<!--tab切换 end-->
+</head>
+
+
+<body bgcolor="#e9eaec">
+	
+	<!--header-->
+    <div class="header_bg">
+    <div class="header_top">
+    	<div class="header_text">
+    		<p>您好，欢迎来到作文状元堂</p>
+        </div>
+        <div class="header_user" >
+        	<a href="user.html"><img src="images/icon_user.png" width="100%" height="34px"></a>
+            <div class="header_user_list">
+            	<ul> 
+                	<a href=""><li class="list_img1"><span>修&nbsp;改&nbsp;资&nbsp;料</span></li></a>
+                    <a href=""><li class="list_img2"><span>我&nbsp;的&nbsp;历&nbsp;程</span></li></a>
+                    <a href=""><li class="list_img3"><span>我&nbsp;的&nbsp;订&nbsp;单</span></li></a>
+                    <a href=""><li class="list_img4"><span>我&nbsp;的&nbsp;收&nbsp;藏</span></li></a>
+                    <a href=""><li class="list_img5"><span>退&nbsp;出&nbsp;登&nbsp;录</span></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bell header_border">
+        	<img src="images/icon_bell.png" width="100%" height="34px">
+        </div>
+    </div>
+    </div>
+    
+    <div class="header_mid_bg">
+    <div class="header_mid">
+    	<div class="header_logo">
+        	<img src="images/icon_logo.png" height="50px">
+        </div>
+    	<div class="header_right">
+    		<div class="nav">
+        	<ul>
+            <li class="nav-item cur">
+            	<a href="index.html">首页<span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">品牌介绍<span>INTRODUCTION</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="news.html">最新消息<span>NEWS</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">作文资源库<span>RESOURCE POOL</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="exercise.html"><li class="list_second"><span>练功房</span></li></a>
+                    <a href="publish.html"><li class="list_second"><span>发表天地</span></li></a>
+                    <a href="active_room.html"><li class="list_second"><span>互动教室</span></li></a>
+                    <a href="ex_course.html"><li class="list_second"><span>精品课程</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="composition.html">作文批改<span>CORRECTING</span></a>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">在线家教<span>ONLINE TUTORING</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="schedule.html"><li class="list_second"><span>一对一教学</span></li></a>
+                    <a href="schedule.html"><li class="list_second"><span>名人课堂</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();" target="_blank">分析中心<span>ANALYSIS</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>排行榜</span></li></a>
+                    <a href=""><li class="list_second"><span>学习历程</span></li></a>
+                </ul>
+            	</div>
+            </li>
+        	</ul>
+        <!--移动的滑动
+        <div class="move-bg" style="display: block; left: 0px;"></div>
+        <!--移动的滑动 end-->
+    		</div>
+  		</div>
+  	</div> 
+    </div>
+  	<!--header end-->
+        
+    <!--position-->
+    <div class="position">
+    	<div class="position_text">
+    	<p>您的位置：</p>
+        <span><a href="index.html">首页</a></span>
+        <div style="color:#666;display:inline">&gt;</div>
+        <span><a href="news.html">最新消息</a></span>
+        </div>
+    </div>
+    <!--position end-->
+
+	<div class="news_info_contain">
+    
+    <!--左边部分-->    
+    <div class="news_info_left">
+    
+    <!--左边tab层-->
+    	<div class="news_info_tab">
+    		<ul> 
+        	<a><li class="news_info_list" id="news_list_one"><span>NEW</span></li></a>
+            <a><li class="news_info_list" ><span>行业新闻</span></li></a>
+            <a><li class="news_info_list"><span>系统公告</span></li></a>
+        	</ul>
+    	</div>
+    <!--左边tab层 end--> 
+     
+    <!--new--> 
+        <div class="news_tab_textall">
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>知乎完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div> 
+        </div>
+       	</a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>天涯完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>知乎完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>知乎完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>知乎完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        </div>
+    <!--new end-->  
+        
+    <!--行业新闻--> 
+        <div class="news_tab_textall" style="display:none;">
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div> 
+        </div>
+       	</a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        </div>
+    <!--行业新闻 end-->  
+        
+    <!--系统公告--> 
+        <div class="news_tab_textall" style="display:none;">
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>write12 在线教育网单日成交额破百万</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div> 
+        </div>
+       	</a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>write12 在线教育网单日成交额破百万</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>write12 在线教育网单日成交额破百万</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>write12 在线教育网单日成交额破百万</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a class="news_tab_link">
+        <div class="news_tab_text">
+        	<div class="news_tab_textone">
+            	<div class="news_tab_title">
+                	<p>write12 在线教育网单日成交额破百万</p>
+                </div>
+                <div class="news_tab_date">
+                	<p>2015-11-03 17:00</p>
+                </div>
+                <div class="news_tab_word">
+                	<p>11月3日消息，知识问答社区知乎已完成C轮5000万美元融资，估值约3至4亿美元。此次融资</p>
+                </div>
+            </div>
+        </div>
+        </a>
+        </div>
+    <!--系统公告 end-->  
+        
+        
+          
+    </div> 
+    <!--左边部分 end-->
+    
+    <!--从最新消息点击进入的详情页-->
+    <div class="news_box_infom">
+    	<div class="box_info_text">
+        	<div class="info_text_title">
+            	<p>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</p>
+            </div>
+            <div class="info_text_name">
+            	<a href=""><p>行业新闻</p></a>
+                <span>•&nbsp;2小时前</span>
+            </div>
+            <div class="info_text_banner">
+            	<img src="images/news_info_banner.png" width="100%" height="400">
+            </div>
+            <div class="info_text_word">
+            	<p>腾讯于 3日 下午召开媒体沟通会，介绍其教育产品QQ 家校.师生群，这也是腾讯继近日发布基于微信的智慧校园（我们的报道链接）后，又一次在教育领域的拓展。智慧校园以微信为依托，主要针对高校市场，而 QQ 家校.师生群则主要面向 K12 市场。<br/><br/>
+				   腾讯方面认为，普通的QQ 群中老师发布的重要信息容易被淹没，而家校群中区分老师、家长、学生几个不同角色，老师的重要信息将有不同的显示界面。针对老师在教学和批改作业中的其他痛点，家校群也提出了相应的解决方案，其核心功能如下：
+				</p>
+            </div>
+    	</div>
+    </div>
+    <!--从最新消息点击进入的详情页 end-->
+    
+    <!--NEW详情页-->
+    <div class="news_box_info" style="display:none">
+    	<div class="box_info_text">
+        	<div class="info_text_title">
+            	<p>知乎完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+            </div>
+            <div class="info_text_name">
+            	<a href=""><p>行业新闻</p></a>
+                <span>•&nbsp;2小时前</span>
+            </div>
+            <div class="info_text_banner">
+            	<img src="images/news_info_banner.png" width="100%" height="400">
+            </div>
+            <div class="info_text_word">
+            	<p>腾讯于 3日 下午召开媒体沟通会，介绍其教育产品QQ 家校.师生群，这也是腾讯继近日发布基于微信的智慧校园（我们的报道链接）后，又一次在教育领域的拓展。智慧校园以微信为依托，主要针对高校市场，而 QQ 家校.师生群则主要面向 K12 市场。<br/><br/>
+				   腾讯方面认为，普通的QQ 群中老师发布的重要信息容易被淹没，而家校群中区分老师、家长、学生几个不同角色，老师的重要信息将有不同的显示界面。针对老师在教学和批改作业中的其他痛点，家校群也提出了相应的解决方案，其核心功能如下：
+				</p>
+            </div>
+    	</div>
+    </div>
+    
+    <div class="news_box_info" style="display:none">
+    	<div class="box_info_text">
+        	<div class="info_text_title">
+            	<p>天涯完成 5000 万美元 C 轮融资，成为上半年论坛投资第一</p>
+            </div>
+            <div class="info_text_name">
+            	<a href=""><p>行业新闻</p></a>
+                <span>•&nbsp;2小时前</span>
+            </div>
+            <div class="info_text_banner">
+            	<img src="images/news_info_banner.png" width="100%" height="400">
+            </div>
+            <div class="info_text_word">
+            	<p>腾讯于 3日 下午召开媒体沟通会，介绍其教育产品QQ 家校.师生群，这也是腾讯继近日发布基于微信的智慧校园（我们的报道链接）后，又一次在教育领域的拓展。智慧校园以微信为依托，主要针对高校市场，而 QQ 家校.师生群则主要面向 K12 市场。<br/><br/>
+				   腾讯方面认为，普通的QQ 群中老师发布的重要信息容易被淹没，而家校群中区分老师、家长、学生几个不同角色，老师的重要信息将有不同的显示界面。针对老师在教学和批改作业中的其他痛点，家校群也提出了相应的解决方案，其核心功能如下：
+				</p>
+            </div>
+    	</div>
+    </div>
+    
+    <div class="news_box_info" style="display:none">
+    </div> 
+    
+    <div class="news_box_info" style="display:none">
+    </div> 
+    
+    <div class="news_box_info" style="display:none">
+    </div>    
+    <!--NEW详情页 end-->
+    
+    <!--行业新闻详情页-->
+    <div class="news_box_info" style="display:none">
+    	<div class="box_info_text">
+        	<div class="info_text_title">
+            	<p>双11战报：天猫移动端17分钟交易额过百亿</p>
+            </div>
+            <div class="info_text_name">
+            	<a href=""><p>行业新闻</p></a>
+                <span>•&nbsp;2小时前</span>
+            </div>
+            <div class="info_text_banner">
+            	<img src="images/news_info_banner.png" width="100%" height="400">
+            </div>
+            <div class="info_text_word">
+            	<p>腾讯于 3日 下午召开媒体沟通会，介绍其教育产品QQ 家校.师生群，这也是腾讯继近日发布基于微信的智慧校园（我们的报道链接）后，又一次在教育领域的拓展。智慧校园以微信为依托，主要针对高校市场，而 QQ 家校.师生群则主要面向 K12 市场。<br/><br/>
+				   腾讯方面认为，普通的QQ 群中老师发布的重要信息容易被淹没，而家校群中区分老师、家长、学生几个不同角色，老师的重要信息将有不同的显示界面。针对老师在教学和批改作业中的其他痛点，家校群也提出了相应的解决方案，其核心功能如下：
+				</p>
+            </div>
+    	</div>
+    </div>
+    <!--行业新闻详情页 end-->
+    
+    <!--系统公告详情页-->
+
+    <!--系统公告详情页 end-->      
+    
+    </div>
+
+
+    <!--底部-->
+    <div class="index_bottom">
+    	<div class="idnex_bottom_width">
+    		<div class="index_bottom_left">
+        		<p>帮助中心</p>
+            	<ul>
+            		<li><a href="javascript:void();">常见问题</a></li>
+                	<li><a href="javascript:void();">新手注册</a></li>
+                	<li><a href="javascript:void();">选课流程</a></li>
+                	<li><a href="javascript:void();">积分消费密码</a></li>
+            	</ul>
+        	</div>
+            <div class="index_bottom_mid">
+        		<p>关于write 12</p>
+            	<ul>
+            		<li><a href="javascript:void();">发展历程</a></li>
+                	<li><a href="javascript:void();">企业文化</a></li>
+                	<li><a href="javascript:void();">社会责任</a></li>
+                	<li><a href="javascript:void();">洽谈合作</a></li>
+        	</div>
+            <div class="index_bottom_right">
+        		<p>联系我们</p>
+            	<ul>
+            		<li>联系电话：4008-777-888</li>
+                	<li>QQ客服：815707707</li>
+                	<li>E-mail：ellisy@sina.com</li>
+                	<li>微信：zhuangyuantang</li>
+            	</ul>
+        	</div>
+            <div class="index_qcode">
+            	<img src="images/qcode.png" width="120">
+            </div>        
+         </div>
+         <div class="index_bottom_under">
+         	<p>Copyright © 2013-2015 jikexueyuan.com All Rights Reversed. 沪ICP备 11018032号-8 沪公网安备 11010802013056</p>
+         </div>
+    </div>
+    <!--底部 end-->
+
+
+    <!--side-->
+    <div class="side1">
+		<ul>
+			<li style="border:none;">
+        	<a href="javascript:goTop();" class="sidetop1">
+            	<img src="./images/side_top.png" width="42" height="42">
+            </a>
+        	</li>
+		</ul>
+	</div>
+    <!--side end-->  
+    
+    
+    
+
+</body>
+</html>

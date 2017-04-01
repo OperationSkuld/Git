@@ -1,0 +1,45 @@
+/*系统管理*/
+
+/*系统设置*/
+.systemBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;margin-top: 20px;padding: 20px 0;}
+.systemBox ul{padding: 0 20px;}
+.systemBox ul li{height: 50px;background: #f8f8f8;padding: 15px 20px;margin-bottom: 20px;}
+.systemLiLeft{float: left;width: 800px;height: 50px;overflow: hidden;}
+.systemBox ul li p{height: 25px;line-height: 25px;font-size: 14px;font-weight: bold;color: #333333;display: block;}
+.systemBox ul li span{height: 25px;line-height: 25px;font-size: 12px;color: #666666;display: block;}
+.systemLiRight{float: right;height: 50px;}
+.inputBox{height: 30px;line-height: 30px;padding: 0 20px;margin-bottom: 20px;}
+.inputBox p{width: 120px;float: left;text-align: right;color: #999999;margin-right: 5px;}
+.inputText{border: 1px solid #dedede;border-radius: 3px;width: 190px;height: 28px;line-height: 28px;color: #333333;padding-left: 10px;outline: 0;}
+.radioBox{float:left;background-image: url(../img/icon_Radio.png);background-repeat: no-repeat;background-position: -16px 0;width:16px;height:16px;margin-top:7px;margin-right:8px;}
+.on {background-position: 0 0;background-image: url(../img/icon_Radio.png);}
+.radioClass {cursor: pointer;position:absolute;width:16px;height:16px;opacity:0;}
+.inputBox span{float:left;color:#333;font-size:12px;margin-right: 50px;}
+.btnSubmit{height: 30px;line-height: 30px;width: 100px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;}
+
+/*店中店设置（部分同上样式）*/
+.textBox{line-height: 1.5;padding: 0 20px;margin-bottom: 20px;overflow: hidden;}
+.textBox p{width: 120px;float: left;text-align: right;color: #999999;margin-right: 5px;}
+.shopBox{width: 65px;height: 65px;float: left;position: relative;}
+.qcodeImg{width: 65px;height: 65px;background-size: cover;background-repeat: no-repeat;background-position: center;}
+.inputFile{width: 65px;height: 65px;position: absolute;left: 0;top: 0;opacity: 0;}
+.textBox textarea{width: 360px;height: 150px;padding: 10px;color: #333;font-size: 12px;line-height: 1.5;border: 1px solid #dedede;resize: none;outline: 0;}
+
+/*会员退款设置（同上样式）*/
+
+/*付款设置（部分同上样式）*/
+.systemLiLeft span a{color: #29ABE2;}
+.systemLiLeft red{color: #ff6760;height: 25px;line-height: 25px;font-size: 12px;display: block;}
+.systemLiLeft > a{color: #29ABE2;height: 25px;line-height: 25px;display: block;}
+.inputBox tip{height: 30px;line-height: 30px;color: #333333;font-size: 12px;display: block;clear: both;margin-left: 125px;}
+.a-upload {height: 30px;line-height: 30px;position: relative;cursor: pointer;color: #29abe2;font-size: 12px;overflow: hidden;display: inline-block;*display: inline;*zoom: 1;float: left;margin-left: 10px;}
+.a-upload input {height: 30px;line-height: 30px;position: absolute;right: 0;top: 0;opacity: 0;filter: alpha(opacity=0);cursor: pointer;float: left;}
+.showFileName{float: left;height: 30px;line-height: 30px;margin-left: 20px;}
+
+/*商品设置（同上样式）*/
+
+/*购物设置（同上样式）*/
+
+/*功能名称设置*/
+.indexContainer{width: 1000px;margin-top: 20px;overflow: hidden;}
+.functionBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 0 3px 3px 3px;overflow: hidden;padding: 20px 0;border-top: none;}

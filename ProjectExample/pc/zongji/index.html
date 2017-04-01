@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>纵极官网</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">	 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/weicbstyle.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<!--banner轮播-->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".index_focus").hover(function(){
+		$(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
+	},function(){
+		$(this).find(".index_focus_pre,.index_focus_next").fadeOut()
+	});
+	
+	$(".index_focus").slide({
+		titCell: ".slide_nav a ",
+		mainCell: ".bd ul",
+		delayTime: 500,
+		interTime: 3500,
+		prevCell:".index_focus_pre",
+		nextCell:".index_focus_next",
+		effect: "fold",
+		autoPlay: true,
+		trigger: "click",
+		startFun:function(i){
+			$(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
+			$(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
+		}
+	});
+
+});
+</script>
+<!--banner轮播 end-->
+<!--楼层锚点特效-->
+<script type="text/javascript">
+$(function(){
+	$(".fl0_circle_default").mouseover(function(){
+		$(this).css("background","#817c85")
+		var length =$(".fl0_circle_default").index(this);
+		var changebg = "fl0_tip_default"+length;
+		$(".fl0_tip_each").eq(length).addClass(changebg)
+	});
+	$(".fl0_circle_default").mouseout(function(){
+		var length =$(".fl0_circle_default").index(this);
+		var changebg = "fl0_tip_default"+length;
+		$(this).css("background","#595764");
+		$(".fl0_tip_each").eq(length).removeClass(changebg)
+	});
+});
+</script>
+<!--楼层锚点特效 end-->
+</head>
+
+<body>
+	<div class="contain">
+        
+	<!--header-->    
+    	<!--<div class="top">
+        	<div class="wd1210">
+        	<div class="top_logo">
+            	<p>纵极科技</p>
+            	<img src="images/zongjilogo.png" width="80%">   
+            </div>
+            <div class="top_tab">
+            	<ul>
+                	<li><a href="index.html">首页</a></li>
+                    <li><a href="design.html">方案设计</a></li>
+                    <li><a href="product.html">电商产品</a></li>
+                    <li><a href="service.html">运营服务</a></li>
+                    <li><a href="talent.html">人才输出</a></li>
+                    <li><a href="trend.html">产业动态</a></li>
+                    <li><a href="about.html">关于纵极</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>-->
+	<!--header end-->    
+    
+    <!--banner-->
+    <!--<div class="index_focus">
+		<a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+		<a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+	
+		<div class="bd">
+			<ul>
+				<li>
+				<a href="javascript:void();" class="pic">
+					<img class="pic" src="images/banner.png" width="1920" height="600" alt="">
+				</a>
+				</li>
+				<li>
+				<a href="javascript:void();" class="pic">
+					<img class="pic" src="images/banner.png" width="1920" height="600" alt="">
+				</a>
+				</li>
+				<li>
+				<a href="javascript:void();" class="pic">
+					<img class="pic" src="images/banner.png" width="1920" height="600" alt="">
+				</a>
+				</li>
+				<li>
+				<a href="javascript:void();" class="pic">
+					<img class="pic" src="images/banner.png" width="1920" height="600" alt="">
+				</a>
+				</li>
+			</ul>
+		</div>
+	
+		<div class="slide_nav">
+			<a href="javascript:;">●</a>
+			<a href="javascript:;">●</a>
+			<a href="javascript:;">●</a>
+			<a href="javascript:;">●</a>
+		</div>
+	</div>-->   
+    <!--banner end-->
+    
+    <!--floor0-->
+	<div class="index_floor0">
+    	<div class="fl0_title">
+        	<p>五大创宝系统快速落地</p>
+            <img src="images/line.png" width="100%">
+        </div>
+        <div class="fl0_circle">
+        	<a href="#floor1">
+            <div class="fl0_circle_1 fl0_circle_default">
+            	<p>物创宝</p>
+            </div>
+            </a>
+            <a href="#floor2">
+            <div class="fl0_circle_2 fl0_circle_default">
+            	<p>万创宝</p>
+            </div>
+            </a>
+            <a href="#floor3">
+            <div class="fl0_circle_3 fl0_circle_default">
+            	<p>讯创宝</p>
+            </div>
+            </a>
+            <a href="#floor4">
+            <div class="fl0_circle_4 fl0_circle_default">
+            	<p>才创宝</p>
+            </div>
+            </a>
+            <a href="#floor5">
+            <div class="fl0_circle_5 fl0_circle_default">
+            	<p>投创宝</p>
+            </div> 
+            </a>     	
+        </div>
+        <div class="fl0_tip">
+        	<div class="fl0_tip_each">
+            	<p>1</p>
+            </div>
+            <div class="fl0_tip_each">
+            	<p>2</p>
+            </div>
+            <div class="fl0_tip_each">
+            	<p>3</p>
+            </div>
+            <div class="fl0_tip_each">
+            	<p>4</p>
+            </div>
+            <div class="fl0_tip_each">
+            	<p>5</p>
+            </div>
+        </div>
+    </div>
+    <!--floor0 end-->
+    
+    <!--floor1-->
+    <a name="floor1"> 
+    <div class="index_floor1">
+    	<div class="fl1_box">
+        	<div class="fl1_left">
+            	<div class="fl1_left_title">
+                	<img src="images/icon_rocket.png" width="180px">
+                	<p>物创宝</p>
+                </div>
+                <div class="fl1_left_word">
+                	<p>智能硬件、电商产品<br/>智能硬件一站式服务云平台</p>
+                </div>
+                <div class="fl1_left_text">
+                	<ul>
+                    	<li class="fl1_list1">现场策划，拿走方案</li>
+                        <li class="fl1_list2">现场整合资源、工具</li>
+                        <li class="fl1_list3">现场教练，打造团队</li>
+                        <li class="fl1_list4">现场启动系统核心 </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl1_right">
+            	<div class="fl1_circle1">
+                	<img src="images/index_fl1_8.png" width="65">
+                    <p>品牌定位</p>
+                </div>
+                <div class="fl1_circle2">
+                	<img src="images/index_fl1_10.png" width="300">
+                    <p>总裁思维</p>
+                </div>
+                <div class="fl1_circle3">
+                	<img src="images/index_fl1_7.png" width="50">
+                    <p>商业模式</p>
+                </div>
+                <div class="fl1_circle4">
+                	<img src="images/index_fl1_9.png" width="90">
+                    <p>营销突破</p>
+                </div>
+                <div class="fl1_circle5">
+                	<img src="images/index_fl1_6.png" width="50">
+                    <p>组织创新</p>
+                </div>
+                <div class="fl1_circle6">
+                	<img src="images/index_fl1_5.png" width="65">
+                    <p>平台规划</p>
+                </div>
+            </div>
+        </div>
+        <div class="fl1_botton">
+            <a href=""><p>了解详情</p></a>
+        </div>
+    </div>
+    </a>
+    <!--floor1 end-->
+    
+    <!--floor2-->
+    <a name="floor2"> 
+    <div class="index_floor2">
+    	<div class="fl2_box">
+        	<div class="fl2_left">
+            	<div class="fl2_left_title">
+                	<img src="images/icon_rockets.png" width="180px">
+                	<p>万创宝</p>
+                </div>
+                <div class="fl2_left_word">
+                	<p>轻电商云，电商服务<br/>最轻企业级电商服务云平台</p>
+                </div>
+            </div>
+            <div class="fl2_right">
+            	<div class="fl2_circle1">
+                	<img src="images/index_fl2_1.png" width="80">
+                    <p>全网部署</p>
+                    <span>一个后台，全网部署、统一管理</span>
+                </div>
+                <div class="fl2_circle2">
+                	<img src="images/index_fl2_2.png" width="80">
+                    <p>独立品牌</p>
+                    <span>独立域名、独立logo、品牌自身</span>
+                </div>
+                <div class="fl2_circle3">
+                	<img src="images/index_fl2_3.png" width="80">
+                    <p>一键开通</p>
+                    <span>急速开店，一键可拥有线上商城</span>
+                </div>
+                <div class="fl2_circle4">
+                	<img src="images/index_fl2_4.png" width="80">
+                    <p>开放接口</p>
+                    <span>满足你的个性化需求</span>
+                </div>
+                <div class="fl2_circle5">
+                	<img src="images/index_fl2_5.png" width="80">
+                    <p>永久免费</p>
+                    <span>万创宝承诺永久免费</span>
+                </div>
+            </div>
+        </div>
+        <div class="fl1_botton">
+            <a href=""><p>了解详情</p></a>
+        </div>
+    </div>
+    </a>
+    <!--floor2 end-->
+    
+    <!--floor3--> 
+    <a name="floor3">  
+    <div class="index_floor3">
+    	<div class="fl3_box">
+        	<div class="fl3_left">
+            	<div class="fl3_left_title">
+                	<img src="images/icon_rocket.png" width="180px">
+                	<p>讯创宝</p>
+                </div>
+                <div class="fl3_left_word">
+                	<p>营销推广、电商运营<br/>一个用数据说话的营销平台</p>
+                </div>
+                <div class="fl3_left_text">
+                	<ul>
+                    	<li class="fl3_list1">全网打通：PC、微信、手机触屏、APP</li>
+                        <li class="fl3_list2">形象系统：主流购物网站设计标准，独创爆品系统</li>
+                        <li class="fl3_list3">引流系统：微拼团队、微砍价、众筹等引流系统</li>
+                        <li class="fl3_list4">转化系统：优惠券、积分、满送等转化系统</li>
+                    </ul>
+                </div>
+            </div>
+         	<div class="fl3_right">
+            <div class="fl3_circleone">
+            	<div class="fl3_circle1">
+                	<img src="images/index_fl3_5.png" width="50">
+                    <p>众筹营销</p>
+                </div>
+                <div class="fl3_circle2">
+                	<img src="images/index_fl3_6.png" width="50">
+                    <p>活动营销</p>
+                </div>
+                <div class="fl3_circle3">
+                	<img src="images/index_fl3_7.png" width="50">
+                    <p>社群营销</p>
+                </div>
+            </div>
+            <div class="fl3_circlesecond">
+                <div class="fl3_circle4">
+                	<img src="images/index_fl3_8.png" width="50">
+                    <p>话题营销</p>
+                </div>
+                <div class="fl3_circle5">
+                	<img src="images/index_fl3_9.png" width="50">
+                    <p>搜索营销</p>
+                </div>
+                <div class="fl3_circle6">
+                	<img src="images/index_fl3_10.png" width="50">
+                    <p>广告联盟</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="fl1_botton">
+            <a href=""><p>了解详情</p></a>
+        </div>
+    </div>
+    </a>
+    <!--floor3 end-->
+     
+    <!--floor4-->
+    <a name="floor4"> 
+    <div class="index_floor4">
+    	<div class="fl4_box">
+        	<div class="fl4_left">
+            	<div class="fl4_left_title">
+                	<img src="images/icon_rockets.png" width="180px">
+                	<p>才创宝</p>
+                </div>
+                <div class="fl4_left_word">
+                	<p>人才培训、电商人才<br/>为您输送创业型电商团队</p>
+                </div>
+                <div class="fl4_left_text">
+                	<ul>
+                    	<li class="fl4_list1">1/3理论，2/3实战，训练“干的能力”</li>
+                        <li class="fl4_list2">电商实战教练全程贴身式辅导</li>
+                        <li class="fl4_list3">不是带一个人，而是带一个团队</li>
+                        <li class="fl4_list4">看到流水，有销量才是硬道理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fl1_botton">
+            <a href=""><p>了解详情</p></a>
+        </div>
+    </div>
+    </a>
+    <!--floor4 end--> 
+    
+	<!--floor5-->
+    <a name="floor5"> 
+    <div class="index_floor5">
+    	<div class="fl5_box">
+        	<div class="fl5_left">
+            	<div class="fl5_left_title">
+                	<img src="images/icon_rocket.png" width="180px">
+                	<p>投创宝</p>
+                </div>
+                <div class="fl5_left_word">
+                	<p>项目投资、电商资本<br/>最靠谱的股权投资平台</p>
+                </div>
+                <div class="fl5_left_text">
+                	<ul>
+                    	<li class="fl5_list1">投资、融资，让您的信息从纷繁的环境脱颖而出</li>
+                        <li class="fl5_list2">资产管理、运营，成功实现资产的保值增值</li>
+                        <li class="fl5_list3">项目开发、15项代理支持帮您行销畅通无阻</li>
+                        <li class="fl5_list4">按需所求、量身定制</li>
+                    </ul>
+                </div>
+            </div>
+         	<div class="fl5_right">
+            	<img src="images/index_fl5_5.png" width="80%" height="300px">
+            </div>
+        </div>
+        <div class="fl1_botton">
+            <a href=""><p>了解详情</p></a>
+        </div>
+    </div>
+    </a> 
+    <!--floor5end-->    
+    
+
+    <!--floor5-->
+    <!--<div class="index_floor5">
+    	<div class="fl5_box">
+        	<div class="fl5_left">
+            	<div class="fl5_left_title">
+                	<img src="images/icon_rocket.png" width="180px">
+                	<p>最新动态</p>
+                </div>
+                <div class="fl5_left_text">
+                	<ul>
+                    	<li><p>2015-10-15</p><a href><span>传统企业微信运营4个误区及3种解决方法,传统企业微信运营4个误区及3种解决方法</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>传统企业微信运营4个误区及3种解决方法</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>传统微分销问题严重？微创宝微分校如何？</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>传统企业转型“O2O”屡屡失败的四点原因</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>微商城分销系统运营如何做好？</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>面对互联网变革 “家装O2O采取”</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>面对互联网变革 “家装O2O采取”</span></a></li>
+                        <li><p>2015-10-15</p><a href><span>面对互联网变革 “家装O2O采取”</span></a></li>
+                        <li class="fl5_more"><a href><p>更 多 >></p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl5_right">
+            	<iframe src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=oXJ9WapqKTA&lcode=&resourceId=0_06_05_99" allowtransparency="true" allowfullscreen="true" allowfullscreenInteractive="true" scrolling="no" border="0" frameborder="0" style="width:420px;height:300px;"></iframe>
+            </div>
+        </div>    
+    </div>-->
+    <!--floor5 end-->
+    
+    <!--footer-->
+    <!--<div class="bottom">
+    	<div class="bottom_box">
+        	<div class="bottom_left">
+            	<div class="bottom_logo">
+                	<img src="images/zongjilogo.png">
+                    <p>纵极科技</p>
+                </div>
+                <div class="bottom_wx">
+                	<img src="images/weixin1.png" width="120">
+                    <p>微信公众账号：上海纵极物联网<br/>新浪微博：纵极物联网</p>
+                    <span>纵极科技服务平台 版权所有</span>
+                </div>
+            </div>
+        	<div class="bottom_right">
+            	<div class="bottom_list1">
+                	<div class="bottom_list_title">
+                    	<p>关于我们</p>
+                    </div>
+                    <div class="bottom_list_word">
+                    	<a href=""><p>新闻动态</p></a>
+                        <a href=""><p>公司简介</p></a>
+                        <a href=""><p>服务条款</p></a>
+                        <a href=""><p>隐私政策</p></a>
+                    </div>
+                </div>
+                <div class="bottom_list2">
+                	<div class="bottom_list_title">
+                    	<p>产品服务</p>
+                    </div>
+                    <div class="bottom_list_word">
+                    	<a href=""><p>经典案例</p></a>
+                        <a href=""><p>数据服务</p></a>
+                        <a href=""><p>推送服务</p></a>
+                        <a href=""><p>扩展服务</p></a>
+                    </div>
+                </div>
+                <div class="bottom_list3">
+                	<div class="bottom_list_title">
+                    	<p>渠道合作</p>
+                    </div>
+                    <div class="bottom_list_word">
+                    	<a href=""><p>营销合作</p></a>
+                        <a href=""><p>加入我们</p></a>
+                        <a href=""><p>商务合作</p></a>
+                        <a href=""><p>友情链接</p></a>
+                    </div>
+                </div>
+                <div class="bottom_list4">
+                	<div class="bottom_list_title1">
+                    	<p>联系我们</p>
+                    </div>
+                    <div class="bottom_contact_tel">
+                    	<p>4006033769</p>
+                        <p>09:00 -18:00</p>
+                    </div>
+                    <div class="bottom_contact_qq">
+                    	<p>24时在线客服</p>
+                    </div>
+                </div>
+                <div class="bottom_cc">
+                	<p>备案号：</p>
+                </div>
+            </div>
+        
+        
+        </div>
+    
+    </div>-->
+    <!--footer end-->
+
+</body>
+</html>

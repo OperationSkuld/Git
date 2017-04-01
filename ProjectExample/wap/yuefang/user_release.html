@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发布需求</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user_release.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script>
+$(function(){
+	var val = $(".base input:eq(0)").val();
+	$(".rel_btn").click(function(){
+		if(val==""){
+			layer.msg('您还没填写联系电话');
+		}
+		else{
+			$("#release").submit();
+		}
+	});	
+})
+</script>
+</head>
+
+<body bgcolor="#eff3f6"> 
+	<div class="contain">
+    <form id="release" action="">
+    	<div class="rel_box"> 
+            <div class="rel_wx">
+            	<p>绑定微信</p>
+                <span>Samson</span>
+            </div>
+            <div class="base_info">
+            	
+            	<div class="base">
+                	<p>姓名</p>
+                    <span>陈先生</span>
+                </div>
+                
+                <div class="base">
+                	<p>性别</p>
+                    <span>男</span>
+                </div>
+
+                <div class="base">
+                	<p>联系电话</p>
+                    <input type="text" class="base_input" value="" size="11" maxlength="11" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+                    <!--<span>18888888888</span>-->
+                </div>
+
+            </div>
+            <div class="base_demand">
+            	<p>购房需求</p>
+            </div>
+            <div class="demand_info">
+            	<div class="base">
+                	<p>区域</p>
+                    <!--<input type="text" class="base_input" value="杨浦区" readonly >-->
+                    <select class="select_input">
+                    	<option value="黄浦区">黄浦区</option>
+                        <option value="卢湾区">卢湾区</option>
+                        <option value="金山区">金山区</option>
+                        <option value="徐汇区">徐汇区</option>
+                        <option value="长宁区">长宁区</option>
+                        <option value="静安区">静安区</option>
+                        <option value="普陀区">普陀区</option>
+                        <option value="闸北区">闸北区</option>
+                        <option value="虹口区">虹口区</option>
+                        <option value="杨浦区">杨浦区</option>
+                        <option value="闵行区">闵行区</option>
+                        <option value="宝山区">宝山区</option>
+                        <option value="嘉定区">嘉定区</option>
+                        <option value="浦东新区">浦东新区</option>
+                        <option value="松江区">松江区</option>
+                        <option value="青浦区">青浦区</option>
+                        <option value="南汇区">南汇区</option>
+                        <option value="奉贤区">奉贤区</option>
+                        <option value="崇明县">崇明县</option>
+                    </select>
+                    <!--<span>杨浦区</span>-->
+                </div>
+
+                <div class="base">
+                	<p>沿线交通</p>
+                    <!--<input type="text" class="base_input" value="8号线" readonly >-->
+                    <select class="select_input">
+                    	<option value="1号线">1号线</option>
+                        <option value="2号线">2号线</option>
+                        <option value="3号线">3号线</option>
+                        <option value="4号线">4号线</option>
+                        <option value="5号线">5号线</option>
+                        <option value="6号线">6号线</option>
+                        <option value="7号线">7号线</option>
+                        <option value="8号线">8号线</option>
+                        <option value="9号线">9号线</option>
+                        <option value="10号线">10号线</option>
+                        <option value="11号线">11号线</option>
+                        <option value="12号线">12号线</option>
+                        <option value="13号线">13号线</option>
+                        <option value="16号线">16号线</option>
+                    </select>
+                   <!-- <span>8号线</span>-->
+                </div>
+
+                <div class="base">
+                	<p>商圈</p>
+                    <!--<input type="text" class="base_input" value="五角场" readonly >-->
+                    <select class="select_input">
+                    	<option value="南京西路商圈">南京西路商圈</option>
+                        <option value="徐家汇商圈">徐家汇商圈</option>
+                        <option value="淮海路商圈">淮海路商圈</option>
+                        <option value="陆家嘴商圈">陆家嘴商圈</option>
+                        <option value="南京东路商圈">南京东路商圈</option>
+                        <option value="虹桥商圈">虹桥商圈</option>
+                        <option value="五角场商圈">五角场商圈</option>
+                        <option value="中山公园商圈">中山公园商圈</option>
+                        <option value="四川北路商圈">四川北路商圈</option>
+                    </select>
+                    <!--<span>五角场</span>-->
+                </div>
+
+            </div>
+            <div class="base_remark">
+            	<p>备注</p>
+            </div>
+            <div class="remark_info">
+                    <!--<input type="text" class="base_input" value="未填写/修改备注" readonly >-->
+                    <textarea placeholder="未填写/修改备注" value=""></textarea>
+                    <!--<span>未填写/修改备注</span>-->
+            </div>
+            <div class="rel_submit">
+            	<button type="button" class="rel_btn">发布需求</button>	
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

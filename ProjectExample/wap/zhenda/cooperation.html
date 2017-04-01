@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>申请合作</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/cooperation.css">
+<link rel="stylesheet" type="text/css" href="css/sm.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script>
+$(function(){
+	$(".footer_btn").click(function(){
+		var sel = $("input").val();
+		if(sel==""){
+			layer.msg('请选择合作方式');
+		}
+		else{
+			layer.msg('提交成功');
+			delay();
+		}
+	});	
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+</script>
+<script>$.noConflict()</script>
+<script type="text/javascript" src="js/zepto.js"></script>
+</head>
+
+<body bgcolor="#eff3f6">
+	<div class="contain">
+    	 <div class="index_mid">
+         	<a href="index_info.html">
+        	<div class="index_each">
+            	<div class="each_left" style="background-image:url(images/user_img1.png)"></div>
+                <div class="each_mid">
+                	<div class="each_name">
+                    	<p>Samson</p>
+                        <span>刚刚</span>
+                    </div>
+                    <div class="each_title">
+                    	<p>C端产品HUD X1</p>
+                    </div>
+                    <div class="each_word">
+                    	<p>甲方：上海淮海一鸣书店</p>
+                        <p>建设方：上海一佳物流有限公司</p>
+                    </div>
+                </div>
+                <div class="each_right" style="background-image:url(images/user_photo1.png)"></div>
+            </div>
+            </a>
+		</div>
+        <form id="form_submit" action="index_info.html">
+        <div class="coop_form">
+        	<div class="coop_way">
+            	<div class="coop_title">
+                	<p>合作方式：</p>
+                </div>
+                <div class="coop_select page-current" id="page-picker">
+                	<input type="text" required class="coop_input"  id="picker" placeholder="请选择以下一项" value="" readonly>
+                </div>
+            </div>
+            <div class="coop_remark">
+            	<div class="coop_title" style="margin-top:3%;">
+                	<p>备注：</p>
+                </div>
+                <div class="coop_textarea">
+                	<textarea required class="textclass" placeholder="选填"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer_box">
+        <div class="footer_btn">
+        	<p>提交</p>
+        </div>
+        </div>
+        </form>
+    </div>
+
+<script src="js/sm.js"></script>
+<script src="js/demos.js"></script>
+
+
+</body>
+</html>

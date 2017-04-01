@@ -1,0 +1,97 @@
+/******推荐申请******/
+.top{
+	background:#FFF;
+	height:40px;
+	line-height:40px;
+	width:100%;	
+}
+.top p{
+	color:#999;
+	text-align:center;	
+}
+.middle{
+	background:#FFF;
+	padding:30px 10% 40px 10%;
+	margin-top:20px;	
+}
+.name{
+	height:30px;
+	width:100%;	
+}
+.input_name{
+	height:30px;
+	line-height:30px;
+	color:#333;
+	font-family:"微软雅黑", "Microsoft Yahei";
+	font-size:14px;
+	border-bottom:1px solid #b5c2ca;
+	outline:0;	
+	background:url(../images/icon_share1.png) 8% 6px no-repeat;
+	background-size:18px 18px;
+	padding-left:18%;
+	width:82%;
+}
+.mobile,.wechat,.careers{
+	height:30px;
+	width:100%;	
+	margin-top:20px;
+}
+.input_mobile{
+	height:30px;
+	line-height:30px;
+	color:#333;
+	font-family:"微软雅黑", "Microsoft Yahei";
+	font-size:14px;
+	border-bottom:1px solid #b5c2ca;
+	outline:0;	
+	background:url(../images/icon_share2.png) 8% 2px no-repeat;
+	background-size:16px;
+	padding-left:18%;
+	width:82%;
+}
+.input_wechat{
+	height:30px;
+	line-height:30px;
+	color:#333;
+	font-family:"微软雅黑", "Microsoft Yahei";
+	font-size:14px;
+	border-bottom:1px solid #b5c2ca;
+	outline:0;	
+	background:url(../images/icon_share3.png) 8% 6px no-repeat;
+	background-size:19px;
+	padding-left:18%;
+	width:82%;
+}
+.input_careers{
+	height:30px;
+	line-height:30px;
+	color:#333;
+	font-family:"微软雅黑", "Microsoft Yahei";
+	font-size:14px;
+	border-bottom:1px solid #b5c2ca;
+	outline:0;	
+	background:url(../images/icon_share4.png) 8% 6px no-repeat;
+	background-size:18px;
+	padding-left:18%;
+	width:82%;
+}
+::-webkit-input-placeholder{ 
+	color:#c4c3c7; 
+	font-family:"微软雅黑", "Microsoft Yahei";
+	font-size:14px;
+}
+.submit_button{
+	margin-top:20px;
+	margin-left:3%;
+	margin-right:3%;
+	background:#34abe3;
+	height:48px;
+	width:94%;
+	border-radius:5px;	
+	color:#FFF;
+	font-size:18px;
+	letter-spacing:2px;
+	text-align:center;
+	font-weight:bold;
+	outline:0;
+}

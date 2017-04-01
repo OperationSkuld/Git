@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>悦房</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/assess.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/upload.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script>
+$(function(){
+	$("#form_submit").click(function(){
+	var val=$('input:radio[name="score"]:checked').val();
+	var valtext=$(".assess_textclass").val();
+	if(val==null){
+		layer.msg('您还未评分');
+		return false;
+	}
+	if(valtext=="" || valtext==null){
+		layer.msg('您还一个字都没写');
+		return false;
+	}
+	layer.msg('评价已提交');
+	delay();
+	})
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_assess").submit();
+    },2000);
+	return false;
+}
+</script>
+</head>
+
+<body bgcolor="#eff3f6" style="width:100%;height:100%" ontouchstart>
+	<div class="contain js_container">
+    	<a href="index_info.html">
+    	<div class="box_bg">
+    	<div class="box_each">
+            	<div class="box_image">
+                	<img src="images/index_default.png" height="70">
+                </div>
+                <div class="box_mid">
+                	<div class="box_title">
+                    	<p>保利 - 心语5A级写字楼</p>
+                    </div>
+                    <div class="box_type">
+                    	<p>面积：100-1300m<sup>2</sup></p>
+                    </div>
+                    <div class="box_pos">
+                    	<img src="images/icon_pos.png" width="15">
+                    	<p>杨浦区&nbsp;&nbsp;周家嘴路双阳路63-64号</p>
+                    </div>
+                </div>
+                <div class="box_right">
+					<p>1.3</p>
+                    <span>万/m<sup>2</sup></span>                
+                </div>
+        </div>
+        </div>
+        </a>
+        <div class="box_midden">
+        <div class="star_word">
+        	<p>评分：</p>
+        </div>
+        <form id="form_assess" action="user_order.html">
+        <div id="starBg" class="star_bg">             	
+            <input name="score" type="radio" required class="score score_1" id="starScore1" value="1">
+          <a href="#starScore1" class="star star_1" title="差"><label for="starScore1"></label></a>
+            <input name="score" type="radio" required class="score score_2" id="starScore2" value="2">
+            <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2"></label></a>
+            <input name="score" type="radio" required class="score score_3" id="starScore3" value="3">
+            <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3"></label></a>
+            <input name="score" type="radio" required class="score score_4" id="starScore4" value="4">
+            <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4"></label></a>
+            <input name="score" type="radio" required class="score score_5" id="starScore5" value="5">
+            <a href="#5" class="star star_5" title="好"><label for="starScore5"></label></a>
+        </div>
+        <div class="assess_wp">
+        	<div class="assess_word">
+            	<textarea required class="assess_textclass" placeholder="写下您的看房评价，您的看法对其他买房者会有很大帮助"></textarea>
+            </div>
+            <!--<div class="assess_picture">
+            	<img src="images/camera.png">
+            </div>-->
+        </div>
+        </div>
+        <div class="box_upload">
+        	<div class="uploadclass">
+            	<img class="preview localImag" src="images/upload_default.png" width="100%" >
+                <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(0)">
+            </div>
+            <div class="uploadclass">
+            	<img class="preview localImag" src="images/upload_default.png" width="100%">
+                <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(1)">
+            </div>
+            <div class="uploadclass">
+            	<img class="preview localImag" src="images/upload_default.png" width="100%">
+                <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(2)">
+            </div>
+            <div class="uploadclass">
+            	<img class="preview localImag" src="images/upload_default.png" width="100%">
+                <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(3)">
+            </div>
+        </div>
+        
+        <div class="box_bottom">
+        	<div class="form_submit">
+            	<button type="button" class="upload_submit" id="form_submit">提交</button>
+            </div>
+        </div>
+        
+        </form>
+        
+    </div>
+</body>
+</html>

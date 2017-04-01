@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit">
+	<title>天天画堂</title>
+	<!--公共css样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--公共css样式-->
+    <!--私有css样式-->	
+	<link rel="stylesheet" type="text/css" href="css/logReg.css">
+	<!--私有css样式-->
+</head>
+
+<body>
+	<div class="contain">
+		<div class="logreg_bg">
+			
+			<div class="logreg_box">
+			<form action="register.html">
+				<div class="selected-end">
+					<ul>
+						<li>
+							<p class="selected">注册老师</p>
+							<input type="radio" name="end" required="required" checked="checked" />
+						</li>
+						<li>
+							<p>注册学生</p>
+							<input type="radio" name="end" required="required" />
+						</li>
+					</ul>
+				</div>
+				<div class="selected-type">
+					<p>用第三方帐号注册天天画堂</p>
+					<a href=""><img src="img/weibo.png" width="40" height="40" alt="" /></a>
+					<a href=""><img src="img/qq.png" width="40" height="40" alt="" /></a>
+					<a href=""><img src="img/wechat.png" width="40" height="40" alt="" /></a>
+					<a href=""><img src="img/douban.png" width="40" height="40" alt="" /></a>
+					<button type="submit">使用手机号/邮箱注册</button>
+				</div>
+			</form>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+	<!--公用js-->
+	<script src="../../js/jquery-1.9.1.min.js"></script>	
+	<!--公用js-->
+	<!--私有js-->
+	<!--radio js-->
+	<script type="text/javascript">
+	$(function(){
+		$(".selected-end ul li input").click(function(){			
+			$(this).siblings("p").addClass("selected");
+			$(this).parent().siblings().find("p").removeClass("selected");
+		})
+	})
+	</script>
+	<!--radio js end-->
+	<!--监控窗口高度 js-->
+	<script type="text/javascript" src="js/monitor.js"></script>
+	<!--监控窗口高度 js end -->
+	<!--私有js-->
+	
+</body>
+</html>

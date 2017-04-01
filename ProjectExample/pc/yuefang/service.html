@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>金融服务</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/service.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--弹窗js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--弹窗js end-->
+<!--房贷计算器-->
+<script type="text/javascript" src="js/calculator.js"></script>
+<script>
+$(function(){
+	$(".cal_radio").bind("click",function(){
+  		$(this).addClass("on").siblings().removeClass("on");
+	})
+});
+</script>
+<!--房贷计算器 end-->
+</head>
+
+<body bgcolor="#f4f4f4">
+	<div class="contain">
+    	
+        <!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item cur"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style="display: block; left: 0px;"></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"><img src="images/user_default.png" width="35"></a>
+                    <div class="login">
+                    	<a><p>登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+
+    	<div class="service_box">
+    		<div class="service_leftbox">
+        		<div class="calculator_title">
+            		<p>房贷计算器</p>
+            	</div>
+                
+                
+                <div class="calculator_box">  
+                    <div class="cal_field">
+                        <div class="cal_word">
+                            <p>还款方式：</p>
+                        </div>
+                        <div class="cal_choose">
+                            <div class="cal_radio on">
+                                <input name="pay_way" type="radio" class="radioclass" value="" checked id="average_rate">	
+                            </div>
+                            <span>等额本息</span>
+                            <div class="cal_radio">
+                                <input type="radio"  name="pay_way" value="" class="radioclass" id="average_corpus">                 	
+                            </div>
+                            <span>等额本金</span>
+                        </div>
+                    </div>
+                    <div class="cal_field" id="touch">
+                        <div class="cal_word">
+                            <p>货款类别：</p>
+                        </div>
+                        <div class="cal_choose">
+                            <div class="cal_radio on">
+                                <input name="pay_type" type="radio" class="radioclass choose2" value="纯商贷" checked>	
+                            </div>
+                            <span>纯商贷</span>
+                            <div class="cal_radio cal_radio_change">
+                                <input type="radio"  name="pay_type"  value="公积金" class="radioclass choose2" id="radio_3">                 	
+                            </div>
+                            <span>公积金</span>
+                            <div class="cal_radio cal_radio_change">
+                                <input type="radio"  name="pay_type" value="组合贷" class="radioclass choose2" id="radio_4">                 	
+                            </div>
+                            <span>组合贷</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show3">
+                        <div class="cal_word">
+                            <p>计算方式：</p>
+                        </div>
+                        <div class="cal_choose">
+                            <div class="cal_radio on" id="refresh1">
+                                <input name="cal_way" type="radio" class="radioclass choose3" id="radio_1" value="按货款额度" checked>	
+                            </div>
+                            <span>按货款额度</span>
+                            <div class="cal_radio" id="refresh2">
+                                <input type="radio"  name="cal_way" id="radio_2" value="按购房总价" class="radioclass choose3">                 	
+                            </div>
+                            <span>按购房总价</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show1" id="show">
+                        <div class="cal_word">
+                            <p>首付：</p>
+                        </div>
+                        <div class="cal_input">
+                            <input name="" type="text" required class="inputclass" onkeyup='this.value=this.value.replace(/\D/gi,"")' value="" size="5" maxlength="5" id="downpayment">
+                            <span>万元</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show1" id="show1">
+                        <div class="cal_word">
+                            <p>贷款金额：</p>
+                        </div>
+                        <div class="cal_input">
+                            <input name="" type="text" required class="inputclass" onkeyup='this.value=this.value.replace(/\D/gi,"")' value="" size="5" maxlength="5" id="loan">
+                            <span>万元</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show2" style="display:none">
+                        <div class="cal_word">
+                            <p>购房总价：</p>
+                        </div>
+                        <div class="cal_input">
+                            <input name="" type="text" required class="inputclass" onkeyup='this.value=this.value.replace(/\D/gi,"")' value="" size="5" maxlength="5" id="purchaseall">
+                            <span>万元</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show6" style="display:none">
+                        <div class="cal_word">
+                            <p>商贷金额：</p>
+                        </div>
+                        <div class="cal_input">
+                            <input name="" type="text" required class="inputclass" onkeyup='this.value=this.value.replace(/\D/gi,"")' value="" size="5" maxlength="5" id="loan_sum">
+                            <span>万元</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show6" style="display:none">
+                        <div class="cal_word">
+                            <p style="font-size:12px;">公积金金额：</p>
+                        </div>
+                        <div class="cal_input">
+                            <input name="" type="text" required class="inputclass" onkeyup='this.value=this.value.replace(/\D/gi,"")' value="" size="5" maxlength="5" id="public_sum">
+                            <span>万元</span>
+                        </div>
+                    </div>
+                    <div class="cal_field show2" style="display:none">
+                        <div class="cal_word">
+                            <p>首付比例：</p>
+                        </div>
+                        <div class="cal_input">       	
+                            <select  class="selectclass" value="" id="ratio">
+                                <option value="0.1">1成</option>
+                                <option value="0.2">2成</option>
+                                <option value="0.3">3成</option>
+                                <option value="0.4">4成</option>
+                                <option value="0.5">5成</option>
+                                <option value="0.6">6成</option>
+                                <option value="0.7">7成</option>
+                                <option value="0.8">8成</option>
+                                <option value="0.9">9成</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cal_field">
+                        <div class="cal_word">
+                            <p>货款年限：</p>
+                        </div>
+                        <div class="cal_input">       	
+                            <select  class="selectclass" value="" id="year"></select>
+                        </div>
+                    </div>
+                    <div class="cal_field show4">
+                        <div class="cal_word">
+                            <p>年利率：</p>
+                        </div>
+                        <div class="cal_input">       	
+                            <select  class="selectclass1" value="" id="year_rate">
+                                <option value="4.35">最新基准利率(4.35%)</option>
+                                <option value="3.48">8折利率(3.48%)</option>
+                                <option value="3.70">8.5折利率(3.70%)</option>
+                                <option value="3.91">9折利率(3.91%)</option>
+                                <option value="4.78">1.1倍利率(4.78%)</option>
+                                <option value="5.22">1.2倍利率(5.22%)</option>
+                                <option value="5.66">1.3倍利率(5.66%)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cal_field show5" style="display:none">
+                        <div class="cal_word">
+                            <p>年利率：</p>
+                        </div>
+                        <div class="cal_input">       	
+                            <input name="" type="text" class="inputclass" value="2.75%" readonly id="publicrate">
+                        </div>
+                    </div>
+                    <div class="cal_submit">
+                        <button type="button" class="btn_submit">开始计算</button>
+                    </div>
+                </div>
+                
+                
+                <div class="result_box">
+            		<div class="repay_way">
+                		<p>等额本息</p>
+                	</div>
+                    <div class="result_list">
+                    	<p>首付</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>贷款总额</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>利息总额</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>还款总额</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>购房总额</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>贷款期数</p>
+                        <span>-</span>
+                    </div>
+                    <div class="result_list">
+                    	<p>月均还款</p>
+                        <span>-</span>
+                    </div>
+            	</div>
+            
+        	</div>
+            
+            <div class="service_righttbox">
+            	<div class="calculator_title">
+            		<p>借贷款利率表</p>
+            	</div>	
+                <div class="rate_bank">
+                	<ul>
+                    	<li>银行</li>
+                        <li>首套</li>
+                        <li>二套</li>
+                    </ul>
+                </div>
+                <div class="rate">
+                <a>
+                <div class="rate_list">               
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+				</a>
+                <a>
+                <div class="rate_list">
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+                </a>
+                <a>
+                <div class="rate_list">
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+                </a>
+                <a>
+                <div class="rate_list">
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+                </a>
+                <a>
+                <div class="rate_list">
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+                </a>
+                <a>
+                <div class="rate_list">
+                	<ul>
+                    	<li>汇丰银行</li>
+                        <li>82折(4.018%)</li>
+                        <li>1.1倍(5.39%)</li>
+                    </ul>
+                    <div class="rate_hover">
+            			<div class="hover_title">
+                			<p>汇丰银行</p>
+                		</div>
+                		<div class="hover_word">
+            				<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            			</div>
+            		</div>
+                </div> 
+                </a>
+                </div>
+                
+                <!--<div class="rate_hover">
+            		<div class="hover_title">
+                		<p>汇丰银行</p>
+                	</div>
+                	<div class="hover_word">
+            			<p>即日起至2016年2月31日，申请汇丰银行首套房人民币纯商业按揭贷款，即享人民银行基准贷款利率85折起。</p>
+            		</div>
+            	</div>-->
+                
+            </div>
+            
+           
+            
+        </div>
+        
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+        
+    </div>
+</body>
+</html>

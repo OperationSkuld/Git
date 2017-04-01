@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/msg.js"></script>
+
+<!--tab切换-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".login_way").bind("click",function(){
+		var index=$(".login_way").index(this);
+		var lilength =$(".login_way").length;
+		for(var i=0;i<lilength;i++){
+			if(i==index){
+				$(".login_way").eq(i).css({"color":"#3a99d8","border-bottom":"2px solid #3a99d8"});
+				$(".signup_forms").eq(i).show();
+				}
+			else{
+				$(".login_way").eq(i).css({"color":"#999","border-bottom":"none"});
+				$(".signup_forms").eq(i).hide();
+				}
+		}
+	});
+});
+</script>
+<!--tab切换 end-->
+
+
+</head>
+
+<body>
+	<div class ="signup_bg"></div>
+	<div class="login_container">
+		<div class="form_header">
+        	<div id="logo">
+            	<img src="images/icon_logo.png" width="80%">
+            </div>
+        </div>
+        
+        <div class="login_tab">
+        	<ul>
+            	<a><li class="login_way" id="login_std">我是学生</li></a>
+                <a><li class="login_way">我是老师</li></a>
+            </ul>
+        </div>
+        
+        <div class="signup_forms">
+            	<div class="signup_forms_container">
+                    <form class="signup_form_form">
+                        <div class="signup_account">
+                            <div class="form_user">	
+        						<input type="text" name="mobile" placeholder="手机号" id="signup_mobile">
+                            </div>
+                            <div class="form_user">	
+        						<input type="text" name="code" placeholder="输入验证码" id="signup_code">
+                                <button type="button" class="signup_code"><span>获取验证码</span></button>
+                            </div>
+                            <div class="form_password">
+           						<input type="password" name="password" placeholder="密码" id="signup_password">
+        					</div>
+                            <div class="form_password">
+           						<input type="password" name="password" placeholder="确认密码" id="signup_password">
+        					</div>
+                            <div class="form_user">	
+        						<input type="text" name="username" placeholder="昵称" id="signup_name">
+                            </div>
+                        </div>
+               					<a href="login.html"><button type="button" class="signup_forms_submit"><span><strong>Sign up</strong></span></button></a>
+                    </form>  		   
+    			</div>
+    	</div>
+        
+        <div class="signup_forms" style="display:none">
+            	<div class="signup_forms_container">
+                    <form class="signup_form_form">
+                        <div class="signup_account">
+                            <div class="form_user">	
+        						<input type="text" name="mobile" placeholder="手机号" id="signup_mobile">
+                            </div>
+                            <div class="form_user">	
+        						<input type="text" name="code" placeholder="输入验证码" id="signup_code">
+                                <button type="button" class="signup_code"><span><strong>获取验证码</strong></span></button>
+                            </div>
+                            <div class="form_password">
+           						<input type="password" name="password" placeholder="密码" id="signup_password">
+        					</div>
+                            <div class="form_password">
+           						<input type="password" name="password" placeholder="确认密码" id="signup_password">
+        					</div>
+                            <div class="form_user">	
+        						<input type="text" name="username" placeholder="昵称" id="signup_name">
+                            </div>
+                        </div>
+               					<a href="login.html"><button type="button" class="signup_forms_submit"><span><strong>Sign up</strong></span></button></a>
+                    </form>  		   
+    			</div>
+    	</div>
+        
+        
+        
+        
+	</div>
+</body>
+</html>

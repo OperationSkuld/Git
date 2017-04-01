@@ -1,0 +1,94 @@
+/*微信端*/
+
+/*微信首次关注 */
+.wxstartBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;margin-top: 20px;padding: 20px 0;}
+.wxstartBox:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+.wxstartLeftBox{position: relative;float: left;}
+.iphoneBg{width: 400px;height: 700px;background: url(../img/bg_iphone.png) 0 0 no-repeat;background-size: cover;}
+.wxScreenBox{width: 271px;height: 481px;position: absolute;left: 60px;top: 77px;background: #f7f7f7;overflow: auto;cursor: pointer;}
+.wxstartDragBox{margin-top: 46px;padding: 10px;height: 380px;overflow: auto;position: relative;}
+.wxLeftDragBox{width: 30px;height: 30px;background-size: cover;background-position: center;background-repeat: no-repeat;float: left;}
+.wxRightDragBox{float: left;margin-left: 10px;width: 160px;padding: 10px;border-radius: 5px;background: #FFF;position: relative;word-break: break-word;}
+#triangle-left {width: 0;height: 0;border-top: 4px solid transparent;border-right: 6px solid #FFF;border-bottom: 4px solid transparent;position: absolute;left: -6px;}
+.wxstartRightBox{float: left;margin-top: 75px;}
+.wxstartBtnBox{margin-top: 30px;}
+.wxstartBtnBox .btnSave{width: 100px;height: 30px;border-radius: 3px;background: #29ABE2;color: #FFF;cursor: pointer;font-size: 12px;font-weight: bold;outline: none;}
+
+/*微信菜单范例*/
+.wxmenuBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;margin-top: 20px;padding: 20px 0;}
+.wxmenuBox:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+.wxmenuTopBox{position: relative;width: 400px;margin: 0 auto;}
+.wxTopScreenBox{width: 271px;height: 481px;position: absolute;left: 60px;top: 77px;background: #f7f7f7;overflow: auto;}
+.wxTopBox{font-size: 0;}
+.wxBottomBox{height: 34px;border-top: 1px solid #dedede;position: absolute;bottom: 0;left: 0;background: #fff;}
+.wxKeyboard{width: 30px;height: 34px;float: left;border-right: 1px solid #dedede;background: url(../img/icon_wxKeyboard.png) 0 0 no-repeat;background-size: cover;}
+.wxBottomBox ul{float: left;}
+.wxBottomBox ul li{position: relative;border-right: 1px solid #dedede;float: left;cursor: pointer;text-align: center;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;height: 34px;width: 80px;}
+.wxBottomBox ul li .wxNavBox{display: table;margin: 0 auto;}
+.wxBottomBox ul li p{line-height: 34px;font-size: 12px;color: #666;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: left;font-weight: bold;}
+.wxBottomBox ul li img{float: left;margin-top: 15px;margin-right: 5px;}
+.wxSecNav{position: absolute;left: 50%;margin-left: -40px;bottom: 50px;padding: 0 5px;width: 68px;border: 1px solid #dedede;background: #FFF;border-radius: 5px;box-shadow: 0 0 10px 1px rgba(0,0,0,.2);display: none;}
+.wxSecNav::before{content: "";display: block;position: absolute;left: 50%;bottom: -16px;margin-left: -7px;width: 0;height: 0;border: 5px solid red;border-width: 8px;border-color: #dedede transparent transparent;}
+.wxSecNav::after{content: "";display: block;position: absolute;left: 50%;bottom: -15px;margin-left: -7px;width: 0;height: 0;border: 5px solid red;border-width: 8px;border-color: #FFF transparent transparent;}
+.wxSecNav a {padding: 10px 0;display: block;text-align: center;color: #666;font-size: 12px;font-weight: bold;border-bottom: 1px solid #dedede;}
+.wxSecNav a:last-child{border-bottom: none;}
+.wxmenuBtnBox{text-align: center;margin-top: -30px;position: relative;z-index: 9;}
+.wxmenuBtnBox button{width: 100px;height: 30px;border-radius: 3px;background: #29ABE2;color: #FFF;cursor: pointer;font-size: 12px;font-weight: bold;outline: none;}
+
+/*微信菜单管理*/
+.wxaddmenuTopBox{padding: 15px 20px;margin-top: 20px;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;background: #FFF;width: 958px;}
+.wxaddmenuTopBox p{color: #ff964b;font-size: 12px;line-height: 2.4;}
+.wxaddmenuTopBox span{color: #333;font-size: 12px;line-height: 2.4;display: block;}
+.wxaddmenuBottomBox{margin-top: 15px;border: 1px solid #dedede;border-radius: 3px;background: #FFF;height: 635px;width: 998px;}
+.wxaddmenuNameBox{float: left;width: 299px;border-right: 1px solid #DEDEDE;height: 635px;}
+.wxaddmenuName{height: 44px;line-height: 44px;padding: 0 20px;border-bottom: 1px solid #DEDEDE;}
+.iconPlan{float: left;margin: 17px 10px 17px 0;}
+.wxaddmenuName p{color: #333333;font-size: 14px;float: left;font-weight: bold;}
+.iconAdd{float: right;margin: 16px 0;}
+.wxaddmenuNumber{overflow: hidden;margin: 15px 0;}
+.wxFirstNav > li{line-height: 30px;padding: 0 20px;cursor: pointer;position: relative;}
+.wxFirstNav > li input{max-width: 90px;height: 30px;line-height: 30px;overflow: hidden;text-overflow: clip;white-space: nowrap;color: #666;font-size: 12px;margin-left: 22px;font-weight: bold;background: none;outline: none;word-break: break-all;}
+.wxSecondNav li{line-height: 30px;cursor: pointer;position: relative;}
+.wxSecondNav li input{max-width: 90px;height: 30px;line-height: 30px;overflow: hidden;text-overflow: clip;white-space: nowrap;color: #666;font-size: 12px;margin-left: 54px;background: none;outline: none;word-break: break-all;}
+.wxaddmenuHover{height: 30px;line-height: 30px;position: absolute;top: 0;right: 20px;display: none;}
+.wxaddmenuHover img{margin-top: 7px;margin-left: 10px;}
+.bgCur{background-color: #f4fbff !important;}
+.save{display: none;}
+.wxaddmenuContent{float: left;width: 698px;}
+.wxaddmenuTitle{height: 45px;line-height: 45px;text-align: center;}
+.wxaddmenuTitle p{color: #333333;font-size: 14px;font-weight: bold;}
+.setActionBox{padding: 200px 0;margin: 0 auto;width: 540px;overflow: hidden;}
+.setActionBox ul li{width: 150px;height: 150px;line-height: 150px;border-radius: 150px;box-shadow: 0 0 10px rgba(0,0,0,.2);margin: 0 60px;float: left;text-align: center;font-size: 14px;letter-spacing: 2px;color: #999;}
+.setActionBox ul li:hover{color: #29ABE2 !important;}
+/*弹窗*/
+.coverBox{position: fixed;left: 0;top: 0;bottom: 0;width: 100%;background: rgba(0,0,0,.2);z-index: 999;display: none;}
+.coverContain{position: absolute;left: 0;right: 0;top: 350px;background: #FFFFFF;overflow: hidden;border-radius: 5px;margin: 0 auto;}
+.coverTitle{padding: 30px 0;text-align: center;}
+.coverTitle p{font-size: 16px;color: #333333;font-weight: bold;}
+.splitline{width: 498px;height: 1px;margin: 0 auto;background: url(../img/line.png) 0 0 no-repeat;background-size: cover;}
+.coverContent{padding: 20px 0;overflow: hidden;}
+.inputBox{text-align: center;position: relative;}
+.inputBox p{color: #333333;font-size: 14px;margin: 10px 0;}
+.inputBox .inputText{border: 1px solid #dedede;border-radius: 3px;width: 430px;height: 30px;line-height: 30px;color: #666;padding-left: 10px;outline: 0;}
+.coverButton{text-align: center;margin-bottom: 30px;}
+.btnComfirm{width: 100px;height: 30px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;margin-right: 20px;cursor: pointer;}
+.btnCancel{width: 100px;height: 30px;text-align: center;color: #333333;background: #FFF;outline: 0;border: 1px solid #dedede;border-radius: 3px;cursor: pointer;}
+
+/*微信菜单发送消息*/
+.wxmsgTip{margin: 20px 0;padding: 0 20px;}
+.wxmsgTip p{font-size: 12px;color: #333;letter-spacing: 1px;}
+.wxmsgEditor{padding: 0 20px;}
+.wxmsgBtnBox{margin: 20px 0;float: right;}
+.wxmsgBtnBox .btnSave{width: 100px;height: 28px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;margin-right: 10px;cursor: pointer;}
+.wxmsgBtnBox .btnBack{width: 100px;height: 28px;text-align: center;color: #333333;background: #FFF;outline: 0;border: 1px solid #dedede;border-radius: 3px;cursor: pointer;}
+
+/*微信菜单链接设置*/
+.wxlinkBox{padding: 0 20px;margin: 150px auto;text-align: center;}
+.wxlinkBox p{font-size: 12px;color: #333;letter-spacing: 1px;}
+.wxlinkBox .inputBox{margin-top: 20px;}
+.wxlinkBox .inputBox select{width: 220px;height: 28px;border: 1px solid #dedede;border-radius: 3px;padding-left: 10px;font-size: 12px;color: #333;outline: none;}
+.wxlinkBox .inputBox input{width: 360px;height: 26px;border: 1px solid #dedede;border-radius: 3px;padding-left: 10px;font-size: 12px;color: #333;outline: none;}
+.inputHref{display: none;}
+.wxlinkBtnBox{margin: 40px 0;}
+.wxlinkBtnBox .btnSave{width: 100px;height: 28px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;margin-right: 10px;cursor: pointer;}
+.wxlinkBtnBox .btnBack{width: 100px;height: 28px;text-align: center;color: #333333;background: #FFF;outline: 0;border: 1px solid #dedede;border-radius: 3px;cursor: pointer;}

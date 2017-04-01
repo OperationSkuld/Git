@@ -1,0 +1,161 @@
+/*面包屑*/
+.bread{width: 100%;height: 50px;background: #70a7c6;}
+.bread ul{width: 1100px;margin: 0 auto;}
+.bread ul li{height: 50px;line-height: 50px;float: left;}
+.bread ul li p{font-size: 14px;color: #FFF;float: left;cursor: pointer;}
+.bread ul li span{font-size: 14px;color: #FFF;}
+
+/*left*/
+.contentBox{width: 1100px;margin: 0 auto;margin-top: 25px;overflow: hidden;}
+.leftbox{width: 200px;overflow: hidden;float: left;}
+.leftbox .title{height: 30px;line-height: 30px;border-bottom: 2px solid #b6b6b6;}
+.leftbox .title p{color: #000;font-size: 16px;}
+/*个人信息*/
+.infoBox{border: 2px solid #d3d3d3;border-radius: 8px;padding: 0 15px;background: #FFF;margin-top: 20px;}
+.infoBox-top{padding: 20px 0;border-bottom: 2px solid #d3d3d3;}
+.info-img{width: 120px;height: 120px;border-radius: 50%;background-position: center;background-size: cover;background-image: url(../img/user-default.png);margin: 0 auto;}
+.infoBox-top p{color: #000;font-size: 16px;margin-top: 20px;margin-bottom: 10px;text-align: center;}
+.infoBox-top span{color: #b2b2b2;font-size: 12px;}
+.infoBox-top line{color: #b2b2b2;margin: 0 5px;font-size: 12px;}
+.infoBox-top button{display: block;width: 105px;height: 30px;background: #0b80af;outline: none;text-align: center;color: #FFF;font-size: 14px;margin: 0 auto;margin-top: 12px;}
+.infoBox-mid{padding: 20px 10px;border-bottom: 2px solid #d3d3d3;}
+.infoBox-mid p{display: block;word-break: break-word;font-size: 12px;color: #B2B2B2;line-height: 1.8;}
+.infoBox-bottom{padding: 20px 10px;overflow: hidden;}
+.infoBox-bottom p{display: block;letter-spacing: 2px;color: #B2B2B2;font-size: 12px;line-height: 1.8;word-break: break-word;}
+.infoBox-bottom .rewards{width: 30px;height: 30px;background: url(../img/icon-reward.png) -1px 3px no-repeat;background-size: cover;float: left;margin-left: 8px;margin-bottom: 10px;cursor: pointer;}
+.infoBox-bottom .rewards p{color: #FFF;font-size: 12px;width: 30px;text-align: center;font-weight: bold;}
+/*我的关注*/
+.leftbox .attention{margin-top: 20px;}
+.attentionBox{border: 2px solid #d3d3d3;border-radius: 8px;padding: 0 15px;background: #FFF;margin-top: 20px;}
+.attentionBox ul li{height: 40px;padding-bottom: 12px;border-bottom: 2px solid #d3d3d3;padding: 15px 0;}
+.attention-leftBox{width: 40px;height: 40px;border-radius: 50%;background-position: center;background-size: cover;background-image: url(../img/user-default.png);float: left;}
+.attention-rightBox{margin-left: 10px;float: left;line-height: 1.8;}
+.attention-rightBox p{color: #333;font-size: 12px;}
+.attention-rightBox span{color: #999;font-size: 12px;}
+.attentionBox ul a{height: 35px;line-height: 35px;color: #666;text-align: center;display: block;letter-spacing: 2px;}
+/*最近访客*/
+.leftbox .recent{margin-top: 20px;}
+.recentBox{border: 2px solid #d3d3d3;border-radius: 8px;padding: 0 15px;background: #FFF;margin-top: 20px;}
+.recentBox ul li{height: 40px;padding-bottom: 12px;border-bottom: 2px solid #d3d3d3;padding: 15px 0;}
+.recent-leftBox{width: 40px;height: 40px;border-radius: 50%;background-position: center;background-size: cover;background-image: url(../img/user-default.png);float: left;}
+.recent-rightBox{margin-left: 10px;float: left;line-height: 1.8;}
+.recent-rightBox p{color: #333;font-size: 12px;}
+.recent-rightBox span{color: #999;font-size: 12px;}
+.recentBox ul a{height: 35px;line-height: 35px;color: #666;text-align: center;display: block;letter-spacing: 2px;}
+
+/*right*/
+.rightbox{width: 200px;overflow: hidden;float: left;margin-left: 30px;width: 870px;}
+.rightbox .title{height: 30px;line-height: 30px;border-bottom: 2px solid #b6b6b6;}
+.rightbox .title p{color: #000;font-size: 16px;}
+/*学习课程*/
+.courseBox{border: 2px solid #d3d3d3;border-radius: 8px;padding: 0 20px;background: #FFF;margin-top: 20px;}
+.course-item ul li{width: 246px;border: 2px solid #d3d3d3;border-radius: 8px;display: inline-block;overflow: hidden;margin: 0 11px;}
+.course-bg{height: 140px;background-position: center;background-size: cover;background-repeat: no-repeat;}
+.course-textBox{padding: 8px 10px;}
+.course-textBox p{font-size: 14px;color: #333;line-height: 1.5;}
+.course-textBox span{font-size: 12px;color: #666;line-height: 1.5;display: block;}
+.course-price{overflow: hidden;}
+.course-price strong{color: #ff4c4c;font-size: 18px;float: left;line-height: 28px;}
+.course-price button{float: right;height: 28px;padding: 0 10px;background: #7d9fea;outline: none;border-radius: 3px;color: #FFF;font-size: 12px;}
+/*历史评价*/
+.rightbox .history{margin-top: 20px;}
+.historyBox{border: 2px solid #d3d3d3;border-radius: 8px;background: #FFF;margin-top: 20px;position: relative;}
+.history-topBox { width: 800px; height: 94px;margin: 0 auto; border-bottom: 2px solid #B6B6B6;margin-top: 20px;}
+.grade { float: left; width: 211px;height:54px;padding-top: 16px; border-right: 2px solid #B6B6B6;text-align: center; font-size: 16px;font-weight: bold;}
+.people { margin-top:8px;font-size:11px;}
+.mark_a { float:left; margin-top: 12px;}
+.stars_a {float: right;width: 174px;height: 16px;margin-left: 80px;font-weight: bold;}
+.stars_a p { float: right;}
+.mark_b { float:left; margin-top: 14px;}
+.stars_b {float: right;width: 174px;height: 16px;margin-left: 80px;font-weight: bold;}
+.stars_b p { float: right;}
+.historyBox ul li{border-bottom: 2px solid #dadada;overflow: hidden;margin: 0 60px;margin-top: 40px;}
+.history-leftBox{float: left;width: 50px;height: 50px;border-radius: 50%;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(../img/user-default.png);}
+.history-rightBox{float: left;margin-left: 25px;width: 670px;overflow: hidden;}
+.history-baseInfo{line-height: 1.8;display: inline-block;width: 100%;}
+.history-baseInfo h5{font-size: 14px;float: left;color: #666666;}
+.history-baseInfo p{font-size: 14px;float: left;color: #666666;margin-left: 15px;}
+.history-baseInfo line{font-size: 14px;float: left;color: #999;margin: 0 10px;}
+.history-baseInfo span{font-size: 14px;float: left;color: #999;}
+.history-baseInfo a{padding: 3px 10px;margin-left: 15px;text-align: center;background: #5c9ac2;color: #FFF;font-size: 14px;letter-spacing: 3px;border-radius: 3px;}
+.history-baseInfo strong{font-size: 14px;color: #333;float: right;}
+.history-content{margin-top: 5px;}
+.history-content p{line-height: 1.8;font-size: 12px;color: #666;padding-bottom: 20px;word-break: break-word;}
+.history-replyBox{float: left;padding-left: 75px;width: 670px;overflow: hidden;padding-top: 15px;border-top: 2px dashed #e5e5e5;}
+/*作品展示*/
+.rightbox .works{margin-top: 20px;}
+.worksBox{border: 2px solid #d3d3d3;border-radius: 8px;padding: 0 20px;background: #FFF;margin-top: 20px;position: relative;}
+.works-item a{margin: 10px 0;color: #333;font-size: 14px;display: block;text-align: right;margin-right: 62px;}
+.works-item ul{width: 728px;margin: 0 auto;overflow: hidden;}
+.works-item ul li{width: 220px;float: left;margin: 0 11px;margin-bottom: 15px;}
+.works-imgBorder{border: 1px solid #e5e5e5;border-radius: 3px;}
+.works-img{margin: 9px;width: 200px;height: 150px;background-position: center;background-size: cover;background-repeat: no-repeat;}
+.works-title{width: 200px;margin: 10px;}
+.works-title p{color: #333;font-size: 14px;text-align: center;line-height: 1.8;}
+/*讨论区*/
+.rightbox .discuss{margin-top: 20px;}
+.discussBox{border: 2px solid #d3d3d3;border-radius: 8px;background: #FFF;margin-top: 20px;position: relative;}
+.discussBox ul li{border-bottom: 2px solid #dadada;overflow: hidden;margin: 0 60px;margin-top: 40px;}
+.discuss-leftBox{float: left;width: 50px;height: 50px;border-radius: 50%;background-repeat: no-repeat;background-position: center;background-size: cover;background-image: url(../img/user-default.png);}
+.discuss-rightBox{float: left;margin-left: 25px;width: 670px;overflow: hidden;}
+.discuss-baseInfo{line-height: 1.8;display: inline-block;}
+.discuss-baseInfo h5{font-size: 14px;float: left;color: #666666;}
+.discuss-baseInfo p{font-size: 14px;float: left;color: #666666;margin-left: 15px;}
+.discuss-baseInfo line{font-size: 14px;float: left;color: #999;margin: 0 10px;}
+.discuss-baseInfo span{font-size: 14px;float: left;color: #999;}
+.discuss-baseInfo a{padding: 3px 10px;margin-left: 15px;text-align: center;background: #5c9ac2;color: #FFF;font-size: 14px;letter-spacing: 3px;border-radius: 3px;}
+.discuss-content{margin-top: 5px;}
+.discuss-content p{line-height: 1.8;font-size: 12px;color: #666;padding-bottom: 20px;word-break: break-word;}
+.discuss-replyBox{float: left;padding-left: 75px;width: 670px;overflow: hidden;padding-top: 15px;border-top: 2px dashed #e5e5e5;}
+.commentBox{padding: 25px 60px;border-top: 2px solid #d3d3d3;position: relative;overflow: hidden;}
+.isLogin{position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 8;}
+.isLoginBox{overflow: hidden;width: 222px;margin: 0 auto;margin-top: 112px;}
+.isLoginBox p{font-size: 12px;color: #333;float: left;margin-right: 5px;}
+.isLoginBox a{float: left;color: #537dd7;font-size: 12px;}
+.isLoginBox line{float: left;margin: 0 5px;color: #333;font-size: 12px;}
+.commentBox button{padding: 0 10px;height: 25px;border-radius: 3px;background: #5c9ac2;outline: none;color: #FFF;font-size: 12px;letter-spacing: 2px;margin-top: 10px;float: right;}
+
+/*弹窗*/
+.coverBox{position: absolute;left: 0;top: 0;bottom: 0;width: 100%;background: rgba(0,0,0,.2);z-index: 999;visibility: hidden;}
+.coverContain{position: fixed;left: 0;right: 0;top: 150px;background: #FFFFFF;overflow: hidden;border: 2px solid #9e9e9e;border-radius: 5px;margin: 0 auto;width: 600px;padding: 10px 25px;}
+.coverTitle{height: 40px;line-height: 40px;padding: 0 20px;border-bottom: 2px solid #e5e5e5;}
+.coverTitle p{font-size: 14px;color: #333333;}
+.coverContent{padding: 15px 20px;overflow: hidden;}
+.coverContent tips{color: #999;font-size: 14px;margin: 20px 0;}
+.inputBox{height: 36px;line-height: 36px;margin: 30px auto;position: relative;text-align: center;}
+.inputBox input[type='text']{border: 1px solid #d9d9d9;width: 400px;height: 34px;line-height: 34px;color: #666;padding-left: 10px;outline: 0;}
+.coverButton{height: 30px;float: right;}
+.btnComfirm{float: left;width: 60px;height: 30px;text-align: center;color: #FFFFFF;background: #5c9ac1;outline: 0;margin-left: 10px;cursor: pointer;}
+.btnCancel{float: left;width: 60px;height: 30px;text-align: center;color: #333333;background: #FFF;outline: 0;border: 1px solid #dedede;margin-left: 10px;cursor: pointer;}
+
+
+
+/*我要开堂*/
+.lesson{}
+.lesson .title{height: 30px;line-height: 30px;border-bottom: 2px solid #b6b6b6;}
+.lesson .title p{color: #000;font-size: 16px;}
+/*开堂资料*/
+.lesson-topBox{border: 2px solid #d3d3d3;border-radius: 8px;background: #FFF;margin-top: 20px;position: relative;}
+.lesson-top-tips{height: 50px;padding: 15px 50px;border-bottom: 2px solid #d3d3d3;}
+.lesson-top-tips p{font-size: 14px;color: #333;line-height: 1.8;}
+.lesson-top-tips p a{color: #70a7c6;}
+.lesson-top-form{padding: 30px 50px;}
+.lesson-upload{width: 280px;height: 180px;float: left;position: relative;}
+.upload-img{width: 280px;height: 180px;background-size: cover;background-repeat: no-repeat;background-position: center;border-radius: 8px;}
+.inputFile{width: 280px;height: 180px;position: absolute;left: 0;top: 0;opacity: 0;}
+.lesson-editor{width: 100%;}
+/*开堂合约*/
+.lesson-contract{margin-top: 20px;}
+.lesson-midBox{border: 2px solid #d3d3d3;border-radius: 8px;background: #FFF;margin-top: 20px;position: relative;padding: 20px 50px;}
+.lesson-midBox h1{color: #70a7c6;font-size: 14px;line-height: 1.8;}
+.lesson-midBox h2{color: #333;font-size: 14px;line-height: 1.8;margin-top: 5px;}
+.lesson-list{margin-top: 20px;}
+.lesson-list p{font-size: 14px;color: #333;line-height: 1.8;}
+.lesson-list span{font-size: 14px;color: #333;display: block;line-height: 1.8;margin-left: 28px;}
+/*联系方式*/
+.lesson-contact{margin-top: 20px;}
+.lesson-bottomBox{border: 2px solid #d3d3d3;border-radius: 8px;background: #FFF;margin-top: 20px;position: relative;padding: 20px 50px;}
+.lesson-bottomBox h1{color: #70a7c6;font-size: 14px;line-height: 1.8;}
+.lesson-bottom-form{padding: 30px 0 0;}
+.lesson-btnBox{margin-top: 40px;text-align: center;}
+.lesson-btnBox button{width: 160px;height: 40px;background: #e33f40;outline: none;font-size: 18px;color: #FFF;letter-spacing: 5px;font-weight: bold;border-radius: 3px;}

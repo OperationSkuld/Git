@@ -1,0 +1,14 @@
+/*帐号日志监控*/
+.logsBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;margin-top: 20px;}
+.logsFilterBox{padding: 20px;overflow: hidden;}
+.inputText{float: left;height: 28px;line-height: 28px;padding-left: 10px;color: #333;border: 1px solid #DEDEDE;border-radius: 3px;margin-right: 10px;outline: none;}
+.logsFilterBox input{width: 160px;height: 28px;line-height: 28px;border: 1px solid #DEDEDE;border-radius: 3px;padding-left: 10px;color: #333;float: left;}
+.logsFilterBox line{float: left;margin: 0 8px;color: #333333;font-size: 12px;line-height: 28px;}
+.btnSearch{height: 30px;width: 65px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;cursor: pointer;float: left;margin-left: 20px;}
+.logsList{height: 40px;line-height: 40px;background: #eeeeee;}
+.logsList p{font-size: 12px;color: #666666;float: left;margin-left: 20px;}
+.logsLi{overflow: hidden;}
+.logsLi ul li{padding: 15px 0;line-height: 1.5;background: #FFFFFF;overflow: hidden;display: table;border-bottom: 1px solid #DEDEDE;}
+.logsLi ul li > p{font-size: 12px;color: #333;padding-left: 20px;overflow: hidden;display: table-cell;vertical-align: middle;}
+
+

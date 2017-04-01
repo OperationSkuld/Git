@@ -1,0 +1,89 @@
+/******申请合作******/
+.coop_each{
+	overflow:hidden;
+	background:#FFF;
+}	
+.coop_top{
+	margin:0 3%;
+	padding:15px 0;
+	height:30px;	
+	border-bottom:1px solid #eff2f6;
+	overflow:hidden;
+}
+.coop_img{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	overflow:hidden;
+	float:left;	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.coop_name{
+	float:left;
+	margin-left:3%;
+	height:30px;
+	line-height:30px;
+}
+.coop_name p{
+	color:#34abe3;
+	padding-right:6px;
+	float:left;	
+}
+.coop_name span{
+	color:#999;
+	float:left;	
+}
+.coop_project p{
+	font-size:14px;	
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#666;
+	padding-left:15px;
+}
+.coop_mid{
+	padding:15px 3%;
+	border-bottom:1px solid #eff2f6;
+}
+.coop_mid p{
+	font-size:14px;
+	color:#333;
+	line-height:24px;
+}	
+.coop_operation{
+	padding:10px 3%;
+	float:right;
+}
+.coop_operation p{
+	float:left;
+	width:90px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background:#34abe3;
+	border-radius:3px;	
+	color:#FFF;
+	font-size:14px;
+	margin-right:5px;
+}
+.coop_operation span{
+	float:left;
+	width:90px;
+	line-height:28px;
+	height:28px;
+	text-align:center;
+	background:#ff4966;
+	border-radius:3px;	
+	color:#FFF;
+	font-size:14px;	
+	margin-right:15px;
+}
+.addclass{
+	background:#FFF !important;
+	color:#999 !important;	
+	margin-right:5px !important;
+}

@@ -1,0 +1,15 @@
+/*应用中心*/
+.appCenterBox{width: 1000px;overflow: hidden;margin-top: 20px;}
+.appCenterEachBox{width: 958px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;margin-bottom: 15px;padding: 20px;}
+.appCenterTitle{height: 30px;line-height: 30px;}
+.appCenterTitle p{font-size: 16px;color: #666666;font-weight: bold;float: left;letter-spacing: 1px;}
+.appCenterTitle a{color: #29abe2;font-size: 12px;float: right;}
+.appCenterContent{overflow: hidden;}
+.appCenterContent ul li{width: 170px;height: 200px;margin-right: 27px;margin-top: 20px;float: left;}
+.appCenterContent ul li:nth-child(5n){margin-right: 0;}
+.appCenterImg{width: 170px;height: 170px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
+.appCenterImg p{width: 150px;height: 25px;line-height: 25px;padding: 0 10px;position: absolute;left: 0;bottom: 0;color: #FFF;font-weight: bold;font-size: 14px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.appCenterWord{height: 30px;line-height: 30px;padding: 0 10px;}
+.appCenterWord strong{float: left;color: #ff964b;font-size: 14px;}
+.appCenterWord span{float: right;color: #333333;font-size: 14px;}
+

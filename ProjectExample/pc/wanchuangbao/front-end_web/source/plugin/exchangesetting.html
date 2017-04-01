@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" charset="UTF-8"/>
+	<title>万创宝-应用中心</title>
+	<!--公共css样式开始-->
+    <link rel="stylesheet" href="../../css/css.css">
+    <link rel="stylesheet" href="../../css/top.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bread.css"/>
+    <!--公共css样式结束-->
+    <!--私有css样式开始-->
+    <link rel="stylesheet" type="text/css" href="css/tab.css"/>
+	<link rel="stylesheet" type="text/css" href="css/integral.css"/>
+	<!--私有css样式结束-->	
+</head>
+<body>
+	<!--============公共部分开始===============-->
+	<div class="topContainer">
+	    <div class="userContent">
+	        <div class="welcome floatLeft">
+	            Hi,欢迎使用万创宝全网系统
+	        </div>
+	        <div class="useDetaile floatRight">
+	            <div class="userStep floatLeft">
+	                <a href="javasceipt:;">
+	                    <p>待付款：6</p>
+	                </a>
+	                <a href="javasceipt:;">
+	                    <p>待发货：7</p>
+	                </a>
+	                <a href="javasceipt:;">
+	                    <p>待确认：8</p>
+	                </a>
+	            </div>
+	            <div class="userHandle floatLeft">
+	                <p>Hi,Ellise</p>
+	                <a href="#">
+	                    <p class="logOut">退出登录</p>
+	                </a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="topNavContaier">
+	    <div class="topNavBox">
+	        <div class="logDiv floatLeft"></div>
+	
+	        <ul class="navBox floatLeft">
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">首页</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">全网店铺</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">商品</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">订单</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">会员</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">财务</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">分销商</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">供应商</li>
+	            </a>
+	            <a href="javaScript:;"  target="bottompage">
+	                <li class="navBorder1">代理商</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder2">应用中心</li>
+	            </a>
+	            <a href="javaScript:;" target="bottompage">
+	                <li class="navBorder1">设置</li>
+	            </a>
+	        </ul>
+	        <div class="userHeader floatRight">
+	            <div style="background: url(../../file/userHeader.png) no-repeat;background-size: cover;
+	                                background-position: center;"></div>
+	        </div>
+	    </div>
+	</div>
+	<!--============公共部分结束===============-->
+	
+	<div class="IndexContainer">
+		
+	<!--左侧导航栏 start-->
+	<div id="indexLeft">
+		<div class="navContainer">
+			<ul class="navLeftBox">
+				<a href="index.html">
+				<li>
+					<p class="firstNavbar">应用中心</p>
+				</li>
+				</a>
+				<a href="search.html">
+				<li>
+					<p class="firstNavbar">所有应用</p>
+				</li>
+				</a>
+				<a href="bought.html">
+				<li>
+					<p class="firstNavbar navFirstCur">已订购的应用</p>
+				</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!--左侧导航栏 end-->
+	<!--右侧index start-->
+	<div id="indexRight">
+		<!--面包屑 start-->
+		<div class="bread">
+			<ul>
+				<li>
+					<img src="img/icon_BreadPos.png" width="12" height="15">
+					<p>位置导航</p>
+				</li>
+				<li>
+					<p class="breadWords">已订购的应用</p>
+				</li>
+				<li>
+					<p class="breadWords breadCur">积分中心</p>
+				</li>
+			</ul>
+		</div>
+		<!--面包屑 end-->
+		<!--tab切换-->
+		<div class="tabContainer">
+			<div class="tabBorder"></div>
+			<ul>
+				<a href="exchangesetting.html">
+					<li class="tabCur" style="margin-left: 0px;">兑换比例设置</li>
+				</a>
+				<a href="exchange.html">
+					<li>兑换商品列表</li>
+				</a>
+				<a href="pointslog.html">
+					<li>积分日志</li>
+				</a>
+			</ul>
+		</div>
+		<!--tab切换 end-->
+		<form action="">
+		<div class="intergralBox">
+			<div class="intergralTitle">
+				<p>现价兑换积分比例</p>
+			</div>
+			<div class="inputBox">
+				<p>消费1元送</p>
+				<input type="text" value="0" onkeyup="value=value.replace(/[^0-9]/g,'')" />
+				<span>积分</span>
+			</div>
+			<div class="intergralTitle">
+				<p>积分抵现比例</p>
+			</div>
+			<div class="inputBox">
+				<p>积分抵现</p>
+				<div class="radioBox" id="radioCheck">
+	        		<input name="intergralSwitch" type="radio" class="radioClass" value="是" />	
+	            </div>
+				<label>是</label>
+				<div class="radioBox on">
+	        		<input name="intergralSwitch" type="radio" class="radioClass" value="否" checked="checked" />	
+	            </div>
+				<label>否</label>
+			</div>
+			<div class="displayBox" style="display: none;">
+			<div class="inputBox">
+				<p>1000积分兑换</p>
+				<input type="text" value="1" onkeyup="value=value.replace(/[^0-9]/g,'')" />
+				<span>元</span>
+			</div>
+			<div class="inputBox">
+				<p>抵现百分比</p>
+				<input type="text" value="50" onkeyup="value=value.replace(/[^0-9]/g,'')" />
+				<span>%</span>
+			</div>
+			<div class="inputBox">
+				<p>抵现最高金额</p>
+				<input type="text" value="0" onkeyup="value=value.replace(/[^0-9]/g,'')" />
+				<span>元</span>
+				<tip>*积分所能抵现的最高金额，为0则不设置</tip>
+			</div>
+			</div>
+			<button type="submit" class="btnSave">保存</button>
+		</div>
+		</form>
+		</form>
+	</div>
+	<!--右侧index end-->
+	
+	</div>
+	
+	<!--  公用js 开始  -->
+	<script src="../../js/jquery-2.24.js"></script>
+	<script src="../../js/topBottom.js"></script>
+	<script src="js/nav.js"></script>
+	<!--  公用js 结束  -->
+	<!--  私有js 开始  -->
+	<!--radio checked-->
+	<script>
+	$(function(){
+		$(".radioBox").bind("click",function(){
+	  		$(this).addClass("on").siblings().removeClass("on");
+	  		if($("#radioCheck").hasClass("on")){
+	  			$(".displayBox").show();
+	  		}
+	  		else{
+	  			$(".displayBox").hide();
+	  		}
+		})
+	});
+	</script>
+	<!--radio checked end-->
+	<!--  私有js 结束  -->
+	
+</body>
+</html>

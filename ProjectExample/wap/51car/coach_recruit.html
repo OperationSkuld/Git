@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>51学车</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">	 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/layer.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script>
+$(document).ready(function(){
+	$(".recruit_bottom").bind("click",function(){
+		layer.msg('提交成功！！！');
+		setTimeout(function(){window.location.href="recruit_confirm.html";},3000);				
+});
+});
+</script>
+</head>
+
+<body bgcolor="#f1f1f1">
+	<div class="contain">
+    
+    	<div class="recruit_top">
+        	<img src="img/icon_coachcc.png" width="100%">
+        </div>
+        
+        <hr style="border: 8px solid #f1f1f1;">
+        
+        <div class="recruit_box">
+        	<div class="recruit_info">
+            	<p>姓&nbsp;&nbsp;&nbsp;名：</p>
+                <input type="text" required class="recruit_input" placeholder="请输入您的姓名">
+            </div>
+            <div class="recruit_info">
+            	<p>电&nbsp;&nbsp;&nbsp;话：</p>
+                <input type="text" required class="recruit_input" placeholder="请输入您的电话">
+            </div>
+            <div class="recruit_info">
+            	<p>驾驶证：</p>
+                <input type="text" required class="recruit_input" placeholder="请输入您的驾驶证">
+            </div>
+            <div class="recruit_info">
+            	<p>教员证：</p>
+                <input type="text" required class="recruit_input" placeholder="请输入您的教员证">
+            </div>           
+        </div>
+        
+        <div class="recruit_bottom">
+        	<p>立即加入＋</p>
+        </div>
+    
+    
+    
+    </div>
+</body>
+</html>

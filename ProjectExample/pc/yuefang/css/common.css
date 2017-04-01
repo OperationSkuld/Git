@@ -1,0 +1,215 @@
+/******通用样式******/
+*{margin:0;padding:0;border:0}
+html,body {margin:0px;padding:0;font-family:"微软雅黑", "Microsoft Yahei","楷体", "KaiTi",Arial, Helvetica, sans-serif;font-size:16px;}
+div,img {margin:0px;padding:0;border:0px;}
+ul,li{list-style-type:none;}
+a{text-decoration:none;cursor:pointer;}
+.contain{
+	position:relative;
+}
+.no_border{
+	border:0 !important;	
+}
+
+/******top******/
+.top_bg{
+	height: 30px;
+	background:#313131;
+}
+.top_black{
+	width: 1100px;
+	height: 30px;
+	margin: 0 auto;
+}
+.top_black_right{
+	float:right;
+}
+.top_black_right a{
+	color:#ff7b00;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	font-size: 12px;
+}
+.top_black_right p{
+	float: left;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	font-size: 12px;
+}
+.top_black_right img{
+	float: left;
+	margin-top: 2.5px;
+	margin-right: 10px;
+}
+.top_box{
+	height:100px;	
+	background:#FFF;	
+}
+.index_top{
+	width:1100px;
+	height:100px;
+	margin:0 auto;
+}
+.index_logo{
+	float:left;
+	margin-top:14px;
+}
+.index_login{
+	float:right;
+	margin-top:27.5px;
+	position:relative;	
+}
+.index_login img{
+}
+.login{
+	position:absolute;
+	left:-30px;
+	height:25px;
+	width:90px;
+	line-height:25px;
+	border-radius:10px;	
+	border:1px solid #d8d8d8;
+	z-index:999;
+	display:none;
+}
+.login p{
+	color:#666;
+	font-size:12px;	
+	text-align:center;
+}
+.index_login:hover .login{
+	display:block;	
+}
+.login a:hover p{
+	background:#d8d8d8;
+	border-radius:10px;		
+}
+
+/******nav******/
+.nav{position:relative;height:100px;line-height:100px;float:left;margin-left:100px;overflow:hidden}
+.nav-item{position:relative;float:left;width:100px;height:100px;line-height:100px;padding:0 10px;text-align:center;z-index:1;font-family:"楷体", "KaiTi";font-size:16px;}
+.cur a{color: #FFF !important;}
+.nav-item a{display:block;height:100px;color:#666;font-size:16px; line-height:100px;}
+.move-bg{display:none;position:absolute;left:0;top:0;width:100px;margin:0 10px;height:100px;z-index:0;background:url(../images/tab.png);background-size:cover;}
+
+/******footer******/
+.footer{
+	height:67px;
+	width:100%;	
+}
+.footer_box{
+	height:67px;
+	width:100%;
+	background:url(../images/footer_bg.png) 0 0 no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:absolute;
+	bottom:0;
+}
+.footer_box p{
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	line-height:67px;
+	letter-spacing:2px;	
+}
+
+/******side******/
+.side{
+	position:fixed;
+	width:40px;
+	height:122px;
+	right:0;
+	top:450px;
+	z-index:100;
+}
+.side ul li{
+	width:40px;
+	height:40px;
+	float:left;
+	position:relative;
+	border-bottom:1px solid #ccc;
+}
+.side ul li .sidebox , #moquu_wxin{
+	position:absolute;
+	width:40px;
+	height:40px;
+	top:0;
+	right:0;
+	transition:all 0.3s;
+	background:#FFF;
+	opacity:0.8;
+	filter:Alpha(opacity=80);
+	color:#fff;
+	font:16px/40px "微软雅黑";
+	overflow:hidden;
+}
+.side ul li .sidetop{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	background:#FFF;
+	opacity:0.8;
+	filter:Alpha(opacity=80);
+	transition:all 0.3s;
+}
+.side ul li .sidetop:hover , #moquu_wxin:hover{
+	background:#3a99d8;
+	opacity:1;
+	filter:Alpha(opacity=100);
+}
+.side ul li img{
+	position:relative;
+	top:7px;
+	left:8px;
+}
+.sidetop img{
+	top:0px !important;	
+}
+.sidebox span{
+	color:#8e9ca9;
+	margin-left:15px;
+}
+.weixin {
+	position: absolute;
+	display: none;
+	left: -130px;
+	top: 3px;
+	width: 120px;
+	height: 120px;
+	background: transparent url("../images/wx_qcode.png") no-repeat scroll 0px -2px;
+}
+/*编辑器样式*/
+.editor{
+	width:850px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	background:#FFF;
+	border-radius:5px;	
+	padding:25px;
+}
+.editor p{
+	border-bottom:1px dashed #d8d8d8;
+	padding-bottom:25px;	
+}
+.order_button{
+	float:right;
+	height:30px;
+	line-height:30px;
+	width:120px;
+	background:#ff7b00;
+	border-radius:5px;
+	color:#FFF;
+	font-size:16px;
+	letter-spacing:5px;
+	font-weight:bold;
+	outline:0;
+	margin-top:20px;	
+	border-top:1px solid #d8d8d8;
+}

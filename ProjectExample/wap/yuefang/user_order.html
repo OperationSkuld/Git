@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的预约</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user_order.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script>
+// 我的预约表弹窗
+$(function(){
+	$(".p_cover").click(function(){
+		$(".coverdiv").show();
+	})
+
+// 点击空白关闭遮罩
+	$(".coverdiv").click(function(e){
+		var _con = $(".cover_div"); // 设置目标区域
+		if(!_con.is(e.target) && _con.has(e.target).length === 0){ 
+			$(".coverdiv").hide();
+		}
+	})
+})	
+</script>
+</head>
+
+<body bgcolor="#eff3f6">
+	<!--此处隐藏没有内容的div-->
+    <!--<div class="content_none">
+        <img src="images/none_order.png" width="70%">
+    </div>-->
+    <!--此处隐藏没有内容的div end-->
+    <!--购入弹窗-->
+    <div class="coverdiv">
+    	<div class="cover_div">
+        	<div class="cover_title">
+            	<p>保利 - 心语5A级写字楼</p>
+            </div>
+            <div class="cover_word">
+            	<p>请填写您购买楼盘的面积以及价格，我们会尽快和您取得联络，给与您线下方式的优惠。</p>
+            </div>
+            <form>
+            <div class="cover_form_area">	
+           	  	<p>面积：</p>
+                <input class="cover_area" name="form_aera" type="text" required value="">
+                <span>m<sup>2</sup></span>
+            </div>
+            <div class="cover_form_price">	
+           	  	<p>价格：</p>
+                <input class="cover_area" name="form_aera" type="text" required value="">
+                <span>万元</span>
+            </div>
+            <div class="cover_submit">
+            	<button type="submit" class="cover_btn">提交</button>
+			</div>
+            </form>
+        </div>
+    </div>
+    <!--购入弹窗 end-->
+	<div class="contain">   	
+    	<div class="collect_box">
+        	<div class="box_each">
+            	<a href="index_info.html">
+            	<div class="box_tag">
+                	<p>写字楼</p>
+                </div>
+            	<div class="box_image">
+                	<img src="images/index_default.png" height="70">
+                </div>
+                <div class="box_mid">
+                	<div class="box_title">
+                    	<p>保利 - 心语5A级写字楼</p>
+                    </div>
+                    <div class="box_pos">
+                    	<img src="images/icon_pos.png" width="15">
+                    	<p>杨浦区&nbsp;&nbsp;周家嘴路双阳路63-64号</p>
+                    </div>
+                    <div class="box_type">
+                    	<p>预约时间：2016-01-10 14:00</p>
+                    </div>
+
+                </div>
+                <div class="box_right">
+					<p>1.3</p>
+                    <span>万/m<sup>2</sup></span>                
+                </div>
+                </a>
+                <div class="collect_cancel">
+                	<p class="p_cover">我已买入</p>
+                    <a href="assess.html"><p style="color:#333">填写评价</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="collect_box">
+        	<div class="box_each">
+            	<a href="index_info.html">
+            	<div class="box_tags">
+                	<p>住宅</p>
+                </div>
+            	<div class="box_image">
+                	<img src="images/index_default.png" height="70">
+                </div>
+                <div class="box_mid">
+                	<div class="box_title">
+                    	<p>保利 - 心语5A级写字楼</p>
+                    </div>
+                    <div class="box_pos">
+                    	<img src="images/icon_pos.png" width="15">
+                    	<p>杨浦区&nbsp;&nbsp;周家嘴路双阳路63-64号</p>
+                    </div>
+                    <div class="box_type">
+                    	<p>预约时间：2016-01-10 14:00</p>
+                    </div>
+
+                </div>
+                <div class="box_right">
+					<p>1.3</p>
+                    <span>万/m<sup>2</sup></span>                
+                </div>
+                </a>
+                <div class="collect_cancel">
+                	<p class="p_cover">我已买入</p>
+                   	<a href="assess.html"><p style="color:#333">填写评价</p></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="collect_box">
+        	<div class="box_each">
+            	<a href="index_info.html">
+            	<div class="box_tag">
+                	<p>写字楼</p>
+                </div>
+            	<div class="box_image">
+                	<img src="images/index_default.png" height="70">
+                </div>
+                <div class="box_mid">
+                	<div class="box_title">
+                    	<p>保利 - 心语5A级写字楼</p>
+                    </div>
+                    <div class="box_pos">
+                    	<img src="images/icon_pos.png" width="15">
+                    	<p>杨浦区&nbsp;&nbsp;周家嘴路双阳路63-64号</p>
+                    </div>
+                    <div class="box_type">
+                    	<p>预约时间：2016-01-10 14:00</p>
+                    </div>
+
+                </div>
+                <div class="box_right">
+					<p>1.3</p>
+                    <span>万/m<sup>2</sup></span>                
+                </div>
+                </a>
+                <div class="collect_cancel">
+                	<p style="color:#b7c4cd">我已买入</p>
+                    <p style="color:#b7c4cd">填写评价</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--footer-->
+        <div class="footer_box">
+        <div class="footer">
+        	<ul>
+            	<a href="index.html"><li><img src="images/home_off.png" height="25"><p>首页</p></li></a>
+                <a href="office.html"><li><img src="images/build_off.png" height="25"><p>写字楼</p></li></a>
+                <a href="house.html"><li><img src="images/house_off.png" height="25"><p>住宅</p></li></a>
+                <a href="service.html"><li><img src="images/service_off.png" height="25"><p>金融服务</p></li></a>
+                <a href="user.html"><li class="foot_cur"><img src="images/user_on.png" height="25"><p>我的</p></li></a>
+            </ul>
+        </div>
+        </div>
+        <!--footer end-->
+        
+    </div>
+</body>
+</html>

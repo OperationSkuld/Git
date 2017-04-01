@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>51学车</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+ 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/hhSwipe.js"></script>
+<script type="text/javascript">
+	function return_button(i)
+	{	
+		
+		for(k=1;k<=3;k++)
+		{	
+		 if(i==k)
+			{
+			$("#hiddenimg"+k).show();
+			$("#showimg"+k).hide();
+			}
+			else
+			{
+				$("#showimg"+k).show();
+				$("#hiddenimg"+k).hide();
+			}
+		}
+	}
+</script>
+
+<script>
+	$(document).ready(function() {
+        $(".coverimg").bind("click",function(){
+			return false;
+			});
+    });
+	function choose2(){
+		$("#test2_2").show();
+		$("#test2_1").hide();
+		}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var bullets = document.getElementById('position').getElementsByTagName('li');
+
+var banner = Swipe(document.getElementById('mySwipe'), {
+	auto: 4000,
+	continuous: true,
+	disableScroll:false,
+	callback: function(pos) {
+		var i = bullets.length;
+		while (i--) {
+			bullets[i].className = ' ';
+		}
+		bullets[pos].className = 'cur';
+	}
+})
+});
+
+</script>
+
+
+</head>
+
+<body bgcolor="#f1f1f1">
+
+<!-- 覆盖层begin -->
+    <div class="coverdiv"  id="test2_1" onClick="choose2()" >
+         <img class="coverimg" src="img/index_chat.png" width="80%">
+    </div>
+<!-- 覆盖层over -->
+
+<div class="contain" id="test2_2">
+  <div class="banner">
+    	<div class="addWrap">
+			<div class="swipe" id="mySwipe">
+				<div class="swipe-wrap">
+					<div><a href="javascript:;"><img class="img-responsive" src="img/banner.png" width="100%"/></a></div>
+					<div><a href="javascript:;"><img class="img-responsive" src="img/banner.png" width="100%" /></a></div>
+					<div><a href="javascript:;"><img class="img-responsive" src="img/banner.png" width="100%"/></a></div>
+                    <div><a href="javascript:;"><img class="img-responsive" src="img/banner.png" width="100%"/></a></div>
+				</div>
+			</div>
+	
+		<ul id="position">
+			<li class="cur"></li>
+			<li></li>
+            <li></li>
+			<li></li>
+		</ul>
+		</div><!--/addWrap--> 
+        
+
+
+  </div>
+  <hr style="border: 8px solid #f1f1f1;">
+  <div class="index_top">
+  	<div class="index_top_left index_top_left_border">
+    	<img src="img/icon_coach.png" width="50%">
+        <p>无理由免费换教练</p>
+    </div>
+    <div class="index_top_right">
+    	<img src="img/icon_cup.png" width="50%">
+        <p>报名就享100万三责险</p>
+    </div>
+  </div>
+  
+  <hr style="border: 8px solid #f1f1f1; clear:both">
+  
+  <div class="index_middle">
+  <div class="index_mid">
+  	<div class="index_mid_left index_mid_left_border" onclick="javascript:window.open('index_page1.html','_self')">
+    	<img src="img/icon_car.png" width="40%">
+        <p>&nbsp;&nbsp;什么是<br><span>&nbsp;&nbsp;51学车</span></p>
+    </div>
+    <div class="index_mid_right" onclick="javascript:window.open('real_store.html','_self')">
+    	<img src="img/icon_addr.png" width="40%" >
+        <p>&nbsp;&nbsp;我们的<br><span>&nbsp;&nbsp;实体门店</span></p>
+    </div>
+  </div>
+  
+  <div class="index_mid">
+  	<div class="index_mid_left1 index_mid_left_border" onclick="javascript:window.open('index_page2.html','_self')">
+    	<img src="img/icon_zan.png" width="40%">
+		<p>&nbsp;&nbsp;我们的教练<br><span>&nbsp;&nbsp;专业教练  一流...</span></p>
+    </div>
+    <div class="index_mid_right1" onclick="javascript:window.open('index_page3.html','_self')">
+    	<img src="img/icon_money.png" width="40%">
+        <p>&nbsp;&nbsp;我们的价格<br><span>&nbsp;&nbsp;全城最低 物超...</span></p>
+    </div>
+  </div>
+  </div>
+  
+  <hr style="border: 8px solid #f1f1f1; clear:both">
+
+	
+    <div class="boottom-navigation-bar">
+    	<div class="box1">
+        	<div class="box1_1" id="showimg1" hidden="hidden" onclick="return_button(1);">
+                <a href="index.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_home_none.png" /></dd>
+                        <dd class="bottom-lan" >首页</dd>
+                    </dl>
+                </a>
+        	</div>
+        	<div class="box1_1" id="hiddenimg1">
+                <a href="index.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_home.png" /></dd>
+                        <dd class="bottom-lan" style="color:#00a8ff">首页</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="box2">
+        	<div class="box2_1" onclick="return_button(2);" id="showimg2">
+                <a href="order.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_yuyue_none.png" /></dd>
+                        <dd class="bottom-lan" >预约</dd>
+                    </dl>
+                </a>
+        	</div>
+        	<div class="box2_1" hidden="hidden" id="hiddenimg2">
+                <a href="order.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_yuyue.png" /></dd>
+                        <dd class="bottom-lan" style="color:#00a8ff">预约</dd>
+                    </dl>
+                </a>
+            </div> 
+        </div>
+        
+        
+        
+        <div class="box3">
+        	<div class="box3_1" onclick="return_button(3);" id="showimg3">
+                <a href="user.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_my_none.png" /></dd>
+                        <dd class="bottom-lan" >我的</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="box3_1" hidden="hidden" id="hiddenimg3">
+                <a href="user.html" style="text-decoration:none">
+                    <dl>
+                        <dd><img src="img/icon_my.png" /></dd>
+                        <dd class="bottom-lan" style="color:#00a8ff">我的</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        
+        
+        
+
+        
+        
+    </div>
+
+</div>
+</body>
+</html>

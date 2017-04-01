@@ -1,0 +1,157 @@
+/******首页******/
+.top{
+	width:100%;
+	height:89px;
+	background:#FFF;
+}
+.index_top{
+	width:100%;
+	height:89px;
+	position:fixed;
+	top:0;
+	background:#FFF;
+}
+.index_search{
+	border-bottom:1px solid #e2e5e9;
+	padding:8px 3%;
+	overflow:hidden;
+	width:94%;
+}
+.index_left{
+	float:left;
+	width:78%;
+}
+.search{
+	width:88%;
+	height:27px;
+	border-radius:5px;
+	background:url(../images/icon_search.png) 3% 6px no-repeat;
+	background-size:15px;	
+	background-color:#ededec;
+	padding-left:12%;
+	font-family:"微软雅黑", "Microsoft Yahei";
+	color:#333;
+}
+.index_right{
+	float:right;
+	width:18%;	
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	background:#34abe3;
+	border-radius:5px;
+}
+.index_right p{
+	color:#FFF;
+	font-size:15px;
+	letter-spacing:1.5px;	
+}
+.index_filter{
+	width:100%;
+	height:44px;
+	line-height:44px;
+	border-bottom:1px solid #e2e5e9;
+	overflow:hidden;	
+}
+.filter_left{
+	width:26%;
+	float:left;	
+	padding:0 12%;
+}
+.filter_right{
+	width:26%;
+	float:right;
+	padding:0 12%;	
+}
+.filter_left p,.filter_right p{
+	text-align:center;
+	font-size:16px;
+	color:#34abe3;	
+	background:url(../images/arrow_down.png) 0 0 no-repeat;
+	background-size:12%;
+	background-position:center right;
+}
+.index_each{
+	padding:15px 3%;
+	overflow:hidden;
+	width:94%;	
+	border-bottom:1px solid #e2e5e9;
+}
+.each_left{
+	float:left;
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	overflow:hidden;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;	
+}
+.each_mid{
+	width:60%;
+	overflow:hidden;
+	float:left;
+}
+.each_name{
+	height:30px;
+	line-height:30px;
+}
+.each_name p{
+	color:#999;
+	float:left;	
+	padding:0 4%;
+}
+.each_name span{
+	color:#999;
+}
+.each_title{
+	padding-left:4%;
+	height:20px;
+	line-height:20px;
+}
+.each_title p{
+	font-size:14px;
+	color:#444;
+	font-weight:bold;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.each_word{
+	padding-left:4%;	
+}
+.each_word p{
+	height:20px;
+	line-height:20px;
+	color:#444;
+	
+}
+.each_right{
+	float:right;
+	width:30%;
+	height:75px;
+	overflow:hidden;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:7.5px;
+}
+.hidden_input1{
+	border:1px solid #ccc;
+	width:26%;
+	margin:0 12%;
+	height:44px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	opacity:0;
+}
+.hidden_input2{
+	border:1px solid #ccc;
+	width:26%;
+	margin:0 12%;
+	height:44px;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	opacity:0;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>悦房</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/building_image.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/hhSwipe.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<!--获取当前窗口高度用于赋值-->
+<script>
+$(function(){
+	var winHeights = $(window).height();
+	var imgHeights = $(".img-responsive").eq(0).height();
+	var marginHeights = (winHeights-imgHeights)/2+'px';
+	<!--$(".img-responsive").eq(0).css("margin-top",marginHeights);-->
+	$(".placeholder").css("height",winHeights);
+})
+</script>
+<!--获取当前窗口高度用于赋值 end-->
+</head>
+
+<body>
+	<!--此处隐藏没有内容的div-->
+    <!--<div class="content_none">
+        <img src="images/none_image.png" width="80%">
+    </div>-->
+	<!--此处隐藏没有内容的div end-->
+<div class="contain">
+    <div class="cover_div">
+        <div class="addWrap">
+            <div class="swipe" id="mySwipe">
+                <div class="swipe-wrap">
+                    <div class="placeholder"><span class="verticalAlign"></span><img class="img-responsive" src="images/banner.png" /></div>
+                    <div class="placeholder"><span class="verticalAlign"></span><img class="img-responsive" src="images/info_image.png" /></div>
+                    <div class="placeholder"><span class="verticalAlign"></span><img class="img-responsive" src="images/user_image.png" /></div>
+                    <div class="placeholder"><span class="verticalAlign"></span><img class="img-responsive" src="images/user_image02.jpg" /></div>
+                </div>
+            </div>
+
+            <ul id="position">         
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

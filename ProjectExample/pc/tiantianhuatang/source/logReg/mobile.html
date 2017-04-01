@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="renderer" content="webkit">
+	<title>天天画堂</title>
+	<!--公共css样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--公共css样式-->
+    <!--私有css样式-->
+    <link rel="stylesheet" type="text/css" href="../../layui/css/layui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/logReg.css">
+	<!--私有css样式-->
+</head>
+
+<body>
+	<div class="contain">
+		<div class="logreg_bg">
+			<div class="logreg_box" style="width: 400px;">
+			<form class="layui-form" action="improve.html">
+				<div class="logreg-text">
+					<p>手机验证</p>
+				</div>
+				<div class="inputBox" style="width: 350px;margin: 10px auto;">
+					<input type="text" id="mobile" value="13125401230" style="width: 338px;" lay-verify="phone" readonly="readonly" />
+				</div>
+				<div class="inputBox" style="width: 350px;margin: 20px auto;">
+					<p>验证码：</p>
+					<input type="text" id="code" value="" style="width: 65px;" lay-verify="required" />
+					<button type="button" id="btn_code">发送验证码</button>
+				</div>
+				<div class="logreg-btn" style="width: 350px;">
+					<button lay-submit>确定</button>
+				</div>
+				<div class="logreg-back" style="width: 350px;">
+					<a href="register.html">&#171;&nbsp;返回注册</a>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--公用js-->
+	<script src="../../js/jquery-1.9.1.min.js"></script>	
+	<!--公用js-->
+	<!--私有js-->	
+	<!--监控窗口高度 js-->
+	<script type="text/javascript" src="js/monitor.js"></script>
+	<!--监控窗口高度 js end -->
+	<!--layui-->
+	<script src="../../layui/layui.js"></script>
+	<script>
+	layui.use(['layer', 'form', 'element'], function(){
+		var layer = layui.layer,
+  			form = layui.form(),
+  			element = layui.element();
+		
+	});
+	</script>
+	<script type="text/javascript">
+	$("#btn_code").click(function(){
+		var validCode=true;
+		var time=60;
+		var mobile = $("#mobile").val();
+		var code = $("#code").val();
+		if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+			return false;
+		}
+		if (validCode) {
+			validCode=false;
+			$("#btn_code").addClass("btn_coding");
+			$("#btn_code").attr("disabled",true);
+			$("#mobile").attr("readonly",true);
+			var t=setInterval(function  () {
+				time--;
+				$("#btn_code").html(time+"s后可重新发送");
+				if (time==0) {
+					clearInterval(t);
+					$("#btn_code").html("重新发送");
+					$("#btn_code").attr("disabled",false);
+					$("#mobile").attr("readonly",false);
+					validCode=true;
+					$("#btn_code").removeClass("btn_coding");					
+				}
+			},1000)
+		}
+	});
+	</script>
+	<!--私有js-->
+	
+</body>
+</html>

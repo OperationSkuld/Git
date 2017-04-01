@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--预约/收藏js-->
+<script type="text/javascript" src="js/user.js"></script>
+<!--预约/收藏js end-->
+</head>
+
+<body>
+<body bgcolor="#f4f4f4">
+
+	<!--购入弹窗-->
+    <div class="coverdiv">
+    	<div class="cover_div">
+        	<div class="cover_title">
+            	<p>保利 - 心语5A级写字楼</p>
+            </div>
+            <div class="cover_word">
+            	<p>请填写您购买楼盘的面积以及价格，我们会尽快和您取得联络，给与您线下方式的优惠。</p>
+            </div>
+            <form>
+            <div class="cover_form_area">	
+           	  	<p>面积：</p>
+                <input class="cover_area" name="form_aera" type="text" required value="" onkeypress="if (event.keyCode!=46 && event.keyCode!=45 && (event.keyCode<48 || event.keyCode>57)) event.returnValue=false">
+                <span>m<sup>2</sup></span>
+            </div>
+            <div class="cover_form_price">	
+           	  	<p>价格：</p>
+                <input class="cover_area" name="form_aera" type="text" required value="" onkeypress="if (event.keyCode!=46 && event.keyCode!=45 && (event.keyCode<48 || event.keyCode>57)) event.returnValue=false">
+                <span>万元</span>
+            </div>
+            <div class="cover_submit">
+            	<button type="submit" class="cover_btn">提交</button>
+                <button type="button" class="cover_cancel">取消</button>
+			</div>
+            </form>
+        </div>
+    </div>
+    <!--购入弹窗 end-->
+
+	<div class="contain">
+    	
+    	<!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style=""></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"></a><img src="images/user_photo.png" width="35" height="35">
+                    <div class="login">
+                    	<a><p>退出登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+        
+        <div class="user_box">
+    
+    	<div class="user_left">
+    		<ul>
+        		<a href="user.html"><li class="user_bg1">发布需求</li></a>
+            	<a href="user_order.html"><li class="user_bg2 curson">我的预约</li></a>
+            	<a href="user_collect.html"><li class="user_bg3">我的收藏</li></a>
+            	<a href="user_activity.html"><li class="user_bg4">活动预约</li></a>
+        	</ul>
+    	</div>
+        
+        <div class="user_right">
+        	<div class="user_title">
+            	<p>我的预约</p>
+            </div>
+            <div class="order_box">
+            
+            	<div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        	<a href="assess.html"><p>填写评价</p></a>
+                            <a><p>我已买入</p></a>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="office_info.html">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip1">
+                        <p>写字楼</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="office_info.html">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+				</div>
+            
+                <div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        		<p class="already">填写评价</p>
+                            	<p class="already">我已买入</p>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="house_info.html">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip2">
+                        <p>住宅</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="house_info.html">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        		<p class="already">填写评价</p>
+                            	<p class="already">我已买入</p>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="office_info.html">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip1">
+                        <p>写字楼</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="office_info.html">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        	<a href="assess.html"><p>填写评价</p></a>
+                            <a><p>我已买入</p></a>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="office_info.html">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip1">
+                        <p>写字楼</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="office_info.html">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+				</div>
+            
+                <div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        	<a><p>填写评价</p></a>
+                            <a><p>我已买入</p></a>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip2">
+                        <p>住宅</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="panel">
+                	<div class="arrow_click" hidden="hidden">
+                    	<img src="images/arrow_bottom1.png" width="14">
+                        <div class="pulldown" hidden="hidden">
+                        	<div class="pulldown_border"></div>
+                        	<a><p>填写评价</p></a>
+                            <a><p>我已买入</p></a>
+                        </div>
+                    </div>
+                    <div class="sub_border">
+                    <a href="">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip1">
+                        <p>写字楼</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+                
+        </div>
+    	
+        </div>
+		
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+            	    
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>章鱼网</title>
+<!--公共css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/side.js"></script>
+<!--公共css/js部分 end-->
+<!--私有css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/setting.css">
+<!--私有css/js部分 end-->
+</head>
+
+<body bgcolor="#f7f7f7">
+
+	<div class="contain">
+		<!--top-->
+		<div class="top_box">
+			<div class="top_bg">
+	    		<div class="top_black">
+	    			<div class="top_black_left">
+	    				<div class="top_city">
+	    					<p>上海</p>
+	    					<a href="#"><span>[切换城市]</span></a>
+	    				</div>
+	    				<div class="top_href">
+							<div class="href_home">
+								<img src="images/top_home.png" width="12" height="12">
+								<p>首页</p>
+							</div>
+							<div class="href_app">
+								<img src="images/top_app.png" width="8" height="12">
+								<p>移动端下载</p>
+							</div>
+	    				</div>
+	    			</div>
+	    			<!--登录后显示-->
+	    			<div class="top_black_right">
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是合伙人</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是销售</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是采购</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>通用设置</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_logout.png" width="15" height="10">
+	    					<a href="#"><p>退出登录</p></a>
+	    				</div>
+	    			</div>
+	    			<!--登录后显示 end-->
+	    		</div>
+	    	</div>
+	    	<div class="setting_top">
+	    		<div class="setting_topleft">
+	    			<img src="images/logo.png" width="270" height="60">
+	    		</div>
+	    		<div class="setting_topright">
+	    			<ul>
+	    				<a href=""><li class="cur">信息认证</li></a>
+	    				<a href=""><li>E+账户</li></a>
+	    				<a href=""><li>安全设置</li></a>
+	    				<a href=""><li>经营类别</li></a>
+	    				<a href=""><li>权限分配</li></a>
+	    				<a href=""><li>积分使用</li></a>
+	    			</ul>
+	    		</div>
+	    	</div>
+		</div>
+		<!--top end-->
+		<form>
+		<div class="certWay_box">
+			<div class="certWay_title">
+				<p>选择认证</p>
+			</div>
+			
+				<div class="certWay_selectbox">
+					<div class="certWay_selectPersonalbox">
+						<input type="radio" name="select_certWay" class="select_certWay" required="required">
+						<label>个人认证</label>
+					</div>
+					<div class="certWay_selectCompanybox">
+						<input type="radio" name="select_certWay" class="select_certWay" required="required">
+						<label>企业认证</label>
+					</div>
+				</div>
+				<script>
+				$(function(){
+					$(".select_certWay").change(function(){
+						$(this).parent().css({"background":"#0071BC","color":"#FFF"});
+						$(this).parent().siblings().css({"background":"#FFF","color":"#333"});
+					})
+				})
+				</script>
+				
+		</div>
+		<div id="hr"></div>
+		<div class="step_btnbox">
+			<button type="submit" id="btn_next">下一步</button>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

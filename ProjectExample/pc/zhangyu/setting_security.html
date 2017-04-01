@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>章鱼网</title>
+<!--公共css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/side.js"></script>
+<!--公共css/js部分 end-->
+<!--私有css/js部分-->
+<link rel="stylesheet" type="text/css" href="css/setting.css">
+<!--layer js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--layer js end-->
+<!--弹窗显示隐藏 js-->
+<script>
+$(function(){
+	$("#revise_name").click(function(){
+		$(".coverdiv").eq(0).show();
+	})
+	$("#revise_email").click(function(){
+		$(".coverdiv").eq(1).show();
+	})
+	$("#revise_mobile").click(function(){
+		$(".coverdiv").eq(2).show();
+	})
+	$(".btn_cancel").click(function(){
+		$(".coverdiv").hide();
+	})
+})
+</script>
+<!--弹窗显示隐藏 js end-->
+<!--正则表达式-->
+<script>
+$(function(){
+	$(".button_submit").click(function(){
+		var oldpassword = $("#oldpassword").val();
+		var newpassword = $("#newpassword").val();
+		var repassword = $("#repassword").val();
+		if(oldpassword==""){
+			layer.msg('请填写旧密码');
+			$("#oldpassword").focus();
+		}
+		else if(newpassword.length<6){
+			layer.msg('请填写6位及以上新密码');
+			$("#newpassword").focus();
+		}
+		else if(repassword!=newpassword){
+			layer.msg('两次输入密码不一致');
+			$("#repassword").focus();
+		}
+		else{
+			layer.msg('新密码设置成功');
+			delay();
+		}
+	});	
+	$(".btn_emailcode").click(function(){
+		var validCode=true;
+		var time=60;
+		var email = $("#email").val();
+		var code = $("#emailcode").val();
+		if(email==""){
+			layer.msg('请填写邮箱');
+			return false;
+		}
+		else if(!/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(email)){
+			layer.msg('请填写正确的邮箱');
+			return false;
+		}
+		if (validCode) {
+			validCode=false;
+			$(".btn_emailcode").addClass("btn_coding");
+			$(".btn_emailcode").attr("disabled",true);
+			$("#email").attr("readonly",true);
+			var t=setInterval(function  () {
+				time--;
+				$(".btn_emailcode").html(time+"s");
+				if (time==0) {
+					clearInterval(t);
+					$(".btn_emailcode").html("重新获取");
+					$(".btn_emailcode").attr("disabled",false);
+					$("#email").attr("readonly",false);
+					validCode=true;
+					$(".btn_emailcode").removeClass("btn_coding");					
+				}
+			},1000)
+		}
+	});
+	$(".btn_mobilecode").click(function(){
+		var validCode=true;
+		var time=60;
+		var mobile = $("#mobile").val();
+		var code = $("#mobilecode").val();
+		if(mobile==""){
+			layer.msg('请填写手机号码');
+			return false;
+		}
+		else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+			return false;
+		}
+		if (validCode) {
+			validCode=false;
+			$(".btn_mobilecode").addClass("btn_coding");
+			$(".btn_mobilecode").attr("disabled",true);
+			$("#mobile").attr("readonly",true);
+			var t=setInterval(function  () {
+				time--;
+				$(".btn_mobilecode").html(time+"s");
+				if (time==0) {
+					clearInterval(t);
+					$(".btn_mobilecode").html("重新获取");
+					$(".btn_mobilecode").attr("disabled",false);
+					$("#mobile").attr("readonly",false);
+					validCode=true;
+					$(".btn_mobilecode").removeClass("btn_coding");					
+				}
+			},1000)
+		}
+	});
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+</script>
+<!--正则表达式 end-->
+<!--私有css/js部分 end-->
+</head>
+
+<body bgcolor="#f7f7f7">
+	<!--修改姓名弹窗-->
+	<div class="coverdiv">
+		<div class="coverdiv_box">
+			<div class="cover_title">
+				<p>基本信息</p>
+			</div>
+			<form>
+			<div class="cover_form">
+				<div>
+					<p>真实姓名：</p>
+					<input type="text" class="textinput" value="" required="required" />
+				</div>
+			</div>
+			<button type="button" class="btn_cancel">关闭</button>
+			<button type="submit" class="btn_submit">修改</button>
+			</form>
+		</div>
+	</div>
+	<!--修改姓名弹窗 end-->
+	<!--修改邮箱弹窗-->
+	<div class="coverdiv">
+		<div class="coverdiv_box">
+			<div class="cover_title">
+				<p>绑定邮箱</p>
+			</div>
+			<form>
+			<div class="cover_form">
+				<div>
+					<p>邮箱名：</p>
+					<input type="text" class="textinput" id="email" value="" required="required" />
+					<button type="button" id="btn_code" class="btn_emailcode">发送验证码</button>
+				</div>
+				<div>
+					<p>验证码：</p>
+					<input type="text" class="textinput" id="emailcode" value="" required="required" />
+				</div>
+			</div>
+			<button type="button" class="btn_cancel">关闭</button>
+			<button type="submit" class="btn_submit">修改</button>
+			</form>
+		</div>
+	</div>
+	<!--修改邮箱弹窗 end-->
+	<!--换绑手机弹窗-->
+	<div class="coverdiv">
+		<div class="coverdiv_box">
+			<div class="cover_title">
+				<p>换绑手机</p>
+			</div>
+			<form>
+			<div class="cover_form">
+				<div>
+					<p>新手机号：</p>
+					<input type="text" class="textinput" id="mobile" value="" required="required" />
+					<button type="button" id="btn_code" class="btn_mobilecode">发送验证码</button>
+				</div>
+				<div>
+					<p>验证码：</p>
+					<input type="text" class="textinput" id="mobilecode" value="" required="required" />
+				</div>
+			</div>
+			<button type="button" class="btn_cancel">关闭</button>
+			<button type="submit" class="btn_submit">修改</button>
+			</form>
+		</div>
+	</div>
+	<!--换绑手机弹窗 end-->
+	<div class="contain">
+		<!--top-->
+		<div class="top_box">
+			<div class="top_bg">
+	    		<div class="top_black">
+	    			<div class="top_black_left">
+	    				<div class="top_city">
+	    					<p>上海</p>
+	    					<a href="#"><span>[切换城市]</span></a>
+	    				</div>
+	    				<div class="top_href">
+							<div class="href_home">
+								<img src="images/top_home.png" width="12" height="12">
+								<p>首页</p>
+							</div>
+							<div class="href_app">
+								<img src="images/top_app.png" width="8" height="12">
+								<p>移动端下载</p>
+							</div>
+	    				</div>
+	    			</div>
+	    			<!--登录后显示-->
+	    			<div class="top_black_right">
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是合伙人</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是销售</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>我是采购</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_operation.png" width="12" height="10">
+	    					<a href="#"><p>通用设置</p></a>
+	    				</div>
+	    				<div class="top_right_operation">
+	    					<img src="images/top_logout.png" width="15" height="10">
+	    					<a href="#"><p>退出登录</p></a>
+	    				</div>
+	    			</div>
+	    			<!--登录后显示 end-->
+	    		</div>
+	    	</div>
+	    	<div class="setting_top">
+	    		<div class="setting_topleft">
+	    			<img src="images/logo.png" width="270" height="60">
+	    		</div>
+	    		<div class="setting_topright">
+	    			<ul>
+	    				<a href=""><li>信息认证</li></a>
+	    				<a href=""><li>E+账户</li></a>
+	    				<a href=""><li class="cur">安全设置</li></a>
+	    				<a href=""><li>经营类别</li></a>
+	    				<a href=""><li>权限分配</li></a>
+	    				<a href=""><li>积分使用</li></a>
+	    			</ul>
+	    		</div>
+	    	</div>
+		</div>
+		<!--top end-->
+		
+		<div class="security_box">
+	    	<div class="security_topbox">
+	    		<div class="security_title">
+	    			<p>更换密码</p>
+	    		</div>
+	    		<form id="form_submit">
+	    		<div class="security_form">
+	    			<div class="security_textinput">
+	    				<p>输入旧密码：</p>
+	    				<input type="password" class="text_input" id="oldpassword" value="" >
+	    			</div>
+	    			<div class="security_textinput">
+	    				<p>输入新密码：</p>
+	    				<input type="password" class="text_input" id="newpassword" value="" >
+	    			</div>
+	    			<div class="security_textinput">
+	    				<p>再次输入：</p>
+	    				<input type="password" class="text_input" id="repassword" value="" >
+	    			</div>
+	    			<button type="button" class="button_submit">确定</button>
+	    		</div>
+	    		</form>
+	    	</div>
+	    	<div class="security_bottombox">
+	    		<div class="security_title">
+	    			<p>登录修改</p>
+	    		</div>
+	    		<div class="baseinfo_form">
+	    			<form>
+	    			<div class="baseinfo_box">
+	    				<p>用户名：</p>
+	    				<span>陈XX</span>
+	    			</div>
+	    			<a id="revise_name">修改>></a>
+	    			</form>
+	    			<form>
+	    			<div class="baseinfo_box">
+	    				<p>绑定邮箱：</p>
+	    				<span>ellisy@163.com</span>
+	    			</div>
+	    			<a id="revise_email">修改>></a>
+	    			</form>
+	    			<form>
+	    			<div class="baseinfo_box">
+	    				<p>绑定手机：</p>
+	    				<span>188****7223</span>
+	    			</div>
+	    			<a id="revise_mobile">修改>></a>
+	    			</form>
+	    		</div>
+	    	</div>
+	    </div>
+		
+		<!--footer-->
+    	<a name="floor3"></a>
+        <div class="footer">
+	        <div class="footer_bgcolor1">
+	        	<div class="footer_box1">
+	        		<div class="footer_left">
+		        		<div class="footer_list">
+		        			<div class="footer_title">
+		        				<img src="images/footer_icon1.png" width="46">
+		        				<p>平台规则</p>
+		        			</div>
+		        			<ul>
+		        				<a href="#"><li>用户注册协议</li></a>
+		        				<a href="#"><li>卖家挂牌规则</li></a>
+		        				<a href="#"><li>买家挂单规则</li></a>
+		        				<a href="#"><li>直接交易规则</li></a>
+		        				<a href="#"><li>间接交易规则</li></a>
+		        				<a href="#"><li>订单生成规则</li></a>
+		        				<a href="#"><li>平台免责申明</li></a>
+		        				<a href="#"><li>隐私政策</li></a>
+		        			</ul>
+		        		</div>
+		        		<div class="footer_list">
+		        			<div class="footer_title">
+		        				<img src="images/footer_icon2.png" width="46">
+		        				<p>用户指南</p>
+		        			</div>
+		        			<ul>
+		        				<a href="#"><li>新手注册</li></a>
+		        				<a href="#"><li>我要买</li></a>
+		        				<a href="#"><li>我要卖</li></a>
+		        				<a href="#"><li>提货须知</li></a>
+		        				<a href="#"><li>内部授权</li></a>
+		        				<a href="#"><li>权利申明</li></a>
+		        				<a href="#"><li>合伙人绩效考评</li></a>
+		        				<a href="#"><li>客户服务</li></a>
+		        			</ul>
+		        		</div>
+		        		<div class="footer_list">
+		        			<div class="footer_title">
+		        				<img src="images/footer_icon3.png" width="46">
+		        				<p>标准合同</p>
+		        			</div>
+		        			<ul>
+		        				<a href="#"><li>买方卖方直接交易合同</li></a>
+		        				<a href="#"><li>买方交易方合同</li></a>
+		        				<a href="#"><li>卖方交易方合同</li></a>
+		        				<a href="#"><li>仓储物流合同</li></a>
+		        				<a href="#"><li>合伙人兼职劳动合同</li></a>
+		        				<a href="#"><li>授信合同</li></a>
+		        			</ul>
+		        		</div>
+		        		<div class="footer_list">
+		        			<div class="footer_title">
+		        				<img src="images/footer_icon4.png" width="46">
+		        				<p>支付方式</p>
+		        			</div>
+		        			<ul>
+		        				<a href="#"><li>招行-中金支付使用说明</li></a>
+		        				<a href="#"><li>线上E付</li></a>
+		        				<a href="#"><li>线下E付</li></a>
+		        				<a href="#"><li>线下直付</li></a>
+		        			</ul>
+		        		</div>
+		        		<div class="footer_list">
+		        			<div class="footer_title">
+		        				<img src="images/footer_icon5.png" width="46">
+		        				<p>常见问题</p>
+		        			</div>
+		        			<ul>
+		        				<a href="#"><li>注册/登录流程</li></a>
+		        				<a href="#"><li>无法登录/忘记密码</li></a>
+		        				<a href="#"><li>修改账户信息</li></a>
+		        				<a href="#"><li>账户安全</li></a>
+		        				<a href="#"><li>支付安全</li></a>
+		        				<a href="#"><li>授权问题</li></a>
+		        			</ul>
+		        		</div>
+	        		</div>
+	        		<div class="footer_right">
+	        			<p>全国统一热线：</p>
+	        			<span>4008-888-888</span>
+	        			<img src="images/qcode.png" width="180" height="180">
+	        			<p style="margin-left: 45px;">微信公众平台</p>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="footer_bgcolor2">
+	        	<div class="footer_box2">
+	        		<p>Copyright 2016 上海萌翼网络科技有限公司 www.ezhangyu.com All Rights Reserved 沪ICP备 11003087 ICP许可证</p>
+	        	</div>
+	        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+            	<li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/sider_wx.png" width="40">
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="sideapp">
+
+                        <img src="./images/sider_app.png" width="40">
+
+                    </a>
+                </li>               
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/sider_top.png" width="40">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+	</div>
+</body>
+</html>

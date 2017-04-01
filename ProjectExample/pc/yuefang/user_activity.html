@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+</head>
+
+<body>
+<body bgcolor="#f4f4f4">
+
+	<div class="contain">
+    	
+    	<!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style=""></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"></a><img src="images/user_photo.png" width="35" height="35">
+                    <div class="login">
+                    	<a><p>退出登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+        
+        <div class="user_box">
+    
+    	<div class="user_left">
+    		<ul>
+        		<a href="user.html"><li class="user_bg1">发布需求</li></a>
+            	<a href="user_order.html"><li class="user_bg2">我的预约</li></a>
+            	<a href="user_collect.html"><li class="user_bg3">我的收藏</li></a>
+            	<a href="user_activity.html"><li class="user_bg4 curson">活动预约</li></a>
+        	</ul>
+    	</div>
+        
+        <div class="user_right">
+        	<div class="user_title">
+            	<p>活动预约</p>
+            </div>
+            <div class="activity_box">
+            
+            	<a href="activity_info.html">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <a href="activity_info.html">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <a href="activity_info.html">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <div class="activity_past">
+                	<p>----------　　　往期活动　　　----------</p>	
+                </div>
+                
+                <a href="activity_info.html">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+                <a href="activity_info.html">
+            	<div class="activity_each" style="background-image:url(images/activity_img.png)">
+                	<div class="activity_shadow"></div>	
+                    <div class="activity_title">
+                    	<p>戎琦全国巡回发布会正式启动 15城市号召阳光公益活动</p>
+                    </div>
+                </div>
+            	</a>
+                
+            </div>
+                
+        </div>
+    	
+        </div>
+		
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+            	    
+    </div>
+</body>
+</html>

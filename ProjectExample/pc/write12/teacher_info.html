@@ -1,0 +1,622 @@
+<!doctype html>
+<html>
+<head>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="futurico/futurico.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/icheck.js"></script>
+<!--nav+bg-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<!--nav+bg end-->
+<!--tab切换-->
+<script type="text/javascript" src="js/tab.js"></script>
+<!--tab切换 end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--导航滑动模块-->
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:120/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--导航滑动模块 end-->
+<!--鼠标点击特效-->
+<script type="text/javascript" src="js/js.js"></script>
+<!--鼠标点击特效 end-->
+
+</head>
+
+<body bgcolor="#e9eaec">
+
+	<!--header-->
+    <div class="header_bg">
+    <div class="header_top">
+    	<div class="header_text">
+    		<p>您好，欢迎来到作文状元堂</p>
+        </div>
+        <div class="header_user" >
+        	<a href="user.html"><img src="images/icon_user.png" width="100%" height="34px"></a>
+            <div class="header_user_list">
+            	<ul> 
+                	<a href=""><li class="list_img1"><span>修&nbsp;改&nbsp;资&nbsp;料</span></li></a>
+                    <a href=""><li class="list_img2"><span>我&nbsp;的&nbsp;历&nbsp;程</span></li></a>
+                    <a href=""><li class="list_img3"><span>我&nbsp;的&nbsp;订&nbsp;单</span></li></a>
+                    <a href=""><li class="list_img4"><span>我&nbsp;的&nbsp;收&nbsp;藏</span></li></a>
+                    <a href=""><li class="list_img5"><span>退&nbsp;出&nbsp;登&nbsp;录</span></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bell header_border">
+        	<img src="images/icon_bell.png" width="100%" height="34px">
+        </div>
+    </div>
+    </div>
+    
+    <div class="header_mid_bg">
+    <div class="header_mid">
+    	<div class="header_logo">
+        	<img src="images/icon_logo.png" height="50px">
+        </div>
+    	<div class="header_right">
+    		<div class="nav">
+        	<ul>
+            <li class="nav-item cur">
+            	<a href="index.html">首页<span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">品牌介绍<span>INTRODUCTION</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="news.html">最新消息<span>NEWS</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">作文资源库<span>RESOURCE POOL</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="exercise.html"><li class="list_second"><span>练功房</span></li></a>
+                    <a href="publish.html"><li class="list_second"><span>发表天地</span></li></a>
+                    <a href="active_room.html"><li class="list_second"><span>互动教室</span></li></a>
+                    <a href="ex_course.html"><li class="list_second"><span>精品课程</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="composition.html">作文批改<span>CORRECTING</span></a>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">在线家教<span>ONLINE TUTORING</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="schedule.html"><li class="list_second"><span>一对一教学</span></li></a>
+                    <a href="schedule.html"><li class="list_second"><span>名人课堂</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();" target="_blank">分析中心<span>ANALYSIS</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>排行榜</span></li></a>
+                    <a href=""><li class="list_second"><span>学习历程</span></li></a>
+                </ul>
+            	</div>
+            </li>
+        	</ul>
+        <!--移动的滑动
+        <div class="move-bg" style="display: block; left: 0px;"></div>
+        <!--移动的滑动 end-->
+    		</div>
+  		</div>
+  	</div> 
+    </div>
+  	<!--header end-->
+        
+    <!--banner-->
+    <div class="banner">
+    	<img src="images/news_banner.png" width="100%">
+    </div>
+    <!--banner end-->
+    
+    <!--position-->
+    <div class="position">
+    	<div class="position_text">
+    	<p>您的位置：</p>
+        <span><a href="index.html">首页</a></span>
+        <div style="color:#666;display:inline">&gt;</div>
+        <span><a href="ex_course.html">教师详情</a></span>
+        </div>
+    </div>
+    <!--position end-->
+    
+    <div class="teacher_info_box">
+    
+    	<div class="tecinfo_top">
+        <div class="tecinfo_topleft">
+            <img src="images/user_img2.png" width="100%" height="120">
+        </div>
+        <div class="tecinfo_topright">
+            <div class="tecinfo_text">
+            	<span>苏小小</span>
+                <p>简介：&nbsp;国家特级教师&nbsp;&nbsp;中高考命题把关人</p>
+            </div>
+   
+        </div>
+        
+        </div>
+    
+    	<!--tab切换-->
+    	<div class="tecinfo_mid">
+        	<ul>
+            	<a><li class="exinfo_list" id="tecinfo_first">讲师详情</li></a>
+                <a><li class="exinfo_list">讲师课堂</li></a>        
+            	<a><li class="exinfo_list">累计评价</li></a>        
+            </ul>     
+        </div>  
+    	<!--tab切换 end-->
+    	
+        <!--讲师详情-->       
+        <div class="exinfo_box">
+        
+    		<div class="exinfo_left_box">
+            	<div class="exinfo_page">
+            		<p>此处为编辑器编辑内容</p>
+            	</div>
+        	</div>  
+             
+            <div class="exinfo_right_box">
+            	<div class="ex_info_ql">
+                	<p>资格认证</p>
+                </div>
+                <ul>
+                	<li class="ex_info_cc1">实名认证</li>
+                	<li class="ex_info_cc2">教师资格证</li>
+                </ul>
+            
+            </div>
+
+        </div>
+    	<!--讲师详情 end-->
+        
+        <!--讲师课堂-->
+    	<div class="exinfo_box" style="display:none;">
+        	<div class="exinfo_left_box" style="display:none;">
+            <ul>
+        	<li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+        	
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+            <li class="tec_course_every">
+            	<a href="">
+            	<div class="inline_course_img">
+                	<img src="images/course_banner2.png" width="100%" height="240">
+                    <div class="inline_course_ins" style="display:none;">
+                    <p>卓文君</p>
+                    <span>国家特级教师</span>
+                    </div>
+                </div>
+                </a>
+                <div class="inline_course_shade">
+                	<div class="inline_course_star">
+                		<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_star.png" width="22">
+                    	<img src="images/icon_unstar.png" width="22">
+                	</div>
+                    <div class="inline_course_price">
+                    	<span>免费</span>
+                    </div>
+                </div>
+                <div class="inline_course_text">
+                	<a href=""><p>古汉语中“之”字的语法常用与基础讲解与基础讲解</p></a>
+                    <span>2015-11-01 17:00</span>
+                </div>
+            </li>
+        
+        	</ul> 
+            </div>
+            
+            <div class="exinfo_right_box">
+            	<div class="ex_info_ql">
+                	<p>资格认证</p>
+                </div>
+                <ul>
+                	<li class="ex_info_cc1">实名认证</li>
+                	<li class="ex_info_cc2">教师资格证</li>
+                </ul>
+            
+            </div>
+        </div>
+    	<!--讲师课堂 end-->
+        
+        <!--累计评价-->
+    	<div class="exinfo_box" style="display:none;">
+        	<div class="exinfo_left_box" style="display:none;">
+            	
+            <div class="tec_info_discuss">
+        		<div class="info_discuss_img">
+            		<img src="images/user_img1.png" width="50" height="50">
+            	</div>
+            	<div class="info_discuss_user">
+            		<div class="discuss_user_name">
+                		<a href=""><p>杨S</p></a>
+                   		<span>&nbsp;•&nbsp;2015-11-01 17:00</span>
+                	</div>
+                    <div class="discuss_course_name">
+                    	<span>课程：高考文言文中常用通假字讲解</span>
+                    </div>
+                	<div class="discuss_user_mes">
+                		<span>分析历年高考试题，我们就会发现，文言文的考查便宽松了。</span>
+                	</div>
+            	</div>
+        	</div>
+        
+        	<div class="tec_info_discuss">
+        		<div class="info_discuss_img">
+            		<img src="images/user_img2.png" width="50" height="50">
+           		</div>
+            	<div class="info_discuss_user">
+            		<div class="discuss_user_name">
+                		<a href=""><p>杨S</p></a>
+                   		<span>&nbsp;•&nbsp;2015-11-01 17:00</span>
+                	</div>
+                    <div class="discuss_course_name">
+                    	<span>课程：高考文言文中常用通假字讲解</span>
+                    </div>
+                	<div class="discuss_user_mes">
+                	<span>从高一开始，每学完一册书，利用寒暑假，要求学生将所有要求背诵的篇目（这里也有老师要求的），在假日里，复习背诵并且默写在作业本上，三年一贯，“学而时习之”。从高一开始，每学完一册书，利用寒暑假，要求学生将所有要求背诵的篇目（这里也有老师要求的），在假日里，复习背诵并且默写在作业本上，三年一贯，“学而时习之”。</span>
+                	</div>
+            	</div>
+        	</div>
+            
+            <div class="tec_info_discuss">
+        		<div class="info_discuss_img">
+            		<img src="images/user_img2.png" width="50" height="50">
+           		</div>
+            	<div class="info_discuss_user">
+            		<div class="discuss_user_name">
+                		<a href=""><p>杨S</p></a>
+                   		<span>&nbsp;•&nbsp;2015-11-01 17:00</span>
+                	</div>
+                    <div class="discuss_course_name">
+                    	<span>课程：高考文言文中常用通假字讲解</span>
+                    </div>
+                	<div class="discuss_user_mes">
+                	<span>从高一开始，每学完一册书，利用寒暑假，要求学生将所有要求背诵的篇目（这里也有老师要求的），在假日里，复习背诵并且默写在作业本上，三年一贯，“学而时习之”。从高一开始，每学完一册书，利用寒暑假，要求学生将所有要求背诵的篇目（这里也有老师要求的），在假日里，复习背诵并且默写在作业本上，三年一贯，“学而时习之”。</span>
+                	</div>
+            	</div>
+        	</div>
+            
+            
+            
+            </div>
+            
+            <div class="exinfo_right_box">
+            	<div class="ex_info_ql">
+                	<p>资格认证</p>
+                </div>
+                <ul>
+                	<li class="ex_info_cc1">实名认证</li>
+                	<li class="ex_info_cc2">教师资格证</li>
+                </ul>
+            
+            </div>
+      
+        </div>
+    	<!--累计评价 end-->
+
+    </div>
+    
+
+    <!--底部-->
+    <div class="index_bottom">
+    	<div class="idnex_bottom_width">
+    		<div class="index_bottom_left">
+        		<p>帮助中心</p>
+            	<ul>
+            		<li><a href="javascript:void();">常见问题</a></li>
+                	<li><a href="javascript:void();">新手注册</a></li>
+                	<li><a href="javascript:void();">选课流程</a></li>
+                	<li><a href="javascript:void();">积分消费密码</a></li>
+            	</ul>
+        	</div>
+            <div class="index_bottom_mid">
+        		<p>关于write 12</p>
+            	<ul>
+            		<li><a href="javascript:void();">发展历程</a></li>
+                	<li><a href="javascript:void();">企业文化</a></li>
+                	<li><a href="javascript:void();">社会责任</a></li>
+                	<li><a href="javascript:void();">洽谈合作</a></li>
+        	</div>
+            <div class="index_bottom_right">
+        		<p>联系我们</p>
+            	<ul>
+            		<li>联系电话：4008-777-888</li>
+                	<li>QQ客服：815707707</li>
+                	<li>E-mail：ellisy@sina.com</li>
+                	<li>微信：zhuangyuantang</li>
+            	</ul>
+        	</div>
+            <div class="index_qcode">
+            	<img src="images/qcode.png" width="120">
+            </div>        
+         </div>
+         <div class="index_bottom_under">
+         	<p>Copyright © 2013-2015 jikexueyuan.com All Rights Reversed. 沪ICP备 11018032号-8 沪公网安备 11010802013056</p>
+         </div>
+    </div>
+    <!--底部 end-->
+
+
+    <!--side-->
+    <div class="side1">
+		<ul>
+			<li style="border:none;">
+        	<a href="javascript:goTop();" class="sidetop1">
+            	<img src="./images/side_top.png" width="42" height="42">
+            </a>
+        	</li>
+		</ul>
+	</div>
+    <!--side end-->   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

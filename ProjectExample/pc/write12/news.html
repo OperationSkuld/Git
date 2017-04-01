@@ -1,0 +1,715 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--nav+bg-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<!--nav+bg end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--导航滑动模块-->
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:120/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--导航滑动模块 end-->
+<!--tab切换-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".news_left ul .new_list").bind("click",function(e){
+		var index=$(".new_list").index(this);
+		var lilength =$(".new_list").length;
+		for(var i=0;i<lilength;i++){
+			if(i==index){
+				$(".new_list").eq(i).css({"background":"#3a99d8","color":"#fff"});
+				$(".news_box").eq(i).show();
+				}
+			else{
+				$(".new_list").eq(i).css({"background":"none","color":"#666"});
+				$(".news_box").eq(i).hide();
+				}
+		}
+	});
+});
+</script>
+<!--tab切换 end-->
+</head>
+
+<body bgcolor="#e9eaec">
+
+	<!--header-->
+    <div class="header_bg">
+    <div class="header_top">
+    	<div class="header_text">
+    		<p>您好，欢迎来到作文状元堂</p>
+        </div>
+        <div class="header_user" >
+        	<a href="user.html"><img src="images/icon_user.png" width="100%" height="34px"></a>
+            <div class="header_user_list">
+            	<ul> 
+                	<a href=""><li class="list_img1"><span>修&nbsp;改&nbsp;资&nbsp;料</span></li></a>
+                    <a href=""><li class="list_img2"><span>我&nbsp;的&nbsp;历&nbsp;程</span></li></a>
+                    <a href=""><li class="list_img3"><span>我&nbsp;的&nbsp;订&nbsp;单</span></li></a>
+                    <a href=""><li class="list_img4"><span>我&nbsp;的&nbsp;收&nbsp;藏</span></li></a>
+                    <a href=""><li class="list_img5"><span>退&nbsp;出&nbsp;登&nbsp;录</span></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bell header_border">
+        	<img src="images/icon_bell.png" width="100%" height="34px">
+        </div>
+    </div>
+    </div>
+    
+    <div class="header_mid_bg">
+    <div class="header_mid">
+    	<div class="header_logo">
+        	<img src="images/icon_logo.png" height="50px">
+        </div>
+    	<div class="header_right">
+    		<div class="nav">
+        	<ul>
+            <li class="nav-item cur">
+            	<a href="index.html">首页<span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">品牌介绍<span>INTRODUCTION</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="news.html">最新消息<span>NEWS</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">作文资源库<span>RESOURCE POOL</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="exercise.html"><li class="list_second"><span>练功房</span></li></a>
+                    <a href="publish.html"><li class="list_second"><span>发表天地</span></li></a>
+                    <a href="active_room.html"><li class="list_second"><span>互动教室</span></li></a>
+                    <a href="ex_course.html"><li class="list_second"><span>精品课程</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="composition.html">作文批改<span>CORRECTING</span></a>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">在线家教<span>ONLINE TUTORING</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="schedule.html"><li class="list_second"><span>一对一教学</span></li></a>
+                    <a href="schedule.html"><li class="list_second"><span>名人课堂</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();" target="_blank">分析中心<span>ANALYSIS</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>排行榜</span></li></a>
+                    <a href=""><li class="list_second"><span>学习历程</span></li></a>
+                </ul>
+            	</div>
+            </li>
+        	</ul>
+        <!--移动的滑动
+        <div class="move-bg" style="display: block; left: 0px;"></div>
+        <!--移动的滑动 end-->
+    		</div>
+  		</div>
+  	</div> 
+    </div>
+  	<!--header end-->
+    
+    <!--banner-->
+    <div class="banner">
+    	<img src="images/news_banner.png" width="100%">
+    </div>
+    <!--banner end-->
+    
+    <!--position-->
+    <div class="position">
+    	<div class="position_text">
+    	<p>您的位置：</p>
+        <span><a href="index.html">首页</a></span>
+        <div style="color:#666;display:inline">&gt;</div>
+        <span><a href="#">最新消息</a></span>
+        </div>
+    </div>
+    <!--position end-->
+    
+    <div class="news_contain">
+    
+    <!--左边tab层-->
+    	<div class="news_left">
+    		<ul> 
+        	<a><li class="new_list" id="new_list_one"><span>全&nbsp;部&nbsp;消&nbsp;息</span></li></a>
+            <a><li class="new_list" ><span>最&nbsp;新&nbsp;消&nbsp;息</span></li></a>
+            <a><li class="new_list"><span>行&nbsp;业&nbsp;新&nbsp;闻</span></li></a>
+            <a><li class="new_list"><span>系&nbsp;统&nbsp;公&nbsp;告</span></li></a>
+        	</ul>
+    	</div>   
+    <!--左边tab层 end-->
+	
+    <!--全部消息-->
+    	<div class="news_box">
+        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href="news_info.html"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href="news_info.html"><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>   
+
+        
+        
+        </div>
+    <!--全部消息 end-->
+    
+    <!--最新消息-->
+    	<div class="news_box" style="display:none;">
+        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href="news_info.html"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href="news_info.html"><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>    
+        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>
+                        
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>
+                    
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>     
+
+        	<div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>今日消息，全新会员制度今日开放</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">最新消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>   
+       
+        </div>
+    <!--最新消息 end-->
+    
+    <!--行业新闻-->
+    	<div class="news_box" style="display:none;">
+        
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href="news_info.html"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href="news_info.html"><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+        
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                    
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="news_info">
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="news_info_text">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>从住宿延伸到行程定制服务，Airbnb 已在旧金山试点 “Journeys”</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">行业新闻</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                    
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>   
+       
+        </div>
+    <!--最新消息 end-->
+    
+    <!--系统公告-->
+    	<div class="news_box" style="display:none;">
+        
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href="news_info.html"><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                    
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                        
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                                
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                            
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                        
+        	<div class="news_info">
+            	<!--
+            	<div class="news_info_img">
+                	<a href=""><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                -->
+                <div class="news_info_textcc">
+                	<div class="news_info_title">
+                    	<a href=""><p><strong>Write12 手机APP今日上线，ios用户可现行下载</strong></p></a>
+                    </div>	
+                    <div class="news_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="javascript:void();">系统消息</a></span>
+                    </div>
+                    <div class="news_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                </div>
+            </div> 
+                                                
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>   
+       
+        </div>
+    <!--系统公告 end-->    
+    
+    
+ 	</div> 
+      
+    <!--底部-->
+    <div class="index_bottom">
+    	<div class="idnex_bottom_width">
+    		<div class="index_bottom_left">
+        		<p>帮助中心</p>
+            	<ul>
+            		<li><a href="javascript:void();">常见问题</a></li>
+                	<li><a href="javascript:void();">新手注册</a></li>
+                	<li><a href="javascript:void();">选课流程</a></li>
+                	<li><a href="javascript:void();">积分消费密码</a></li>
+            	</ul>
+        	</div>
+            <div class="index_bottom_mid">
+        		<p>关于write 12</p>
+            	<ul>
+            		<li><a href="javascript:void();">发展历程</a></li>
+                	<li><a href="javascript:void();">企业文化</a></li>
+                	<li><a href="javascript:void();">社会责任</a></li>
+                	<li><a href="javascript:void();">洽谈合作</a></li>
+        	</div>
+            <div class="index_bottom_right">
+        		<p>联系我们</p>
+            	<ul>
+            		<li>联系电话：4008-777-888</li>
+                	<li>QQ客服：815707707</li>
+                	<li>E-mail：ellisy@sina.com</li>
+                	<li>微信：zhuangyuantang</li>
+            	</ul>
+        	</div>
+            <div class="index_qcode">
+            	<img src="images/qcode.png" width="120">
+            </div>        
+         </div>
+         <div class="index_bottom_under">
+         	<p>Copyright © 2013-2015 jikexueyuan.com All Rights Reversed. 沪ICP备 11018032号-8 沪公网安备 11010802013056</p>
+         </div>
+    </div>
+    <!--底部 end-->
+
+
+    <!--side-->
+    <div class="side1">
+		<ul>
+			<li style="border:none;">
+        	<a href="javascript:goTop();" class="sidetop1">
+            	<img src="./images/side_top.png" width="42" height="42">
+            </a>
+        	</li>
+		</ul>
+	</div>
+    <!--side end-->  
+    
+    
+
+
+
+
+
+</body>
+</html>

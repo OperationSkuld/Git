@@ -1,0 +1,107 @@
+/******个人中心******/
+.user_top{
+	width:90%;
+	height:100px;
+	padding:0 5%;
+	overflow:hidden;
+	background:url(../images/user_bg.png) 0 0 no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+.user_photo{
+	width:50px;
+	height:50px;
+	float:left;
+	overflow:hidden;	
+	margin-top:25px;
+	border-radius:50%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+.user_name{
+	margin-top:28px;
+	margin-left:62px;	
+}
+.user_name p{
+	font-size:18px;
+	color:#FFF;	
+}
+.user_name span{
+	font-size:14px;
+	color:#FFF;	
+}
+.user_arrow{
+	position:absolute;
+	right:10px;
+	top:40px;	
+}
+.box_each{
+	background:#FFF;	
+	height:40px;
+	border-bottom:1px solid #eff3f6;
+}
+.box_each_one{
+	background:url(../images/user_icon1.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_two{
+	background:url(../images/user_icon2.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_three{
+	background:url(../images/user_icon3.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_four{
+	background:url(../images/user_icon4.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_five{
+	background:url(../images/user_icon5.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_six{
+	background:url(../images/user_icon6.png) 0 0 no-repeat;
+	background-size:23px;
+	background-position:left center;
+	height:40px;
+	line-height:40px;
+	margin:0 10px 0 20px;
+}
+.box_each_one p,.box_each_two p,.box_each_three p,.box_each_four p,.box_each_five p,.box_each_six p{
+	margin-left:40px;
+	font-size:16px;
+	letter-spacing:1.5px;
+	color:#333;	
+	float:left;
+}
+.msg{
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:#ff4966;
+	float:left;
+	margin-top:14px;
+	margin-left:15px;
+}

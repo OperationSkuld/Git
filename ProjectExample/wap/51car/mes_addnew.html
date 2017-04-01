@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="css/font-awesome.min.css" />  
+    <link rel="stylesheet" href="css/mlzla.css" />     
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+<script>
+    function linkonclick(){
+		layer.msg('提交成功！');
+		setTimeout(function(){window.location.href="mes_feedback.html";},2000);
+	}   
+</script>
+
+    <title>来租啦-个人中心</title>  
+</head>
+<body class="bgf7">
+    <div class="wap">
+        <section>
+          <div class="clearfix"></div>
+          <hr class="topline1">
+          <hr class="topline2">
+          <form class="form-option">
+            <textarea placeholder="请留下您的宝贵意见和建议，我们将努力改进"></textarea>
+            <input type="text" placeholder="请留下手机号码，以便我们回复您">
+          </form> 
+          <div class="btn-addfeedback"><a href="javascript:linkonclick()">提交反馈</a></div>
+        </section>
+
+    </div>
+
+</body>
+</html>

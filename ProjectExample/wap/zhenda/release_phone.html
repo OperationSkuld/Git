@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user_release.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script>
+$(function(){
+	$(".release_submit").click(function(){
+		var mobile = $("#mobile").val();
+		var code = $("#code").val();
+		if(mobile==""){
+			layer.msg('请填写手机号码');
+		}
+		else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+		}
+		else if(code==""){
+			layer.msg('请填写验证码');
+		}
+		else{
+			layer.msg('提交成功');
+			delay();
+		}
+	});	
+	$(".msg_code").click(function(){
+		var validCode=true;
+		var time=60;
+		var mobile = $("#mobile").val();
+		var code = $("#code").val();
+		if(mobile==""){
+			layer.msg('请填写手机号码');
+			return false;
+		}
+		else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+			layer.msg('请填写正确的手机号码');
+			return false;
+		}
+		if (validCode) {
+			validCode=false;
+			$(".msg_code").addClass("msg_coding");
+			$(".msg_code").attr("disabled",true);
+			$("#mobile").attr("readonly",true);
+			var t=setInterval(function  () {
+				time--;
+				$(".msg_code").html(time+"s");
+				if (time==0) {
+					clearInterval(t);
+					$(".msg_code").html("重新获取");
+					$(".msg_code").attr("disabled",false);
+					$("#mobile").attr("readonly",false);
+					validCode=true;
+					$(".msg_code").removeClass("msg_coding");
+					
+				}
+			},1000)
+		}
+	});
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+</script>
+
+</head>
+
+<body bgcolor="#eff2f6">
+	<div class="contain">
+    <form action="user_release.html">
+    	<div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd">
+                	<label class="weui_label">手机号</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="number" placeholder="请输入手机号" id="mobile"/>
+                </div>
+            </div>
+            <div class="weui_cell weui_vcode">
+                <div class="weui_cell_hd">
+                	<label class="weui_label">验证码</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="number" placeholder="请输入验证码" id="code"/>
+                </div>
+                <div class="weui_cell_ft weui_vimg_wrp">
+                    <button type="button" class="msg_code">获取验证码</button>
+                </div>
+            </div>
+        </div>
+        <div class="release_submit">
+            <button type="button" class="rel_btn">保存</button>	
+        </div>
+    </form>
+    </div>
+</body>
+</html>
