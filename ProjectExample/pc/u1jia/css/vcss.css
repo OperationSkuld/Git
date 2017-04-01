@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+.v_advertisement{width:1300px;margin:0 auto;text-align:center;padding:68px 0;border-style:none none dashed;border-color:#cccccc;border-width:1px;}
+.v_advertisement dt{color:#88bd43;font-size:40px;font-weight:bolder}
+.v_advertisement dd{font-size:16px;color:#a9a9a9;}
+
+.v_one{width:1200px;height:618px;margin:80px auto 0;background:url(../images/venue_1.jpg) no-repeat;}
+.v_one dl{position:relative;top:0px;left:0;width:279px;height:284px;background:#40a3c7;}
+.v_one dl dt{margin:0 20px;padding:20px 0;font-size:24px;color:#363533}
+.v_one dl dd{margin:8px 20px;color:#363533;font-size:14px;}
+
+.v_two{width:1200px;height:618px;margin:35px auto 0;background:url(../images/venue_2.jpg) no-repeat;}
+.v_two dl{position:relative;top:0px;left:0;width:188px;height:355px;background:#ed8f26;}
+.v_two dl dt{margin:0 20px;padding:20px 0;font-size:24px;color:#363533}
+.v_two dl dd{margin:8px 20px;color:#363533;font-size:14px;}
+
+.v_three{width:1200px;height:618px;margin:35px auto 0;background:url(../images/venue_3.jpg) no-repeat;}
+.v_three_fontone{position:relative;top:284px;left:867px;width:334px;height:334px;background:#40a3c7;}
+.v_three_d{margin:20px 25px 0;padding:20px 0;font-size:24px;color:#363533;text-align:right;}
+.v_three_o{width:120px;float:right;}
+.v_three_o dd{margin:8px 25px 8px 0;color:#363533;font-size:14px;text-align:right;}
+.v_three_t{width:120px;float:right;}
+.v_three_t dd{margin:8px 25px 8px 0;color:#363533;font-size:14px;text-align:right;}
+
+.v_four{width:1200px;height:618px;margin:35px auto 0;background:url(../images/venue_4.jpg) no-repeat;}
+.v_four_fontone{position:relative;top:0px;left:388px;width:279px;height:284px;background:#40a3c7;}
+.v_four_d{margin:20px 25px 0;padding:20px 0;font-size:24px;color:#363533;}
+.v_four_o{width:120px;float:left}
+.v_four_o dd{margin:8px 0 8px 25px;color:#363533;font-size:14px;}
+.v_four_t{width:120px;float:left}
+.v_four_t dd{margin:8px 0 8px 25px;color:#363533;font-size:14px;}
+
+.v_mapandtwo{position:relative;top:0;width:1200px;height:426px;margin:35px auto 72px;background:#3ba3c8;}
+.v_map{position:absolute;top:0;left:0;width:893px;height:426px;background:url(../images/map.png) no-repeat;background-size:100%;}
+.v_twoma{position:absolute;top:0;right:0;width:307px;height:426px;background:url(../images/venue_where.jpg);}
+#p1{font-size:40px;font-weight:bolder;}
+.p2{font-size:12px;line-height:20px;text-align:left;}
+.p2 a{color:#333;font-size:12px;}
+#p2{padding:0 0 25px;}
+
+/******优惠券**********/
+.v_return{position:fixed;right:0px;bottom:300px;width:67px;height:137px;background:url(../images/return.png) no-repeat;}
+#v_coupon_0{position:fixed;right:0px;bottom:100px;width:67px;height:168px;background:url(../images/coupon.png) no-repeat;}
+#v_coupon_t{display:none;position:fixed;right:0px;bottom:100px;width:168px;height:168px;background:url(../images/coupon.png) no-repeat;cursor:pointer;}
+#v_get_coupon{position:fixed;top:0;left:0;right:0;background:rgba(0,0,0,1);z-index:999;}
+#v_all_img{z-index:-1;}
+#aaa{position:fixed;top:200px;width:100%;height:329px;z-index:999}
+#v_aaa{margin:0 auto;width:1017px;height:329px;background:url(../images/input.png) no-repeat;}
+#v_input_coupon{position:fixed;top:350px;width:1017px;margin:0 auto;height:150px;z-index:999;}
+#v_input_coupon table{margin:0 auto;width:400px;font-size:18px;font-family:"微软雅黑";color:#fff;}
+#v_input_coupon table td{padding:0 2px 50px;text-align:center}
+#v_input_coupon table input{width:250px;height:30px;border:none;background-color:rgba(255,255,255,0.7);}
+#v_input_coupon button{margin:0 408px;width:200px;;height:40px;border:none;text-align:center;font-family:"微软雅黑";font-size:24px;line-height:24px;color:#af1811;background:#ffead5;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;cursor:pointer;}
+#v_aaa_g{padding:108px 0 0 722px;margin:0px 0 0;width:60px;text-align:center;}
+#v_aaa_g p{width:40px;height:24px;color:#fff; -moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;}
+
+#v_aaa_hide{position:fixed;top:350px;width:1017px;margin:0 auto;height:150px;z-index:999;}
+.v_hide_coupon{margin:0 auto;width:400px;font-family:"微软雅黑";color:#fff;text-align:center;font-size:30px;}
+.v_hide_coupon p{font-family:"微软雅黑";color:#fff;padding:0 0 40px;}
+.v_hide_coupon button{width:200px;height:40px;border:none;font-family:"微软雅黑";font-size:24px;color:#af1811;background:#ffead5;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;cursor:pointer;}
+
+
+
+
+
+

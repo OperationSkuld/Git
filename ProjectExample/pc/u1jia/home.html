@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>优伊家</title>
+<meta name="viewport"  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link type="text/css" href="css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/carousel_img.js"></script>
+</head>
+	
+<body>
+	<!--顶部-->
+	<div class="header">
+    	<div class="log">
+        	<img src="images/logo.png" alt="优依家" />
+        </div>
+        <div class="navigation bar">
+        	<ul>
+            	<a href="home.html"><li>首页<br /><span>HOME</span></li></a>
+                <a href="aboutus.html"><li>关于优依家<br /><span>ABOUT US</span></li></a>
+                <a href="venue.html"><li>场馆展示<br /><span>VENUE</span></li></a>
+                <a href="joinus.html"><li>加入我们<br /><span>JOIN US</span></li></a>
+            </ul>
+        </div>
+        <div class="right_img">
+        	<p>更懂你的O2O家居平台</p>
+        </div>
+    </div>
+    <!--轮播图部分-->
+    <div class="carousel_imgd"> 
+    	<!--轮播图-->
+        <div class="carousel_img_" id="image_parent"> 
+            <div id="carousel_img_1"  class="show"></div> 
+            <div id="carousel_img_2"  class="hidden"></div>  	
+            <div id="carousel_img_3" class="hidden"></div>
+            <div id="carousel_img_4" class="hidden"></div>
+        </div>
+        <div class="carousel_img_s">
+        	<div class="left_image" onclick="left_change()"></div>
+            <div class="carousel_img_f"><img src="images/banner_z.png" width="100%" height="100%" /></div>
+            <div class="right_image" onclick="right_change()"></div>
+            <a href="venue.html"><div class="more_button"><p>了解更多<span>+</span></p></div></a>
+        </div>
+    </div>
+    
+    
+    <div class="middle_img">
+    	<a href="aboutus.html" onmouseover="mOverf(this)"  onmouseout="mOutf(this)">
+            <div class="middle_img_f">
+            	<div class="back_border_f"></div>
+                <p class="change_back">关于优依家/ABOUT US</p>
+            </div>
+            <div class="middle_img_f_1" hidden="">
+               	<div class="back_border_1">
+                	<img src="images/Mode.png" width="36" height="36" />
+                    <dl>
+                    	<dd class="dd_c">坚持原创,发现居家之美,线下展馆开放中</dd>
+                        <dd class="dd_i">Exhibition hall is opening now!</dd>
+                    </dl>
+                </div> 
+            </div>
+        </a>
+        
+        <a href="venue.html" onmouseover="mOvers(this)"  onmouseout="mOuts(this)">
+            <div class="middle_img_s">
+            	<div class="back_border_s"></div>
+                <p class="change_back_s">场馆展示/VENUE</p>	
+            </div>
+            <div class="middle_img_s_1" hidden="">
+               	<div class="back_border_2">
+                	<img src="images/Mode.png" width="36" height="36" />
+                    <dl>
+                    	<dd class="dd_c">坚持原创,发现居家之美,线下展馆开放中</dd>
+                        <dd class="dd_i">Exhibition hall is opening now!</dd>
+                    </dl>
+                </div> 
+            </div>
+        </a>
+        
+        <a href="joinus.html" onmouseover="mOvert(this)"  onmouseout="mOutt(this)">
+            <div class="middle_img_t">
+            	<div class="back_border_t"></div>
+                <p class="change_back_t">加入我们/JOIN US</p>
+            </div>
+             <div class="middle_img_t_1" hidden="">
+               	<div class="back_border_3">
+                	<img src="images/Mode.png" width="36" height="36" />
+                    <dl>
+                    	<dd class="dd_c">坚持原创,发现居家之美,线下展馆开放中</dd>
+                        <dd class="dd_i">Exhibition hall is opening now!</dd>
+                    </dl>
+                </div> 
+            </div>
+        </a>
+    </div>
+    
+    <div class="bottom_icon">
+    	<div class="bottom_icon_l">
+        	<ul>
+            	<li><img src="images/bottom_icon_1.png" /><br /><p>私家定制</p></li>
+                <li><img src="images/bottom_icon_2.png" /><br /><p>品质保证</p></li>
+                <li><img src="images/bottom_icon_3.png" /><br /><p>低价保证</p></li>
+                <li><img src="images/bottom_icon_4.png" /><br /><p>进口原装</p></li>
+            </ul>
+        </div>
+        <div class="second_ma">
+        	<img src="images/weixin.png" /><br /><p>优依家微信公众号</p>
+        </div>
+        <div class="call_phone">
+        	<dl>
+				<dd><a href="tel:400-666-6666">400-666-6666</a></dd>
+                <dd>全国服务热线</dd>
+			</dl>
+        </div>
+        <a href="#"><div class="hotline"></div></a>
+    </div>
+    <div class="bottom_f">
+    	<p>Copyright2015 &copy;u1jia.com, All Rights Reserved. 沪ICP备15009558号 优伊家网络 版权所有</p>
+    </div>
+</body>
+</html>
