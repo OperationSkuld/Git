@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>51学车</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">	 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/layer.css">
+<link href="polaris/polaris1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/icheck.js"></script>
+<script>
+    function linkonclick(){
+		layer.msg('支付成功！');
+		setTimeout(function(){window.location.href="order_info.html";},1000);
+	}
+        
+</script>
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_polaris',
+    radioClass: 'iradio_polaris',
+    increaseArea: '-10%' // optional
+  });
+});
+</script>
+</head>
+
+<body bgcolor="#f1f1f1">
+<div class="contain">
+    <hr style="border: 8px solid #f1f1f1;"> 
+    <div class="pay_info_xq">
+            <div class="pay_info_cc">
+            	<div class="pay_info_title">
+                	<img src="img/icon_draft.png" width="28%">
+                    <p>订单详情</p>
+                </div>
+            </div> 
+                <div class="pay_info_box">
+                <p>预约教练：张哲</p>
+                <p>服务方式：上门办理资料</p>
+                <p>预约时间：2015-09-30 11:00</p>
+                <p>驾照类型：C1驾证</p>
+                <p>您的电话：13761522505</p>
+                <p style="display:inline;position:absolute;">预约地址：</p><span>上海市营口路588号海尚杰座2号楼13M</span>
+                <p>备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</p>
+                </div>
+     </div>
+     
+     <hr style="border: 8px solid #f1f1f1;"> 
+     
+     <form>
+     <div class="pay_info_for">
+   	   <div class="pay_info_way1">
+    		<p>余额付款：￥4900</p>
+			<div class="pay_info_choose">
+        		<input name="iCheck" type="radio" required id="optionsRadios1" value="是" checked>
+		   </div>
+   	   </div>
+     </div>
+     </form>
+     
+     <hr style="border: 8px solid #f1f1f1;"> 
+
+     <form>
+     <div class="pay_info_for">
+    	<div class="pay_info_way1">
+    		<p>微信付款</p>
+			<div class="pay_info_choose">
+        		<input name="iCheck" type="radio" required id="optionsRadios1" value="是" checked>
+			</div>
+    	</div>
+     </div>
+    
+     <div class="pay_info_for">
+    	<div class="pay_info_way1">
+    		<p>找人代付</p>
+        	<div class="pay_info_choose">
+        		<input name="iCheck" type="radio" required id="optionsRadios2" value="否"> 
+			</div>
+    	</div>
+     </div>
+     
+     <div class="pay_info_for">
+    	<div class="pay_info_way2">
+    		<p>支付宝付款</p>
+        	<div class="pay_info_choose">
+        		<input name="iCheck" type="radio" required id="optionsRadios3" value="否"> 
+			</div>
+    	</div>
+     </div>
+     </form>
+     
+     <hr style="border: 8px solid #f1f1f1;"> 
+     
+     <form>
+     <div class="pay_info_for">
+   	   <div class="pay_info_way3">
+    		<p style="font-size:16px;">我已阅读并同意
+            <span style="color:#00a8ff"><a href="index_page4.html">《学车服务协议》</a></span>
+            </p>
+			<div class="pay_info_choose1">
+                <input type="checkbox" id="checkbox_a1" class="chk_1" checked  required /><label for="checkbox_a1"></label>
+		   </div>
+   	   </div>
+     </div>
+     </form> 
+          
+     <div class="pay_info_money">
+     	<a href="javascript:linkonclick()"><img src="img/icon_pay.png" width="70%"></a>
+     </div>  
+       
+</div>
+
+</body>
+</html>
