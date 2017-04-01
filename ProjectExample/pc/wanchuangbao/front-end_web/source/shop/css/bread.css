@@ -1,7 +1,0 @@
-/*面包屑*/
-.bread{width: 998px;height: 38px;line-height: 38px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;}
-.bread ul li{width: 135px;height: 38px;line-height: 38px;background: url(../img/icon_BreadArrow.png) 0 0 no-repeat;background-position: center right;float: left;}
-.bread ul li img{margin: 11.5px 0;float: left;padding-left: 15px;padding-right: 8px;}
-.bread ul li p{color: #999;font-size: 14px;}
-.breadWords{width: 110px;text-align: center;}
-.breadCur{color: #ff964b !important;}

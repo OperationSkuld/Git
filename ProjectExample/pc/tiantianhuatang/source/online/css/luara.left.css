@@ -1,9 +1,0 @@
-/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- luara
- version 0.1  2014-8-21
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-/*左滑*/
-.luara-left{position:relative;padding:0;overflow: hidden;}
-.luara-left ul{position: relative;}
-.luara-left ul li{float: left;list-style: none;}
-.luara-left ul li img{width: inherit;height: inherit;}
