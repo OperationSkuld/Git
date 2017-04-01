@@ -1,0 +1,77 @@
+/*图库管理*/
+
+/*图库管理*/
+.galleryBox{margin-top: 15px;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;background: #FFF;height: 645px;width: 998px;}
+.galleryNameBox{float: left;width: 299px;border-right: 1px solid #DEDEDE;height: 645px;}
+.galleryName{height: 44px;line-height: 44px;padding: 0 20px;border-bottom: 1px solid #DEDEDE;}
+.iconPlan{float: left;margin: 17px 10px 17px 0;}
+.galleryName p{color: #333333;font-size: 14px;float: left;font-weight: bold;}
+.iconAdd{float: right;margin: 16px 0;}
+.galleryNumber{overflow: hidden;margin: 15px 0;}
+.galleryNumber ul li{height: 40px;line-height: 40px;padding: 0 20px;cursor: pointer;position: relative;}
+.galleryNumber ul li > input{max-width: 140px;height: 30px;line-height: 30px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #666;font-size: 12px;float: left;margin-left: 32px;margin-top: 5px;background: none;outline: none;word-break: break-all;}
+.galleryNumber ul li > p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #666;font-size: 12px;float: left;margin-left: 32px;}
+.galleryNumber ul li > span{float: left;color: #666;font-size: 12px;}
+.galleryHover{height: 30px;line-height: 30px;position: absolute;right: 20px;display: none;}
+.galleryHover img{margin-top: 12px;margin-left: 12px;}
+.bgCur{background-color: #f4fbff !important;}
+.galleryContent{float: left;width: 698px;height: 645px;background: #FFFFFF;}
+.galleryContentBtn{height: 45px;padding: 0 20px;}
+.galleryBtn{float: left;width: 100px;height: 28px;margin-top: 17px;margin-right: 10px;color: #FFF;text-align: center;outline: 0;border-radius: 3px;cursor: pointer;}
+.gallerySearch{padding-left: 10px;width: 155px;height: 26px;line-height: 26px;border: 1px solid #DEDEDE;border-right: none;border-radius: 3px;margin-top: 17px;float: left;outline: 0;}
+.btnSubmit{width: 52px;height: 28px;margin-top: 17px;color: #FFF;background: #29abe2;outline: 0;cursor: pointer;border-radius: 0 3px 3px 0;}
+.galleryPicBox{overflow: hidden;margin: 15px 18px 0 5px;}
+.galleryPic{overflow: hidden;width: 120px;float: left;margin: 0 0 30px 15px;}
+.galleryPic li{width: 118px;height: 118px;border: 1px solid #dedede;float: left;background-size: 100%;background-position: center;background-repeat: no-repeat;}
+.checkboxBox{float:left;background-image: url(../img/icon_Radio.png);background-repeat: no-repeat;background-position: -16px 0;width:16px;height:16px;margin: 6px 8px 6px 6px;}
+.on {background-position: 0 0;background-image: url(../img/icon_Radio.png);}
+.checkboxClass {cursor: pointer;position:absolute;width:16px;height:16px;opacity:0;}
+.galleryPic span{float:left;color:#333;font-size:12px;height: 16px;line-height: 16px;width: 90px;margin: 6px 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.save{display: none;}
+
+/*弹窗*/
+.coverBox{position: absolute;left: 0;top: 0;bottom: 0;width: 100%;background: rgba(0,0,0,.2);z-index: 999;visibility: hidden;}
+.coverContain{position: absolute;left: 0;right: 0;top: 150px;background: #FFFFFF;overflow: hidden;border: 3px solid #9e9e9e;border-radius: 3px;margin: 0 auto;width: 600px;}
+.coverTitle{height: 40px;line-height: 40px;padding: 0 10px;border-bottom: 1px solid #dedede;}
+.coverTitle p{font-size: 14px;color: #333333;}
+.coverContent{padding: 10px 0;overflow: hidden;border-bottom: 1px solid #dedede;}
+.inputBox{height: 30px;line-height: 30px;padding: 0 10px;margin: 10px 0;position: relative;}
+.inputBox p{width: 100px;float: left;text-align: right;color: #333333;margin-right: 5px;}
+.inputBox span{float: left;color: #999;margin-left: 25px;}
+.inputText{border: 1px solid #dedede;border-radius: 3px;width: 180px;height: 28px;line-height: 28px;color: #666;padding-left: 10px;outline: 0;float: left;}
+.inputBox select{border: 1px solid #dedede;border-radius: 3px;width: 190px;height: 30px;line-height: 30px;color: #666;padding-left: 10px;outline: 0;float: left;}
+.inputBox > button{float: left;height: 30px;color: #29ABE2;background: #FFF;outline: 0;margin-left: 20px;cursor: pointer;font-weight: bold;letter-spacing: 1px;}
+red{color: #f67b14;}
+.coverButton{padding: 10px 0;height: 30px;float: right;}
+.btnComfirm{float: left;width: 50px;height: 30px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;margin-right: 10px;cursor: pointer;}
+.btnCancel{float: left;width: 50px;height: 30px;text-align: center;color: #333333;background: #FFF;outline: 0;border: 1px solid #dedede;border-radius: 3px;margin-right: 10px;cursor: pointer;}
+.classificationBox{height: 30px;float: left;margin-left: 20px;overflow: hidden;display: none;}
+.classificationBox > button{float: left;height: 30px;background: #FFF;outline: 0;margin-left: 10px;cursor: pointer;font-weight: bold;letter-spacing: 1px;}
+.saveClass{color: #29ABE2;}
+.cancelClass{color: #999;}
+
+.btnFile{width: 100px;border: 1px solid #dedede;border-radius: 3px;color: #999 !important;font-size: 12px;background: #f1f1f1 !important;margin-left: 0 !important;}
+.inputFile{position: absolute;left: 115px;top: 0;width: 100px;height: 30px;cursor: pointer;z-index: 9;opacity: 0;}
+.inputBox tip{margin-left: 10px;color: #999;font-size: 12px;float: left;}
+#imgPreview{margin-left: 115px;overflow: hidden;margin-right: 10px;max-height: 184px;overflow: auto;}
+#imgPreview ul li{width: 80px;height: 80px;float: left;margin-bottom: 10px;margin-right: 10px;background-repeat: no-repeat;background-position: center;background-size: cover;border: 1px solid #dedede;position: relative;}
+.uploadBtnBox{margin-top: 10px;clear: both;display: none;}
+#imgPreview button{width: 100px;height: 30px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;cursor: pointer;font-weight: bold;}
+#imgPreview ul li:hover .hoverBox{display: block;}
+.hoverBox{position: absolute;left: 0;top: 0;width: 75px;height: 25px;background: rgba(0,0,0,0.8);padding-left: 5px;display: none;}
+.hoverBox p{float: left;width: 60px;line-height: 25px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #FFF;font-size: 12px;}
+.hoverBox span{float: right;width: 15px;line-height: 25px;;color: #FFFFFF;font-size: 16px;text-align: center;cursor: pointer;}
+
+.galleryTab{overflow: hidden;padding: 0 10px;}
+.galleryTab ul li{float: left;width: 100px;height: 35px;line-height: 35px;text-align: center;font-size: 14px;color: #999;cursor: pointer;}
+.tabSelected{border-bottom: 2px solid #29ABE2;color: #333 !important;}
+.galleryImgBox{margin-left: 10px;overflow: hidden;margin-right: 10px;}
+.galleryImgBox ul li{width: 80px;height: 80px;float: left;margin-bottom: 10px;margin-right: 10px;background-repeat: no-repeat;background-position: center;background-size: cover;border: 1px solid #dedede;position: relative;}
+.galleryImgBox ul li input{width: 82px;height: 82px;position: absolute;left: 0;top: 0;opacity: 0;}
+.checkedIcon{width: 82px;height: 82px;background-image: url(../img/icon_checked.png);background-repeat: no-repeat;background-size: cover;background-color: rgba(0,0,0,0.5);display: none;z-index: 9;position: relative;}
+.selectImgBox{overflow: hidden;width: 100%;text-align: center;margin-top: 5px;}
+.selectImgBox p{height: 30px;line-height: 30px;padding: 0 10px;color: #999;font-size: 14px;text-align: left;margin-bottom: 5px;}
+.selectImgBox ul li{width: 80px;height: 80px;display: inline-block;margin-bottom: 10px;margin-right: 10px;background-repeat: no-repeat;background-position: center;background-size: cover;border: 1px solid #dedede;position: relative;}
+.imgDelete{position: absolute;right: 0;bottom: 0;width: 15px;height: 15px;background-color: #999;color: #FFF;font-size: 14px;line-height: 15px;cursor: pointer;}
+.imgDelete:hover{background: #FF0000 !important;}
+#imgPos{display: none;}

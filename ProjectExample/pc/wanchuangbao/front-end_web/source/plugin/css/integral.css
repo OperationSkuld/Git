@@ -1,0 +1,67 @@
+/*积分中心*/
+.intergralBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 0 3px 3px 3px;overflow: hidden;padding: 0 0 20px 0;border-top: none;}
+
+/*兑换比例设置*/
+.intergralTitle{margin: 20px;}
+.intergralTitle p{font-size: 16px;color: #666;font-weight: bold;letter-spacing: 1px;}
+.inputBox{padding: 0 20px 20px;overflow: hidden;line-height: 28px;}
+.inputBox p{float: left;width: 90px;text-align: right;overflow: hidden;margin-right: 15px;color: #999;font-size: 12px;}
+.inputBox input[type="text"]{float: left;width: 110px;height: 26px;padding-left: 10px;border: 1px solid #dedede;border-radius: 3px;outline: none;color: #333;font-size: 12px;margin-right: 15px;}
+.inputBox span{float: left;color: #999;font-size: 12px;}
+.inputBox label{float: left;color: #333;font-size: 12px;margin-right: 30px;}
+.inputBox tip{float: left;color: #ff6760;font-size: 12px;margin-left: 20px;}
+.radioBox{float:left;background-image: url(../img/icon_Radio.png);background-repeat: no-repeat;background-position: -16px 0;width:16px;height:16px;margin-top:6px;margin-right: 10px;position: relative;float: left;}
+.on {background-position: 0 0;background-image: url(../img/icon_Radio.png);}
+.radioClass {cursor: pointer;position:absolute;width:16px;height:16px;opacity:0;}
+.btnSave{height: 30px;width: 120px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;margin-left: 20px;margin-top: 10px;}
+
+/*兑换商品列表*/
+.intergralTopBox{padding: 20px 20px 0;overflow: hidden;}
+.intergralTopBox > ul > li{height: 50px;background: #f8f8f8;padding: 15px 20px;margin-bottom: 20px;}
+.intergralLiLeft{float: left;width: 800px;height: 50px;overflow: hidden;}
+.intergralTopBox > ul > li p{height: 25px;line-height: 25px;font-size: 14px;font-weight: bold;color: #333333;display: block;}
+.intergralTopBox > ul > li span{height: 25px;line-height: 25px;font-size: 12px;color: #666666;display: block;}
+.intergralLiRight{float: right;height: 50px;}
+.btnHref{height: 30px;line-height: 30px;width: 100px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;margin-bottom: 20px;display: block;}
+.exchangeTabBox{float: left;height: 28px;line-height: 28px;overflow: hidden;margin-bottom: 20px;}
+.exchangeTabBox ul li{float: left;height: 20px;line-height: 20px;padding: 0 15px;margin: 4px 0;border-right: 2px solid #b6b6b6;font-size: 14px;color: #999;cursor: pointer;}
+.exchangeTabBox ul li:last-child{border: none;}
+.exchangeTabBox ul li.selected{color: #29ABE2 !important;}
+.searchBox{float: right;height: 28px;margin-bottom: 20px;}
+.searchBox input{width: 210px;height: 26px;border: 1px solid #dedede;border-radius: 3px;border-right: none;float: left;padding-left: 15px;outline: 0;}
+.searchBox button{height: 28px;width: 100px;background: #29ABE2;color: #fff;font-size: 12px;text-align: center;outline: 0;border-radius: 0 3px 3px 0;font-weight: bold;cursor: pointer;}
+.intergralList{height: 54px;line-height: 54px;background: #eeeeee;}
+.intergralList p{font-size: 12px;color: #666666;float: left;margin-left: 20px;}
+.intergralLi{overflow: hidden;}
+.intergralLi ul li:nth-child(even){padding: 10px 0;background: #f4fbff;display: table;}
+.intergralLi ul li:nth-child(odd){padding: 10px 0;background: #FFFFFF;display: table;}
+.intergralLi ul li > p{font-size: 12px;color: #666666;padding-left: 20px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: table-cell;vertical-align: middle;}
+.intergralLi ul li > p > input{width: 15px;height: 15px;margin-left: 5px;outline: 0;}
+.intergralLiInfo{display: table-cell;vertical-align: middle;padding-left: 20px;overflow: hidden;}
+.intergralLiImg{width: 75px;height: 75px;background-repeat: no-repeat;background-size: cover;background-position: center;margin-right: 15px;display: table-cell;vertical-align: middle;}
+.intergralLiTitle{display: table-cell;vertical-align: middle;padding-left: 15px;}
+.intergralLiTitle p{color: #333;font-size: 12px;font-weight: bold;}
+.liOperation{width: 218px;display: table-cell;vertical-align: middle;padding-left: 20px;}
+.liOperation img{float: left;padding-right: 10px;margin-top: 1.5px;}
+.liOperation p{color: #666666;margin-right: 20px;cursor: pointer;float: left;}
+.intergralBtnBox{margin-top: 20px;}
+.btnCommon{height: 30px;padding: 0 20px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-size: 12px;font-weight: bold;cursor: pointer;float: left;margin-right: 8px;letter-spacing: 2px;}
+
+/*添加兑换商品*/
+.goodsBox{width: 98px;height: 98px;float: left;position: relative;border: 1px solid #dedede;border-radius: 3px;}
+.goodsImg{width: 98px;height: 98px;background-size: cover;background-repeat: no-repeat;background-position: center;}
+.inputFile{width: 98px;height: 98px;position: absolute;left: 0;top: 0;opacity: 0;}
+.inputBox select{border: 1px solid #dedede;border-radius: 3px;width: 200px;height: 28px;line-height: 28px;color: #333333;padding-left: 10px;outline: 0;float: left;}
+.checkBoxClass{width:16px;height:16px;float: left;margin-right: 10px;margin-top: 6px;margin-left: 105px;}
+
+/*积分日志*/
+.inputBox input.laydate-icon{width: 160px;height: 26px;border: 1px solid #DEDEDE;border-radius: 3px;padding-left: 10px;color: #333;float: left;outline: none;}
+.inputBox line{float: left;margin: 0 8px;color: #333333;font-size: 12px;line-height: 28px;}
+.btnSubmit{height: 28px;width: 100px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;margin-left: 20px;}
+.logsList{height: 40px;line-height: 40px;background: #eeeeee;margin-top: 25px;}
+.logsList p{font-size: 12px;color: #666666;float: left;margin-left: 20px;}
+.logsLi{overflow: hidden;}
+.logsLi ul li:nth-child(odd){padding: 10px 18px 10px 0;line-height: 1.5;background: #FFFFFF;overflow: hidden;display: table;background: #FFF;}
+.logsLi ul li:nth-child(even){padding: 10px 18px 10px 0;line-height: 1.5;background: #FFFFFF;overflow: hidden;display: table;background: #f4fbff;}
+.logsLi ul li > p{font-size: 12px;color: #666;padding-left: 20px;overflow: hidden;display: table-cell;vertical-align: middle;}
+.logsLi ul li > p > span{font-size: 12px;color: #333;line-height: 1.5;}

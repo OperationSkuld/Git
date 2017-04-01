@@ -1,0 +1,29 @@
+/*所有应用*/
+.allAppBox{width: 1000px;overflow: hidden;margin-top: 20px;}
+.filterBox{padding: 10px 0px;overflow: hidden;background: #FFF;border: 1px solid #dedede;border-radius: 3px;}
+.filterList{height: 50px;line-height: 50px;overflow: hidden;padding: 0 20px;border-bottom: 1px dashed #DEDEDE;}
+.filterList:last-child{border: 0;}
+.filterTitle{float: left;width: 60px;text-align: right;margin-right: 10px;}
+.filterTitle p{color: #666666;font-size: 12px;}
+.filterLi{float: left;}
+.filterLi ul li{float: left;margin: 0 20px;color: #333;font-size: 12px;}
+.selected{color: #29abe2 !important;}
+.sortBox{height: 45px;padding: 0 20px;border: 1px solid #DEDEDE;border-radius: 3px;background: #FFF;margin-top: 15px;}
+.sortBox ul li{float: left;line-height: 45px;margin-right: 40px;cursor: pointer;}
+.sortBox ul li p{float: left;color: #666;font-size: 12px;margin-right: 5px;}
+.sortBox ul li span{color: #999;font-size: 12px;}
+.searchBox{float: right;height: 28px;margin: 8.5px 0;}
+.searchBox input{width: 210px;height: 26px;border: 1px solid #dedede;border-radius: 3px;border-right: none;float: left;padding-left: 15px;outline: 0;}
+.searchBox button{height: 28px;width: 100px;background: #29ABE2;color: #fff;font-size: 12px;text-align: center;outline: 0;border-radius: 0 3px 3px 0;font-weight: bold;cursor: pointer;}
+.allAppEachBox{width: 958px;background: #FFF;border: 1px solid #dedede;border-radius: 3px;overflow: hidden;padding: 20px;margin-top: 15px;}
+.allAppTitle{height: 30px;line-height: 30px;}
+.allAppTitle p{font-size: 16px;color: #666666;font-weight: bold;float: left;letter-spacing: 1px;}
+.allAppTitle a{color: #29abe2;font-size: 12px;float: right;}
+.allAppContent{overflow: hidden;}
+.allAppContent ul li{width: 170px;height: 200px;margin-right: 27px;margin-top: 20px;float: left;}
+.allAppContent ul li:nth-child(5n){margin-right: 0;}
+.allAppImg{width: 170px;height: 170px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
+.allAppImg p{width: 150px;height: 25px;line-height: 25px;padding: 0 10px;position: absolute;left: 0;bottom: 0;color: #FFF;font-weight: bold;font-size: 14px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.allAppWord{height: 30px;line-height: 30px;padding: 0 10px;}
+.allAppWord strong{float: left;color: #ff964b;font-size: 14px;}
+.allAppWord span{float: right;color: #333333;font-size: 14px;}

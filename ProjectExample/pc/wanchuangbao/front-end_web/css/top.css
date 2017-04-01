@@ -1,0 +1,23 @@
+
+.topContainer{width: 100%;height: 30px;background: #444444;}
+.userContent{width: 1200px;height: 30px;margin: 0 auto;color: #ffffff;line-height: 30px;font-size: 12px;}
+.welcome{}
+.useDetaile{height: 30px;
+/*background: url(../image/bgUpIcon1.png) no-repeat;background-size: auto 100%;background-position: 270px center ;*/ 
+}
+.userStep p{float: left;margin-right:36px;color: #ffffff;}
+.userHandle{margin-left: 32px;}
+.userHandle p{float: left;color: #FFFFFF;margin-left: 32px;}
+.userHandle .logOut{padding-left: 30px;  background: url(../img/logOut.png) no-repeat;background-size: 20px auto;background-position: 5px center;}
+.topNavContaier{width: 100%;height: 80px;border-bottom: 1px #dedede solid;}
+.topNavBox{width: 1200px;margin: 0 auto;}
+.logDiv{width: 180px;height: 80px;background: url(../img/logo.png) no-repeat;background-size: auto 54px;
+background-position: center;}
+.navBox{height: 80px;}
+.navBox li{float: left;margin: 0 18px;height: 78px;line-height: 78px;padding:0 4px;}
+.navBorder1{border-bottom: 2px #FFFFFF solid;color: #666666;}
+.navBorder2{border-bottom: 2px #ff964b solid;color: #ff964b;}
+.navBorder1:hover{color: #333333;}
+.navBox:after{content: '';clear: both;display: block;}
+.userHeader{padding: 25px;}
+.userHeader div{width: 30px;height: 30px;border-radius: 15px;}

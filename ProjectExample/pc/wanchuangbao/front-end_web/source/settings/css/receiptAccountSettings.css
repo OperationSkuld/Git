@@ -1,0 +1,19 @@
+/*收款帐号设置*/
+
+/*支付宝、微信、京东*/
+.receiptBox{width: 998px;background: #FFF;border: 1px solid #dedede;border-radius: 0 3px 3px 3px;overflow: hidden;padding: 20px 0;border-top: none;}
+.receiptBox ul{padding: 0 20px;}
+.receiptBox ul li{height: 50px;background: #f8f8f8;padding: 15px 20px;margin-bottom: 20px;}
+.receiptLiLeft{float: left;width: 800px;height: 50px;overflow: hidden;}
+.receiptBox ul li p{height: 25px;line-height: 25px;font-size: 14px;font-weight: bold;color: #333333;display: block;}
+.receiptBox ul li span{height: 25px;line-height: 25px;font-size: 12px;color: #666666;display: block;}
+.receiptLiRight{float: right;height: 50px;}
+.inputBox{height: 30px;line-height: 30px;padding: 0 20px;margin-bottom: 20px;}
+.inputBox p{width: 120px;float: left;text-align: right;color: #999999;margin-right: 5px;}
+.inputBox a{height: 30px;line-height: 30px;color: #29abe2;padding-left: 10px;float: left;}
+.inputBox span{float:left;color:#999999;font-size:12px;margin-left: 30px;}
+.inputText{border: 1px solid #dedede;border-radius: 3px;width: 190px;height: 28px;line-height: 28px;color: #333333;padding-left: 10px;outline: 0;float: left;}
+.radioBox{float:left;background-image: url(../img/icon_Radio.png);background-repeat: no-repeat;background-position: -16px 0;width:16px;height:16px;margin-top:7px;margin-right:8px;}
+.on {background-position: 0 0;background-image: url(../img/icon_Radio.png);}
+.radioClass {cursor: pointer;position:absolute;width:16px;height:16px;opacity:0;}
+.btnSubmit{height: 30px;line-height: 30px;width: 100px;text-align: center;color: #FFFFFF;background: #29abe2;outline: 0;border-radius: 3px;font-weight: bold;}
