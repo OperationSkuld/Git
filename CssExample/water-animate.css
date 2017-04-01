@@ -1,0 +1,44 @@
+/*water animation*/
+.loading {
+	font-size: 0;
+}
+
+@keyframes wave-animation {
+	0% {
+		background-position: 0 bottom;
+	}
+	100% {
+		background-position: 200px bottom;
+	}
+}
+
+@keyframes loading-animation {
+	0% {
+		background-size: 200px 0px;
+	}
+	100% {
+		background-size: 200px 200px;
+	}
+}
+
+.wave {
+	-moz-background-clip: initial;
+	-o-background-clip: initial;
+	-webkit-background-clip: initial;
+	background-clip: initial;
+	display: inline-block;
+	color: transparent;
+	text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+	/*animation: wave-animation 1s infinite linear, loading-animation 10s linear;*/
+	background-repeat: repeat-x;
+	background-size: 0;
+	opacity: 1;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	background-color: #eeeeee;
+}
