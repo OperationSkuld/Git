@@ -1,0 +1,146 @@
+/******详情页******/
+.info_image{
+	position:relative;	
+}
+.info_head{
+	position:absolute;
+	bottom:5%;
+	left:0;	
+	height:20px;
+	line-height:20px;
+	padding:0 3%;
+	width:94%;
+}
+.info_head p{
+	color:#FFF;
+	font-size:16px;
+	width:100%;	
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.info_title{
+	padding-left:3%;
+	height:50px;
+	width:97%;
+	background:#FFF;	
+}
+.info_text{
+	height:50px;
+	line-height:50px;
+	width:85%;
+	float:left;	
+}
+.info_text p{
+	font-size:14px;
+	color:#000;
+	width:100%;	
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	font-weight:bold;
+}
+.info_collect{
+	float:left;
+	border-left:1px solid #eff3f6;
+	height:40px;
+	margin-top:5px;
+	width:14.5%;
+	text-align:center;
+}
+#star_bg{
+	background:url(../images/stars.png) 0 0 no-repeat;
+	width:25px;
+	height:25px;
+	margin-top:5px;
+	margin-left:28%;
+}
+.info_collect img{
+	text-align:center;
+	margin-top:5px;	
+}
+.box_info{
+	background:#FFF;
+	padding:0 3%;
+}
+.box_info_top{
+	background:#FFF;
+	padding:10px 0;
+	border-bottom:1px solid #eff3f6;
+}
+.box_info_word{
+	height:25px;
+	line-height:25px;
+}
+.box_info_word p{
+	color:#b7c4cd;
+	width:65px;
+	float:left;	
+	text-align:right;
+}
+.box_info_word span{
+	color:#333;
+	font-weight:bold;	
+}
+.box_info_word img{
+	padding-top:3px;	
+}
+.box_info_btn{
+	height:35px;
+	line-height:35px;	
+}
+.box_info_btn a p{
+	color:#3397db;
+	text-align:center;
+}
+.box_mid{
+	background:#FFF;
+	width:100%;
+}
+.box_mid ul a li{
+	width:24.5%;
+	height:75px;
+	float:left;
+	text-align:center;
+	border-left:1px solid #eff3f6;
+	border-bottom:1px solid #eff3f6;
+	padding-top:10px;	
+}
+.info_list p{
+	color:#b7c4cd;	
+}
+.box_news{
+	background:#FFF;
+	width:100%;	
+}
+.news_title{
+	height:36px;
+	line-height:36px;
+	border-left:5px solid #ff7b00;	
+}
+.news_title p{
+	padding:0 1.8%;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;	
+}
+.news_each{
+	height:36px;
+	line-height:36px;
+	padding:0 3%;
+	border-top:1px solid #eff3f6;
+}
+.news_each p{
+	float:left;
+	color:#333;
+	font-size:12px;	
+	font-weight:bold;
+	width:80%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.news_each span{
+	float:right;
+	color:#eff3f6;	
+}

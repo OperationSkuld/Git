@@ -1,0 +1,231 @@
+/******撰写评价******/
+.box_bg{
+	background:#FFF;
+}
+.box_each{
+	height:80px;
+	padding:10px 0;	
+	margin:0 10px;
+	border-bottom:1px solid #eff3f6;
+}
+.box_image{
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	overflow:hidden;
+	float:left;	
+	margin-top:5px;
+}
+.box_mid{	
+	float:left;
+	width:62%;
+	overflow:hidden;
+}
+.box_title{
+	padding-top:10px;
+	height:20px;
+	line-height:20px;
+}
+.box_title p{
+	font-size:12px;
+	color:#333;	
+	float:left;
+	height:20px;
+	line-height:20px;
+	margin-left:10px;
+	font-weight:bold;
+	width:95%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.box_type{
+	height:20px;
+	line-height:20px;	
+}
+.box_type p{
+	color:#999;
+	float:left;
+	height:20px;
+	line-height:20px;
+	margin-left:10px;
+	margin-top:-5px	
+}
+.box_pos{
+	height:20px;
+	line-height:20px;
+	margin-top:5px;
+}
+.box_pos img{
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+	margin-right:5px;	
+}
+.box_pos p{
+	color:#666;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.box_right{
+	float:right;
+	height:60px;
+	text-align:center;
+	line-height:1;
+	padding-top:20px;
+}	
+.box_right p{
+	color:#ff4966;
+	font-size:20px;
+	font-weight:bold;	
+}
+.box_right span{
+	color:#cccccc;
+	font-size:12px;
+}
+/*星级评价*/	
+.box_midden{
+	overflow:hidden;
+	background:#FFF;
+	padding-bottom:15px;
+}
+.star_word{
+	margin-left:20px;
+	margin-right:5px;
+	padding:15px 0;	
+	overflow:hidden;
+	float:left;	
+}
+.star_word p{
+	float:left;
+	color:#333;	
+}
+.star_bg {
+    width:125px; 
+	height:25px;
+    background: url(../images/ev_stars.png) repeat-x;
+	background-position:0 0px;
+	background-size:25px;
+    position: relative;
+    overflow: hidden;
+	margin-top:9px;
+}
+.star {
+    height: 100%; 
+	width: 25px;
+    position: absolute;
+    z-index: 3;
+}
+.star_1 { left: 0px; }
+.star_2 { left: 25px; }
+.star_3 { left: 50px; }
+.star_4 { left: 75px; }
+.star_5 { left: 100px; }
+
+label { 
+    display: block; 
+	_display:inline;
+    height: 100%; 
+	width: 100%;
+    cursor: pointer;
+}
+/*单选按钮 */
+input[type="radio"]{
+	margin-left:-3px;	
+}
+.score { 
+	opacity:0;
+	clip: rect(0 0 0 0);
+}
+.score:checked + .star {  
+	width:125px; 
+	height:25px;  
+    background: url(../images/ev_stars.png) repeat-x;
+	background-position:0 -25px;
+	background-size:25px;
+	position: absolute;
+    left: 0;
+	z-index: 1;
+}
+.score_1:checked ~ .star_1 { width: 25px; }
+.score_2:checked ~ .star_2 { width: 50px; }
+.score_3:checked ~ .star_3 { width: 75px; }
+.score_4:checked ~ .star_4 { width: 100px; }
+.score_5:checked ~ .star_5 { width: 125px; }
+
+.assess_wp{
+	margin-top:10px;
+	clear:both;
+	overflow:hidden;
+	padding:0 4%;
+	width:92%;	
+}
+.assess_word{
+	float:left;
+	width:92%;	
+}
+.assess_textclass{
+	width:100%;
+	height:80px;
+	border:2px solid #b7c4cd;	
+	border-radius:6px;
+	outline:none;
+	resize:none;
+	background:#eff3f6;
+	color:#333;
+	line-height:1.5;
+	padding:10px;	
+	float:left;
+}
+.assess_picture{
+	float:right;	
+}
+.assess_picture img{
+	width:50px;	
+}
+.box_upload{
+	margin-top:15px;
+	background:#FFF;
+	padding:10px 4%;
+	text-align:center;	
+	position:relative;
+	overflow:hidden;
+}
+.uploadclass{
+	width:20%;
+	height:auto;
+	margin:0 2%;
+	position:relative;
+	display:inline-block;
+}
+.uploadimg{
+	position:absolute;
+	text-align:center;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.box_bottom{
+	height:50px;
+}	
+.form_submit{
+	height:50px;
+	width:100%;	
+	position:fixed;
+	bottom:0;
+	background:#ff7b00;		
+}
+.upload_submit{
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	font-size:16px;
+	color:#FFF;
+	letter-spacing:1px;	
+	background:#ff7b00;	
+	font-weight:bold;
+}
