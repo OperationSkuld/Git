@@ -1,0 +1,74 @@
+/*reset*/
+body{font-family: "microsoft yahei","微软雅黑";}
+body,ul,li,ol,img{margin: 0;padding: 0;}
+li{list-style: none;}
+
+body{margin:0;}
+img { display: block;}
+/*example*/
+/*.example2 { width: 100%;}*/
+.example2 ol{position:relative;width: 60px;height: 20px;top:-44px;left:65%;}
+.example2 ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;border-radius:10px;z-index: 99;}
+.example2 ol li.seleted{background:#70A7C6;}
+/*top
+.top{width: 100%;height: 105px;border-bottom: 1px solid #a0a0a0;position: fixed;top: 0;left: 0;z-index: 9;}
+.topBox{height: 40px;background: #333;}
+.topContent{width: 1100px;height: 40px;margin: 0 auto;}
+.topLeftContent{padding: 11px 0;height: 18px;line-height: 18px;float: left;}
+.topLeftContent img{float: left;margin-right: 10px;}
+.topLeftContent p{color: #999;font-size: 14px;margin-right: 25px;float: left;height: 18px;line-height: 18px;}
+.topMidContent{margin-left: 400px;float: left;height: 40px;}
+.topMidContent .inputSearch{width: 170px;padding-left: 15px;height: 20px;border-radius: 20px;background: #FFF;float: left;margin-top: 10px;outline: none;font-size: 12px;color: #333333;}
+.topMidContent button{background: none;outline: none;}
+.topMidContent img{margin-left: 15px;padding: 7.5px 0;}
+.topRightContent{float: right;}
+.topRightContent p{color: #FFF;font-size: 16px;letter-spacing: 5px;height: 40px;line-height: 40px;cursor: pointer;}
+
+/*nav*/
+/*.nav{height: 65px;background: #FFF;}
+.navContent{width: 1100px;height: 65px;margin: 0 auto;}
+.logo{float: left;}
+.logo img{margin-top: 12.5px;}
+.nav .navContent > ul{margin-left: 50px;overflow: hidden;float: left;position: relative;}
+.nav .navContent > ul > a > li{margin: 0 30px;float: left;height: 65px;line-height: 65px;color: #000;font-size: 14px;cursor: pointer;min-width: 56px;text-align: center;}
+.secondNav{width: 702px;background: #f2f2f2;margin-top: 67px;overflow: hidden;display: none;}
+.secondNav-1{width: 116px;float: left;}
+.secondNav-1 ul li{height: 30px;line-height: 30px;font-size: 12px;color: #333;text-align: center;margin: 3px 0;}
+.secondNav-3{width: 116px;float: left;margin-left: 116px;}
+.secondNav-3 ul li{height: 30px;line-height: 30px;font-size: 12px;color: #333;text-align: center;margin: 3px 0;}
+.secondNav-5{width: 116px;float: left;margin-left: 121px;}
+.secondNav-5 ul li{text-align: center;margin: 3px 0;}
+.secondNav-5 ul li a{height: 20px;line-height: 20px;display: block;font-size: 12px;color: #333;}
+.secondNav-5 ul li a:first-child{height: 25px;line-height: 25px;}
+.secondNav-6{width: 116px;float: left;}*/
+/*.secondNav-6 ul li{height: 30px;line-height: 30px;font-size: 12px;color: #333;text-align: center;margin: 3px 0;}
+.secondNav a:hover,.secondNav a li:hover{color: #4d34ca;}
+.nav .navContent > ul:hover .secondNav{display: block;}*/
+/*bottom*/
+/*.bottom{position: absolute;left: 0;bottom: 106px;height: 340px;width: 100%;}
+.bottom-common{margin-top: 100px;height: 340px;width: 100%;}
+.bottom-info{height: 300px;background: #636a71;}
+.bottom-infoBox{width: 1100px;margin: 0 auto;}
+.bottom-infoBox-left{width: 300px;float: left;margin-top: 60px;}
+.bottom-infoBox-left p{font-size: 18px;color: #FFF;font-weight: bold;letter-spacing: 2px;}
+.bottom-infoBox-left span{margin-top: 25px;font-size: 12px;color: #FFF;line-height: 1.5;display: block;letter-spacing: 2px;}
+.bottom-infoBox-mid{width: 300px;float: left;margin: 50px 100px 0;text-align: center;}
+.bottom-infoBox-mid p{font-size: 18px;color: #FFF;font-weight: bold;letter-spacing: 2px;}
+.bottom-infoBox-mid span{margin-top: 20px;font-size: 12px;color: #FFF;display: block;letter-spacing: 2px;}
+.bottom-infoBox-mid button{width: 150px;height: 40px;background: #FFF;outline: none;font-weight: bold;font-size: 12px;letter-spacing: 2px;color: #333;margin-top: 20px;border: 1px solid #000;border-radius: 3px;}
+.bottom-infoBox-mid a.link{color: #FFF;font-size: 12px;letter-spacing: 2px;display: block;margin-top: 20px;}
+.bottom-infoBox-right{width: 300px;float: left;margin-top: 80px;}
+.weixin,.weibo{width: 120px;float: left;margin: 0 10px;}
+.weixin span,.weibo span{margin-top: 15px;color: #FFF;font-size: 12px;letter-spacing: 1px;text-align: center;line-height: 1.5;display: block;}
+.bottom-copyright{height: 40px;background: #3a3b3c;}
+.bottom-copyrightBox{width: 1100px;margin: 0 auto;}
+.bottom-copyright-left{float: left;}
+.bottom-copyright-right{float: right;}
+.bottom-copyright-right p{color: #b9b9b9;font-size: 12px;line-height: 40px;}
+.bottom-introduce{width: 1100px;margin: 0 auto;display: table;height: 250px;}
+.bottom-introduce ul{display: table-cell;overflow: hidden;vertical-align: middle;}
+.bottom-introduce ul li{float: left;width: 320px;text-align: center;margin: 0 20px;text-align: center;position: relative;min-height: 250px;}
+.bottom-introduce ul li p{font-size: 16px;font-weight: bold;color: #000;word-break: break-word;line-height: 1.5;}
+.bottom-introduce ul li span{font-size: 12px;color: #666;word-break: break-word;line-height: 1.5;margin-top: 35px;display: block;}
+.bottom-introduce ul li img{position: absolute;left: 0;bottom: 0;right: 0;margin: 0 auto;}
+.bottom-introduce ul li button{position: absolute;left: 0;bottom: 0;right: 0;margin: 0 auto;width: 320px;height: 48px;border: 1px solid #333;border-radius: 50px;background: none;outline: none;font-size: 14px;color: #333333;}*/

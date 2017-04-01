@@ -1,0 +1,28 @@
+/*bottom*/
+.bottom{position: absolute;left: 0;bottom: 106px;height: 340px;width: 100%;}
+.bottom-common{margin-top: 100px;height: 340px;width: 100%;}
+.bottom-info{height: 300px;background: #636a71;}
+.bottom-infoBox{width: 1100px;margin: 0 auto;}
+.bottom-infoBox-left{width: 300px;float: left;margin-top: 60px;}
+.bottom-infoBox-left p{font-size: 18px;color: #FFF;font-weight: bold;letter-spacing: 2px;}
+.bottom-infoBox-left span{margin-top: 25px;font-size: 12px;color: #FFF;line-height: 1.5;display: block;letter-spacing: 2px;}
+.bottom-infoBox-mid{width: 300px;float: left;margin: 50px 100px 0;text-align: center;}
+.bottom-infoBox-mid p{font-size: 18px;color: #FFF;font-weight: bold;letter-spacing: 2px;}
+.bottom-infoBox-mid span{margin-top: 20px;font-size: 12px;color: #FFF;display: block;letter-spacing: 2px;}
+.bottom-infoBox-mid button{width: 150px;height: 40px;background: #FFF;outline: none;font-weight: bold;font-size: 12px;letter-spacing: 2px;color: #333;margin-top: 20px;border: 1px solid #000;border-radius: 3px;}
+.bottom-infoBox-mid a.link{color: #FFF;font-size: 12px;letter-spacing: 2px;display: block;margin-top: 20px;}
+.bottom-infoBox-right{width: 300px;float: left;margin-top: 80px;}
+.weixin,.weibo{width: 120px;float: left;margin: 0 10px;}
+.weixin span,.weibo span{margin-top: 15px;color: #FFF;font-size: 12px;letter-spacing: 1px;text-align: center;line-height: 1.5;display: block;}
+.bottom-copyright{height: 40px;background: #3a3b3c;}
+.bottom-copyrightBox{width: 1100px;margin: 0 auto;}
+.bottom-copyright-left{float: left;}
+.bottom-copyright-right{float: right;}
+.bottom-copyright-right p{color: #b9b9b9;font-size: 12px;line-height: 40px;}
+.bottom-introduce{width: 1100px;margin: 0 auto;display: table;height: 250px;}
+.bottom-introduce ul{display: table-cell;overflow: hidden;vertical-align: middle;}
+.bottom-introduce ul li{float: left;width: 320px;text-align: center;margin: 0 20px;text-align: center;position: relative;min-height: 250px;}
+.bottom-introduce ul li p{font-size: 16px;font-weight: bold;color: #000;word-break: break-word;line-height: 1.5;}
+.bottom-introduce ul li span{font-size: 12px;color: #666;word-break: break-word;line-height: 1.5;margin-top: 35px;display: block;}
+.bottom-introduce ul li img{position: absolute;left: 0;bottom: 0;right: 0;margin: 0 auto;}
+.bottom-introduce ul li button{position: absolute;left: 0;bottom: 0;right: 0;margin: 0 auto;width: 320px;height: 48px;border: 1px solid #333;border-radius: 50px;background: none;outline: none;font-size: 14px;color: #333333;}
