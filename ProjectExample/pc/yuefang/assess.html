@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>评价</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/comment.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--弹窗js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--弹窗js end-->
+<!--上传图片js-->
+<script type="text/javascript" src="js/upload.js"></script>
+<!--上传图片js end-->
+<!--表单验证js-->
+<script>
+$(function(){
+	$(".btn_submit").click(function(){
+	var val=$('input:radio[name="score"]:checked').val();
+	var valtext=$(".assess_textclass").val();
+	if(val==null){
+		layer.msg('您还未评分');
+		return false;
+	}
+	if(valtext=="" || valtext==null){
+		layer.msg('请填写评论');
+		$(".assess_textclass").focus();
+		return false;
+	}
+	layer.msg('评价已提交');
+	delay();
+	})
+})
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+</script>
+<!--表单验证js end-->
+</head>
+
+<body>
+<body bgcolor="#f4f4f4">
+
+	<div class="contain">
+    
+    	<!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style=""></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"><img src="images/user_photo.png" width="35" height="35"></a>
+                    <div class="login">
+                    	<a><p>退出登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+        
+        <div class="assess">
+        	<div class="assess_title">
+            	<p>我的评价</p>
+            </div>
+            <div class="assess_box">
+            	<div class="panel">
+                    <div class="sub_border">
+                    <a href="office_info.html">
+                    <div class="subfeature" style="background-image:url(images/index_upload.png)"></div>
+                    </a>
+                    <div class="sub_tip1">
+                        <p>写字楼</p>
+                    </div>
+                    </div>
+                    <div class="subfeature-txt">
+                        <a href="office_info.html">
+                        <p>￥13000 元/m2</p>
+                        <span>宝山 · 顾村公园写字楼</span>
+                        <span style="font-size:12px;">宝山区 顾北路1022号 宝欣苑大厦</span>
+                        </a>
+                    </div>
+				</div>
+                <form id="form_submit" action="user_order.html">
+                <div class="assess_right">
+                	<div class="star_word">
+                        <p>评分：</p>
+                    </div>
+                    <div id="starBg" class="star_bg">             	
+                        <input name="score" type="radio" required class="score score_1" id="starScore1" value="1">
+                      	<a href="#starScore1" class="star star_1" title="差"><label for="starScore1"></label></a>
+                        <input name="score" type="radio" required class="score score_2" id="starScore2" value="2">
+                        <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2"></label></a>
+                        <input name="score" type="radio" required class="score score_3" id="starScore3" value="3">
+                        <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3"></label></a>
+                        <input name="score" type="radio" required class="score score_4" id="starScore4" value="4">
+                        <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4"></label></a>
+                        <input name="score" type="radio" required class="score score_5" id="starScore5" value="5">
+                        <a href="#5" class="star star_5" title="好"><label for="starScore5"></label></a>
+                    </div>
+                	<div class="assess_textarea">
+                		<textarea required class="assess_textclass" placeholder="写下您的看房评价，您的看法对其他买房者会有很大帮助"></textarea>
+                	</div>
+                    <div class="box_upload">
+                        <div class="uploadclass">
+                            <img class="preview localImag" src="images/upload_default.png" width="100%" >
+                            <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(0)">
+                        </div>
+                        <div class="uploadclass" style="display:none">
+                            <img class="preview localImag" src="images/upload_default.png" width="100%">
+                            <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(1)">
+                        </div>
+                        <div class="uploadclass" style="display:none">
+                            <img class="preview localImag" src="images/upload_default.png" width="100%">
+                            <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(2)">
+                        </div>
+                        <div class="uploadclass" style="display:none">
+                            <img class="preview localImag" src="images/upload_default.png" width="100%">
+                            <input type="file" name="uploadimg" class="uploadimg" value="" onchange="setImagePreview(3)">
+                        </div>
+        			</div>
+
+            		<button type="button" class="btn_submit">提交</button>
+
+                </div>
+                </form>
+            </div>
+        
+        
+        </div>
+    	
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+/******首页搜索结果******/
+.filter_result{
+	margin-left:auto;
+	margin-right:auto;
+	width:1060px;
+	margin-top:20px;
+	background:#FFF;
+	padding:10px 20px;
+	overflow:hidden;
+	border:1px solid #d8d8d8;
+	border-radius:10px;
+	overflow:hidden;	
+}
+.result_title{
+	
+	height:35px;
+	line-height:35px;
+	float:left;
+}	
+.result_title p{
+	color:#999;
+	font-size:14px;	
+}
+.sub_tip1{
+	position:absolute;	
+	right:10px;
+	top:10px;
+	background:#f04666;
+	width:55px;
+	height:22px;
+	line-height:22px;
+}
+.sub_tip2{
+	position:absolute;	
+	right:10px;
+	top:10px;
+	background:#ff7b00;
+	width:55px;
+	height:22px;
+	line-height:22px;
+}
+.sub_tip1 p,.sub_tip2 p{
+	color:#FFF;
+	font-size:12px;
+	text-align:center;	
+}

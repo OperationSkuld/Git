@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/user.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--监听窗口高度-->
+<script type="text/javascript" src="js/monitor.js"></script>
+<!--监听窗口高度 end-->
+<!--nav-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:140/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--nav end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--下拉表单筛选-->
+<script type="text/javascript" src="js/select.js"></script>
+<!--下拉表单筛选 end-->
+<!--弹窗js-->
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--弹窗js end-->
+<!--表单验证-->
+<script>
+$(function(){
+	$(".btn_submit").click(function(){
+		if($(".validate").val()==""){
+			layer.tips('请填写姓名', '#name', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else if($(".validate:eq(1)").val()==""){
+			layer.tips('请填写电话', '#tel', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else if($(".validate:eq(1)").val().length!=8 && $(".validate:eq(1)").val().length!=11){
+			layer.tips('请填写正确的电话', '#tel', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else if($(".validate:eq(2)").val()==""){
+			layer.tips('请选择区域', '#area', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else if($(".validate:eq(3)").val()==""){
+			layer.tips('请选择交通', '#traffic', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else if($(".validate:eq(4)").val()==""){
+			layer.tips('请选择商圈', '#business', {
+    			tips: [3, '#ff7b00'] //还可配置颜色
+			});
+		}
+		else{
+			layer.msg('发布成功');
+			delay();
+		}
+	});
+});
+
+function delay(){
+    window.setTimeout(function(){
+        $("#form_submit").submit();
+    },2000);
+	return false;
+}
+
+</script>
+<!--表单验证 end-->
+</head>
+
+<body bgcolor="#f4f4f4">
+	<div class="contain" onclick="closess(event)">
+    
+    	<!--top-->
+    	<div class="top_box">
+        	<div class="index_top">
+            	<div class="index_logo">
+                	<img src="images/logo.png" width="353">
+                </div>
+                <div class="nav">
+        			<ul>
+           				<li class="nav-item"><a href="index.html">首页</a></li>
+            			<li class="nav-item"><a href="office.html">写字楼</a></li>
+            			<li class="nav-item"><a href="house.html">住宅</a></li>
+            			<li class="nav-item"><a href="service.html">金融服务</a></li> 
+        			</ul>
+        			<!--移动的滑动-->
+        			<div class="move-bg" style=""></div>
+        			<!--移动的滑动 end-->
+    			</div>
+                <div class="index_login">
+                	<a href="user.html"></a><img src="images/user_photo.png" width="35" height="35">
+                    <div class="login">
+                    	<a><p>退出登录</p></a>
+                    </div>
+                </div>
+	
+            </div>
+        </div>
+        <!--top end-->
+    
+    	<div class="user_box">
+    
+    	<div class="user_left">
+    		<ul>
+        		<a href="user.html"><li class="user_bg1 curson">发布需求</li></a>
+            	<a href="user_order.html"><li class="user_bg2">我的预约</li></a>
+            	<a href="user_collect.html"><li class="user_bg3">我的收藏</li></a>
+            	<a href="user_activity.html"><li class="user_bg4">活动预约</li></a>
+        	</ul>
+    	</div>
+        
+        <div class="user_right">
+        	<div class="user_title">
+            	<p>发布需求</p>
+                <span>－修改您的基本资料，留下您端购房需求，可以让我们更方便的帮您精确查找优质房源。</span>
+            </div>
+            
+            <form id="form_submit" action="">
+            <div class="index_form">
+            	<input type="text" required class="text_input_left validate" placeholder="姓名 Name" value="" id="name">
+                <div class="select">
+                    <input name="sex" type="radio" required class="" id="radio_c1" checked />
+                    <label class="radio_c1">先生</label>
+                  	<label class="radio_c2">女士</label>
+                    <input name="sex" type="radio" required class="chk_3" id="radio_c2" /><label></label>
+			  	</div>
+              	<input type="text" required class="text_input_left validate" placeholder="电话 Tel" value="" onkeyup='this.value=this.value.replace(/\D/gi,"")' id="tel">
+              	<div class="pos">
+                <input type="text" required class="text_input_right validate" id="area" placeholder="区域 Area" value="" onfocus="this.blur()">
+                	<div class="area cancel">
+                        <ul>
+                            <a><li>不限</li></a>
+                            <a><li>黄浦区</li></a>
+                            <a><li>卢湾区</li></a>
+                            <a><li>金山区</li></a>
+                            <a><li>徐汇区</li></a>
+                            <a><li>长宁区</li></a>
+                            <a><li>静安区</li></a>
+                            <a><li>普陀区</li></a>
+                            <a><li>闸北区</li></a>
+                            <a><li>虹口区</li></a>
+                            <a><li>杨浦区</li></a>
+                            <a><li>闵行区</li></a>
+                            <a><li>宝山区</li></a>
+                            <a><li>嘉定区</li></a>
+                            <a><li>浦东新区</li></a>
+                            <a><li>松江区</li></a>
+                            <a><li>青浦区</li></a>
+                            <a><li>南汇区</li></a>
+                            <a><li>奉贤区</li></a>
+                            <a><li>崇明县</li></a>
+                      	</ul>
+                  	</div>
+              	</div>
+                <div class="pos">
+                <input type="text" required class="text_input_right validate" id="traffic" placeholder="交通 Subway" value="" onfocus="this.blur()">
+                	<div class="traffic cancel">
+                        <ul>
+                            <a><li>不限</li></a>
+                            <a><li>1号线</li></a>
+                            <a><li>2号线</li></a>
+                            <a><li>3号线</li></a>
+                            <a><li>4号线</li></a>
+                            <a><li>5号线</li></a>
+                            <a><li>6号线</li></a>
+                            <a><li>7号线</li></a>
+                            <a><li>8号线</li></a>
+                            <a><li>9号线</li></a>
+                            <a><li>10号线</li></a>
+                            <a><li>11号线</li></a>
+                            <a><li>12号线</li></a>
+                            <a><li>13号线</li></a>
+                            <a><li>16号线</li></a>
+                      	</ul>
+                  	</div>
+              	</div>
+                <div class="pos">
+                <input type="text" required class="text_input_right validate" id="business" placeholder="商圈 Trading Area" value="" onfocus="this.blur()">
+                	<div class="business cancel">
+                        <ul>
+                            <a><li>不限</li></a>
+                            <a><li>南京西路商圈</li></a>
+                            <a><li>徐家汇商圈</li></a>
+                            <a><li>淮海路商圈</li></a>
+                            <a><li>陆家嘴商圈</li></a>
+                            <a><li>南京东路商圈</li></a>
+                            <a><li>虹桥商圈</li></a>
+                            <a><li>五角场商圈</li></a>
+                            <a><li>中山公园商圈</li></a>
+                            <a><li>四川北路商圈</li></a>
+                      	</ul>
+                  	</div>
+              	</div>
+              	
+                <button type="button" class="btn_submit">发布</button>
+                
+            </div>
+            </form>
+            
+        </div>
+    
+    	</div>
+		
+        <!--footer-->
+        <div class="footer">
+        <div class="footer_box">
+        	<p>© 2011~2016 悦房网 | 京ICP备12031756号 | 京公网安备11010802012285号</p>
+        </div>
+        </div>
+        <!--footer end-->
+        
+        <!--side-->
+        <div class="side">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                    <div class="sidebox">
+                        <img src="./images/icon_tel.png" width="24">
+                        <span>400-800-8888</span>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                    <div id="moquu_wxin">
+                        <img src="./images/qcode.png" width="24">
+                    </div>
+                    </a>
+                </li>
+                <li style="border:none;">
+                <a href="javascript:goTop();" class="sidetop">
+                    <img src="./images/top.png" width="24">
+                </a>
+                </li>
+            </ul>
+            <div class="weixin"></div>
+        </div>
+    	<!--side end-->
+        
+	</div>
+</body>
+</html>

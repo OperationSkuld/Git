@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{width:100%;height:500px;}
+		p{margin-left:5px; font-size:14px;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ctVH5i8VV618Bsx8ol7t9DBR"></script>
+	<title>根据关键字本地搜索</title>
+</head>
+<body>
+	<div id="allmap"></div>
+	<p>返回北京市“景点”关键字的检索结果，并展示在地图上</p>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var sContent =
+	"<h4 style='margin:-5px 0 5px 0;padding:0.2em 0;color:#ff7b00'>天安门</h4>" + 
+	"<img style='float:left;margin-right:10px' src='http://app.baidu.com/map/images/tiananmen.jpg' width='100' height='80' title='天安门'/>" +
+	"<p style='margin:0;line-height:1.5;font-size:12px'>地址：杨浦区营口路588号</p>" + 
+	"<p style='margin:0;line-height:1.5;font-size:12px'>价格：￥50,000m<sup>2</sup></p>" + 
+	"</div>";
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.404, 39.915);
+	var marker = new BMap.Marker(point);
+	var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+	map.centerAndZoom(point, 15);
+	map.addOverlay(marker);
+	marker.addEventListener("click", function(){          
+	   this.openInfoWindow(infoWindow);
+	   //图片加载完毕重绘infowindow
+	   document.getElementById('imgDemo').onload = function (){
+		   infoWindow.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+	   }
+	});
+</script>
+

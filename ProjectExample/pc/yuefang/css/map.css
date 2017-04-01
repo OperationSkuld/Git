@@ -1,0 +1,244 @@
+/*地图搜索样式*/
+.map_top{
+	height: 70px;
+	width: 100%;
+}
+.top_search{
+	position:fixed;
+	left: 0;
+	top: 0;
+	line-height: 70px;
+	height: 70px;
+	width: 100%;
+	background: #fff;
+	z-index: 9;
+}
+.search_input{
+	width:20%;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	background:#eff3f6;	
+	outline:none;
+	border:1px solid #ccc;
+	float:left;
+	margin-top: 20px;
+	margin-left: 20px;
+	position: relative;
+}
+.search_button{
+	width:80px;
+	height:32px;
+	line-height:32px;
+	background:#ff7b00;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;	
+	margin-top: 20px;
+	outline: 0;
+	float: left;	
+}
+.top_select{
+	height:70px;
+	float: left;
+	margin-left: 2%;
+	width: 65%;
+}
+.select_css{
+	width: 16%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	border:1px solid #ccc;
+	position:relative;
+	float: left;
+	margin-right: 3%;
+}
+.select_first{
+	background:url(../images/arrow_bottom1.png) 90% 12px no-repeat;
+	background-size:12px;
+}
+.select_second{
+	background:url(../images/arrow_bottom1.png) 90% 12px no-repeat;
+	background-size:12px;
+}
+.select_thrid{
+	background:url(../images/arrow_bottom1.png) 90% 12px no-repeat;
+	background-size:12px;
+}
+.select_fourth{
+	background:url(../images/arrow_bottom1.png) 90% 12px no-repeat;
+	background-size:10px;
+}
+.coverdiv{
+	position: fixed;
+    top: 0;
+	left:0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+	margin-top:77px;
+    z-index: 99;
+	display:none;
+}
+.area , .traffic , .business, .size, .feature{
+	position:absolute;
+	width:100%;	
+	height:333px;
+	background:#FFF;
+	overflow-y:auto;
+	top: 31px;
+	left: -1px;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	border-bottom:1px solid #bebebe;
+	display: none;
+}
+.area ul li , .traffic ul li , .business ul li, ..size ul li, .feature ul li{
+	text-align:left;
+	padding:0 4%;
+	height:36px;
+	line-height:36px;
+	font-weight:normal;
+	color:#333;
+	font-size:14px;
+	/*border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;*/
+}
+.area_cur{
+	background:#eff3f6;	
+}
+.cancel ul a:hover li{
+	background:#eff3f6;	
+}
+/*房源推荐*/
+.map_left{
+	background:#FFF;
+	/*width:1100px;*/
+	overflow:hidden;
+	padding:5px 0;
+	float:left;
+}
+.recommend{
+	padding-left: 25px;
+	height: 30px;
+	line-height: 30px;
+}
+.recommend p{
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.suite_each{
+	padding:10px 20px;
+	overflow:hidden;
+	/*width:500px;*/
+	margin:0 auto;	
+}
+.suite_left{
+	float:left;
+	padding:10px;
+	border:1px solid #cccccc;
+	position:relative;
+}
+.suite_img{
+	float:left;
+	width:130px;
+	height:130px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;	
+}
+.suite_mid{
+	overflow:hidden;
+	float:left;	
+	margin-left:10px;
+	width:150px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.suite_title{
+	height:30px;
+	line-height:30px;
+	margin-top:5px;
+}
+.suite_title p{
+	font-size:16px;
+	color:#333;
+	font-weight:bold;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+}
+.suite_label{
+	margin-top:15px;
+}
+.suite_label p{
+	display:inline-block;
+	padding:3px 15px;
+	color:#ff7b00;
+	font-size:12px;
+	border:1px solid #d8d8d8;
+	border-radius:20px;	
+	letter-spacing:1px;
+	margin-right:10px;
+}
+.suite_info{
+	margin-top:25px;	
+}
+.suite_info p{
+	color:#333;
+	font-size:14px;
+	line-height:1.5;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.suite_right{
+	float:right;
+	height:150px;
+	line-height:150px;
+	margin-left: 10px;	
+}
+.suite_right p{
+	font-size:18px;
+	color:#999;
+	font-weight:bold;
+}
+.suite_right p strong{
+	font-size:18px;
+	color:#ff7b00;	
+}
+.suite_box a:hover .suite_each{
+	/*background:#d8d8d8;*/
+	/*border-shadow:1px solid #d8d8d8;*/
+	box-shadow:0px 0px 5px #ffae62;
+}
+.sub_tip1{
+	position:absolute;	
+	right:10px;
+	top:10px;
+	background:#f04666;
+	width:55px;
+	height:22px;
+	line-height:22px;
+}
+.sub_tip2{
+	position:absolute;	
+	right:10px;
+	top:10px;
+	background:#ff7b00;
+	width:55px;
+	height:22px;
+	line-height:22px;
+}
+.sub_tip1 p,.sub_tip2 p{
+	color:#FFF;
+	font-size:12px;
+	text-align:center;	
+}
+.map_left a:hover .suite_each{
+	background:#f1f1f1;
+}
+/*房源列表 end*/
