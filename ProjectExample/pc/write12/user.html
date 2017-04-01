@@ -1,0 +1,1212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="futurico/futurico.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/icheck.js"></script>
+<!--nav+bg-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<!--nav+bg end-->
+<!--tab切换-->
+<script type="text/javascript" src="js/tab.js"></script>
+<!--tab切换 end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--导航滑动模块-->
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:120/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--导航滑动模块 end-->
+<!--checkbox-->
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_futurico',
+    radioClass: 'iradio_futurico',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+<!--checkbox end-->
+
+<script>
+function show(){document.getElementById("inss").style.display="block";}
+function hide(){document.getElementById("inss").style.display="none";}
+</script>
+
+</head>
+
+<body bgcolor="#e9eaec">
+
+	<!--header-->
+    <div class="header_bg">
+    <div class="header_top">
+    	<div class="header_text">
+    		<p>您好，欢迎来到作文状元堂</p>
+        </div>
+        <div class="header_user" >
+        	<a href="user.html"><img src="images/icon_user.png" width="100%" height="34px"></a>
+            <div class="header_user_list">
+            	<ul> 
+                	<a href=""><li class="list_img1"><span>修&nbsp;改&nbsp;资&nbsp;料</span></li></a>
+                    <a href=""><li class="list_img2"><span>我&nbsp;的&nbsp;历&nbsp;程</span></li></a>
+                    <a href=""><li class="list_img3"><span>我&nbsp;的&nbsp;订&nbsp;单</span></li></a>
+                    <a href=""><li class="list_img4"><span>我&nbsp;的&nbsp;收&nbsp;藏</span></li></a>
+                    <a href=""><li class="list_img5"><span>退&nbsp;出&nbsp;登&nbsp;录</span></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bell header_border">
+        	<img src="images/icon_bell.png" width="100%" height="34px">
+        </div>
+    </div>
+    </div>
+    
+    <div class="header_mid_bg">
+    <div class="header_mid">
+    	<div class="header_logo">
+        	<img src="images/icon_logo.png" height="50px">
+        </div>
+    	<div class="header_right">
+    		<div class="nav">
+        	<ul>
+            <li class="nav-item cur">
+            	<a href="index.html">首页<span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">品牌介绍<span>INTRODUCTION</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="news.html">最新消息<span>NEWS</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">作文资源库<span>RESOURCE POOL</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="exercise.html"><li class="list_second"><span>练功房</span></li></a>
+                    <a href="publish.html"><li class="list_second"><span>发表天地</span></li></a>
+                    <a href="active_room.html"><li class="list_second"><span>互动教室</span></li></a>
+                    <a href="ex_course.html"><li class="list_second"><span>精品课程</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="composition.html">作文批改<span>CORRECTING</span></a>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">在线家教<span>ONLINE TUTORING</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href="schedule.html"><li class="list_second"><span>一对一教学</span></li></a>
+                    <a href="schedule.html"><li class="list_second"><span>名人课堂</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();" target="_blank">分析中心<span>ANALYSIS</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>排行榜</span></li></a>
+                    <a href=""><li class="list_second"><span>学习历程</span></li></a>
+                </ul>
+            	</div>
+            </li>
+        	</ul>
+        <!--移动的滑动
+        <div class="move-bg" style="display: block; left: 0px;"></div>
+        <!--移动的滑动 end-->
+    		</div>
+  		</div>
+  	</div> 
+    </div>
+  	<!--header end-->
+        
+    <!--banner-->
+    <div class="banner">
+    	<img src="images/news_banner.png" width="100%">
+    </div>
+    <!--banner end-->
+    
+    <!--position-->
+    <div class="position">
+    	<div class="position_text">
+    	<p>您的位置：</p>
+        <span><a href="index.html">首页</a></span>
+        <div style="color:#666;display:inline">&gt;</div>
+        <span><a href="">个人中心</a></span>
+        </div>
+    </div>
+    <!--position end-->
+    
+    <div class="user_contain">
+	
+    <!--左边tab切换-->
+	<div class="user_left">
+    		<ul> 
+        	<a><li class="user_left_list"><span>我的订单</span></li></a>
+            <a><li class="user_left_list"><span>我的购物车</span></li></a>
+            <a><li class="user_left_list"><span>我的收藏</span></li></a>
+            <a><li class="user_left_list"><span>账户余额</span></li></a>
+            <a><li class="user_left_list"><span>我的发表</span></li></a>
+            <a><li class="user_left_list"><span>练功记录</span></li></a>
+            <a><li class="user_left_list"><span>技能雷达图</span></li></a>
+            <a><li class="user_left_list"><span>级距落点</span></li></a>
+        	</ul>
+    </div>   
+	<!--左边tab切换 end-->
+    
+    <!--右上用户资料区-->
+    <div class="user_box_topright">
+
+        <div class="user_image" onmouseover="show()" onmouseout="hide()">
+        	<img src="images/user_photo.png" width="100%">
+            <div id="inss" style="display:none;"></div>
+        </div>
+    
+    	<div class="user_info">
+        	<ul>
+            	<li class="user_list">
+                	<p>账户余额</p>
+                    <img src="images/icon_money.png" height="34">
+                    <span>3600</span>
+                </li>
+                <li class="user_list">
+                	<p>我的订单</p>
+                    <img src="images/icon_order.png" height="34">
+                    <span>3</span>
+                </li>
+                <li class="user_list">
+               	  <p>我的发表</p>
+                    <img src="images/icon_pencil.png" height="34">
+                    <span>7</span>
+                </li>
+              <li class="user_list_last">
+                	<p>购物车</p>
+                  <img src="images/icon_cart.png" height="34">
+                  <span>12</span>
+                </li>
+            </ul>
+        </div>
+    
+    
+    </div>
+       
+    <!--右上用户资料区 end-->
+    
+    <!--个人中心 首页-->
+    <div class="user_boxcc">
+    
+    	<div class="user_recent_order">      
+        	<div class="recent_order_title">
+            	<p>最近订单</p>
+                <a href><span>查看全部&gt;&gt;</span></a>
+            </div>
+        	<div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>           
+        </div>
+        
+        <div class="user_skill_radar">
+        	<div class="skill_radar_title">
+            	<p>技能雷达</p>
+            </div>   
+                <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    			<div id="main" style="width:260px; height:260px;"></div>
+    			<!-- ECharts单文件引入 -->
+    			<script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+    			<script type="text/javascript">
+				  
+        			var option = { //可以去官网上根据每个案例不同的option去写各种图形
+            			title: {   //标题
+                		text: ''
+            			},
+            			tooltip: {   //提示框，鼠标悬浮交互时的信息提示
+                		show:true,
+                		trigger: 'axis'
+            			},
+            			legend: {    //图例，每个<a href="http://www.suchso.com/catalog.asp?tags=ECharts%E6%95%99%E7%A8%8B" class="keylink" title=" 图表" target="_blank">图表</a>最多仅有一个图例
+                		x: 'center',
+                		data: []
+            			},
+            			polar: [{    //极坐标 
+                		indicator: [{text: '题意与思想',max: 100}, 
+                            		{text: '特征',max: 100},
+                            		{text: '结构',max: 100},
+                            		{text: '中心与内容',max: 100},
+                            		{text: '常规项',max: 100},
+                            		{text: '表达',max: 100}
+                           			],
+						textStyle:{color:"#000"},
+                		radius: 80,      
+                		startAngle: 90   // 改变雷达图的旋转度数
+            			}],
+             
+            			series: [{         // 驱动图表生成的数据内容数组，数组中每一项为一个系列的选项及数据
+                
+                		type: 'radar',
+                		itemStyle: {//图形样式，可设置图表内图形的默认样式和强调样式（悬浮时样式）：
+                    	normal: {
+                        	areaStyle: {
+                            type: 'default'
+                        	}
+                    	}
+                		},
+                		data: [{
+                    	value: [],      //外部加载，也可以通过ajax去加载外部数据。
+                    	name: ''       
+                		}]
+            		}]
+        		};
+
+        			$(function(c) {
+            		option.series[0].data[0].value=[82,62,94,53,73,65];  // 加载数据到data中
+            		option.series[0].data[0].name ='用户名';
+            		var myChart = echarts.init(document.getElementById('main'));  
+            		myChart.setOption(option, true);   //为echarts对象加载数据
+
+        			});
+					
+    		</script>
+        </div>
+        
+
+        
+        <div class="user_collect_order">      
+        	<div class="recent_order_title">
+            	<p>最近收藏</p>
+                <a href><span>查看全部&gt;&gt;</span></a>
+            </div>
+        	<div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>
+            <div class="recent_order_text">
+            	<p>古汉语中“之”字的解读与考试中常用的具体题型解嘟嘟噜</p>
+                <span>卓文君&nbsp;&nbsp;黄冈中学&nbsp;&nbsp;高级教师</span>
+                <div class="rencent_order_textcc">
+                	<a href><p>详情</p></a>
+                </div>
+            </div>           
+        </div>
+    	
+		<div class="user_skill_curve">
+        	<div class="skill_radar_title">
+            	<p>级距落点</p>
+            </div>   
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="mainLine" style="width:360px; height:260px; margin-left:-40px;"></div>
+    <!-- ECharts单文件引入-->
+    	<script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+    	<script type="text/javascript">
+     		var options = {
+    				title : {
+        				text: '',
+        				subtext: ''
+    				},
+    				tooltip : {
+        				trigger: 'axis'
+    				},
+    				legend: {
+        				data:[]
+    				},
+    				calculable : true,
+    				xAxis : [
+        					{
+            				type : 'category',
+            				boundaryGap : false,
+            				data : ['1次','2次','3次','4次','5次','6次']
+			
+       					 	}
+    						],
+    				yAxis : [
+        					{
+            				type : 'value',
+            				axisLabel : {
+                				formatter: '{value} 分'
+           						}
+        					}
+    						],
+    				series : [     
+        					{
+            				name:'分数',
+            				type:'line',
+            				data:[80, 65, 78, 90, 50, 90],
+            				smooth:true,
+            				markLine : {
+                				data : [
+                    				{type : 'average', name : '平均值'}
+                				]
+            				}
+        			}
+    				]
+				};
+				$(function(c) {
+					var myCharts = echarts.init(document.getElementById('mainLine'));  
+            		myCharts.setOption(options, true);   //为echarts对象加载数据
+				});
+				
+    	</script>
+       
+        
+        
+        </div>
+    
+    
+    </div>
+    <!--个人中心 首页 end-->
+    
+	<!--我的订单-->
+   	<div class="user_box" style="display:none">	 	
+    	<div class="order_box">
+        	<div class="order_title">
+            	<p>我的订单</p>
+            </div>
+            
+        	<div class="order_num">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text">
+                   	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>讲师：卓文君</p>
+                    <span>订单类型：一对一教学</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>待学习</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_goto">
+                    <a href="#"><span>前往教室</span></a>
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num1">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text">
+                   	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>讲师：卓文君</p>
+                    <span>订单类型：名人课堂</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>待评价</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_goto">
+                    <a href="#"><span>去评价</span></a>
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num1">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text">
+                   	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>讲师：卓文君</p>
+                    <span>订单类型：精品课程</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span style="color:#999">已评价</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>0 积分</p>
+                </div>
+                <div class="order_go">                   
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text1">
+                   	<a href="#"><p>在线作文批改</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>——</p>
+                    <span>订单类型：在线作文批改</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>待审核</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_go">                   
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text1">
+                   	<a href="#"><p>在线作文批改</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>——</p>
+                    <span>订单类型：在线作文批改</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>审核未通过</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_goto">
+                    <a href="#"><span>重新上传</span></a>
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text1">
+                   	<a href="#"><p>在线作文批改</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>批改老师：苏小小</p>
+                    <span>订单类型：在线作文批改</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>待批改</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_go">                   
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="order_num1">
+            	<p>订单号：A1365115202199710</p>
+                <span>2015-11-01 17:00</span>
+            </div>
+        	<div class="order_every">
+                <div class="order_text1">
+                   	<a href="#"><p>在线作文批改</p></a>
+                </div>
+                <div class="order_teach">
+                    <p>批改老师：苏小小</p>
+                    <span>订单类型：在线作文批改</span>
+                </div>
+                <div class="order_status">
+                    <p>订单状态：</p>
+                    <span>待评价</span>
+                </div>
+                <div class="order_payfor">
+                   	<p>300 积分</p>
+                </div>
+                <div class="order_goto">
+                    <a href="#"><span>去评价</span></a>
+                    <a href="#"><p>查看详情</p></a>
+               	</div>
+            </div>
+            
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>  
+            
+            
+        </div>
+    </div>    
+    <!--我的订单 end-->
+    
+    <!--我的购物车-->
+    <div class="user_box" style="display:none">
+        <form>
+    	<div class="cart_box">
+        	<div class="cart_title">
+            	<p>我的购物车</p>
+            </div>
+				<div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input name="" type="checkbox" required value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_del">
+                    	<a href="#"><p>删除</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_del">
+                    	<a href="#"><p>删除</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_del">
+                    	<a href="#"><p>删除</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every_last">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_del">
+                    	<a href="#"><p>删除</p></a>
+                    </div>
+                </div>
+                
+        </div>
+                <div class="cart_opeartion">
+                	<div class="cart_allchoose">
+                    	<input type="checkbox" class="text_box" name="select" value="全选/全不选"/>
+                    	
+                    </div>
+                    <div class="cart_choose_text">
+                    	<p>全选</p>
+                        <a href="#"><span>删除</span></a>
+                    </div>
+                    <div class="cart_together">
+                    	<p>合计：</p>
+                        <span>1200 积分</span>
+                    </div>
+                    <div class="cart_balance">
+                    	<a href="pay.html"><p>结算</p></a>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <!--我的购物车 end-->
+    
+    <!--我的收藏-->
+    <div class="user_box" style="display:none">
+        <form>
+    	<div class="cart_box">
+        	<div class="cart_title">
+            	<p>我的收藏</p>
+            </div>
+				<div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input name="" type="checkbox" required value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_cancel">
+                    	<a href="#"><span>移入购物车</span></a>
+                    	<a href="#"><p>取消收藏</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_cancel">
+                    	<a href="#"><span>移入购物车</span></a>
+                    	<a href="#"><p>取消收藏</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_cancel">
+                    	<a href="#"><span>移入购物车</span></a>
+                    	<a href="#"><p>取消收藏</p></a>
+                    </div>
+                </div>
+                
+                <div class="cart_every_last">
+                	<div class="cart_choose">
+                    	<label><input type="checkbox" name="" value=""></label>
+                    </div>
+                    <div class="cart_text">
+                    	<a href="#"><p>古汉语中“之”字的语法难点与常见的出题方式古汉语中“之”字的语法难点与常见的出题方式</p></a>
+                    </div>
+                    <div class="cart_teach">
+                    	<p>讲师：卓文君</p>
+                        <span>教学方式：一对一教学</span>
+                    </div>
+                    <div class="cart_payfor">
+                    	<p>300 积分</p>
+                    </div>
+                    <div class="cart_cancel">
+                    	<a href="#"><span>移入购物车</span></a>
+                    	<a href="#"><p>取消收藏</p></a>
+                    </div>
+                </div>
+                
+        </div>
+                <div class="cart_opeartion">
+                	<div class="cart_allchoose">
+                    	<input type="checkbox" class="text_box" name="select" value="全选/全不选"/>
+                    	
+                    </div>
+                    <div class="cart_choose_text">
+                    	<p>全选</p>
+                        <a href="#"><span>取消收藏</span></a>
+                    </div>
+                    <div class="cart_together">
+                    	<p>合计：</p>
+                        <span>1200 积分</span>
+                    </div>
+                    <div class="cart_balance">
+                    	<a href="#"><p>移入购物车</p></a>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <!--我的收藏 end-->
+    
+    <!--账户余额-->
+    <div class="user_box" style="display:none">
+    	<div class="account_box">
+        	<div class="account_title">
+            	<p>账户余额</p>
+            </div>
+            <div class="account_text">
+            	<p>账户余额：</p>
+                <span>1600.0</span>
+                <p>（积分）</p>
+            </div>
+            <div class="account_recharge">
+            	<a href="integral.html"><p>充值+</p></a>
+            </div>
+        </div>
+    
+    </div>
+    <!--账户余额 end-->
+    
+    <!--我的发表-->
+    <div class="user_box" style="display:none">
+    	<div class="pub_box">
+        	<div class="pub_title">
+            	<p>我的发表</p>
+            </div>
+
+    		<div class="pub_info">
+            	<div class="pub_info_img">
+                	<a class="pub_info_link"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="pub_info_text">
+                	<div class="pub_info_title">
+                    	<a class="pub_info_link"><p><strong>在线教育对比传统教育机构转型，海风教育到了线上还要做1对1教学</strong></p></a>
+                    </div>	
+                    <div class="pub_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="">沈城</a></span>
+                    </div>
+                    <div class="pub_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                    <div class="pub_info_key">
+                    	<p>关键字：</p>
+                        <a href=""><span>教育</span></a><div style="color:#999;display:inline;">、</div>
+                        <a href=""><span>O2O</span></a><div style="color:#999;display:inline;">、</div> 
+                        <a href=""><span>融资</span></a>
+                    </div>
+                </div>
+                <a href="#"><div class="pub_delete"></div></a>
+                <a href="#"><div class="pub_rewrite"></div></a>
+            </div>
+            
+            <div class="pub_info">
+            	<div class="pub_info_img">
+                	<a class="pub_info_link"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="pub_info_text">
+                	<div class="pub_info_title">
+                    	<a class="pub_info_link"><p><strong>在线教育对比传统教育机构转型，海风教育到了线上还要做1对1教学</strong></p></a>
+                    </div>	
+                    <div class="pub_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="">沈城</a></span>
+                    </div>
+                    <div class="pub_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                    <div class="pub_info_key">
+                    	<p>关键字：</p>
+                        <a href=""><span>教育</span></a><div style="color:#999;display:inline;">、</div>
+                        <a href=""><span>O2O</span></a><div style="color:#999;display:inline;">、</div> 
+                        <a href=""><span>融资</span></a>
+                    </div>
+                </div>
+                <a href="#"><div class="pub_delete"></div></a>
+                <a href="#"><div class="pub_rewrite"></div></a>
+            </div>
+            
+            <div class="pub_info">
+            	<div class="pub_info_img">
+                	<a class="pub_info_link"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="pub_info_text">
+                	<div class="pub_info_title">
+                    	<a class="pub_info_link"><p><strong>在线教育对比传统教育机构转型，海风教育到了线上还要做1对1教学</strong></p></a>
+                    </div>	
+                    <div class="pub_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="">沈城</a></span>
+                    </div>
+                    <div class="pub_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                    <div class="pub_info_key">
+                    	<p>关键字：</p>
+                        <a href=""><span>教育</span></a><div style="color:#999;display:inline;">、</div>
+                        <a href=""><span>O2O</span></a><div style="color:#999;display:inline;">、</div> 
+                        <a href=""><span>融资</span></a>
+                    </div>
+                </div>
+                <a href="#"><div class="pub_delete"></div></a>
+                <a href="#"><div class="pub_rewrite"></div></a>
+            </div>
+            
+            <div class="pub_info">
+            	<div class="pub_info_img">
+                	<a class="pub_info_link"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="pub_info_text">
+                	<div class="pub_info_title">
+                    	<a class="pub_info_link"><p><strong>在线教育对比传统教育机构转型，海风教育到了线上还要做1对1教学</strong></p></a>
+                    </div>	
+                    <div class="pub_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="">沈城</a></span>
+                    </div>
+                    <div class="pub_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                    <div class="pub_info_key">
+                    	<p>关键字：</p>
+                        <a href=""><span>教育</span></a><div style="color:#999;display:inline;">、</div>
+                        <a href=""><span>O2O</span></a><div style="color:#999;display:inline;">、</div> 
+                        <a href=""><span>融资</span></a>
+                    </div>
+                </div>
+                <a href="#"><div class="pub_delete"></div></a>
+                <a href="#"><div class="pub_rewrite"></div></a>
+            </div>
+            
+            <div class="pub_info">
+            	<div class="pub_info_img">
+                	<a class="pub_info_link"><img src="images/news_photo.png" width="100%" height="100%";></a>
+                </div>
+                <div class="pub_info_text">
+                	<div class="pub_info_title">
+                    	<a class="pub_info_link"><p><strong>在线教育对比传统教育机构转型，海风教育到了线上还要做1对1教学</strong></p></a>
+                    </div>	
+                    <div class="pub_info_date">
+                    	<p>2015/10/24 21:27 •&nbsp;</p><span><a href="">沈城</a></span>
+                    </div>
+                    <div class="pub_info_word">
+                    	<p>今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。
+                        今日消息，Airbnb 已经在旧金山试点行程定制服务 “Journeys”，让用户在当地人（Airbnb 的房东）的推荐和指导下体验一个新的城市。</p>
+                    </div>
+                    <div class="pub_info_key">
+                    	<p>关键字：</p>
+                        <a href=""><span>教育</span></a><div style="color:#999;display:inline;">、</div>
+                        <a href=""><span>O2O</span></a><div style="color:#999;display:inline;">、</div> 
+                        <a href=""><span>融资</span></a>
+                    </div>
+                </div>
+                <a href="#"><div class="pub_delete"></div></a>
+                <a href="#"><div class="pub_rewrite"></div></a>
+            </div>
+            
+            <div class="pub_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div>  
+            
+    	</div>
+    </div>  
+    <!--我的发表 end-->
+    <!--练功记录-->
+    <div class="user_box" style="display:none">
+    	<div class="pub_box">
+        	<div class="pub_title">
+            	<p>练功记录</p>
+            </div>
+        </div>
+    </div>
+    <!--练功记录-->
+    <!--技能雷达图-->
+    <div class="user_box" style="display:none">
+		<div class="radar_info">
+        	<div class="radar_info_title">
+            	<p>技能雷达</p>
+            </div>
+        	<div class="radar_info_text">
+            	<span>此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     </span>
+            </div>
+        </div>
+    	
+        
+        <div class="user_skill_radar">
+        	<div class="skill_radar_title">
+            	<p>技能雷达</p>
+            </div>   
+                <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    			<div id="main1" style="width:260px; height:260px;"></div>
+    			<!-- ECharts单文件引入 -->
+    			<script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+    			<script type="text/javascript">
+				  
+        			var option1 = { //可以去官网上根据每个案例不同的option去写各种图形
+            			title: {   //标题
+                		text: ''
+            			},
+            			tooltip: {   //提示框，鼠标悬浮交互时的信息提示
+                		show:true,
+                		trigger: 'axis'
+            			},
+            			legend: {    //图例，每个<a href="http://www.suchso.com/catalog.asp?tags=ECharts%E6%95%99%E7%A8%8B" class="keylink" title=" 图表" target="_blank">图表</a>最多仅有一个图例
+                		x: 'center',
+                		data: []
+            			},
+            			polar: [{    //极坐标 
+                		indicator: [{text: '题意与思想',max: 100}, 
+                            		{text: '特征',max: 100},
+                            		{text: '结构',max: 100},
+                            		{text: '中心与内容',max: 100},
+                            		{text: '常规项',max: 100},
+                            		{text: '表达',max: 100}
+                           			],
+						textStyle:{color:"#000"},
+                		radius: 80,      
+                		startAngle: 90   // 改变雷达图的旋转度数
+            			}],
+             
+            			series: [{         // 驱动图表生成的数据内容数组，数组中每一项为一个系列的选项及数据
+                
+                		type: 'radar',
+                		itemStyle: {//图形样式，可设置图表内图形的默认样式和强调样式（悬浮时样式）：
+                    	normal: {
+                        	areaStyle: {
+                            type: 'default'
+                        	}
+                    	}
+                		},
+                		data: [{
+                    	value: [],      //外部加载，也可以通过ajax去加载外部数据。
+                    	name: ''       
+                		}]
+            		}]
+        		};
+
+        			$(function(c) {
+            		option1.series[0].data[0].value=[82,62,94,53,73,65];  // 加载数据到data中
+            		option1.series[0].data[0].name ='用户名';
+            		var myChart = echarts.init(document.getElementById('main1'));  
+            		myChart.setOption(option1, true);   //为echarts对象加载数据
+
+        			});
+					
+    		</script>
+        </div>
+        </div>
+
+    <!--技能雷达图 end-->
+    
+    <!--级距落点-->
+    <div class="user_box" style="display:none">
+		<div class="radar_info">
+        	<div class="radar_info_title">
+            	<p>技能雷达</p>
+            </div>
+        	<div class="radar_info_text">
+            	<span>此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     此处由文字客户还未给出，做在前台钉死     </span>
+            </div>
+        </div>
+    	
+        
+        <div class="user_skill_curve1">
+        	<div class="skill_radar_title">
+            	<p>级距落点</p>
+            </div>   
+    	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    	<div id="mainLine1" style="width:360px; height:260px; margin-left:-40px;"></div>
+    	<!-- ECharts单文件引入-->
+    	<script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+    	<script type="text/javascript">
+     		var options1 = {
+    				title : {
+        				text: '',
+        				subtext: ''
+    				},
+    				tooltip : {
+        				trigger: 'axis'
+    				},
+    				legend: {
+        				data:[]
+    				},
+    				calculable : true,
+    				xAxis : [
+        					{
+            				type : 'category',
+            				boundaryGap : false,
+            				data : ['1次','2次','3次','4次','5次','6次']
+			
+       					 	}
+    						],
+    				yAxis : [
+        					{
+            				type : 'value',
+            				axisLabel : {
+                				formatter: '{value} 分'
+           						}
+        					}
+    						],
+    				series : [     
+        					{
+            				name:'分数',
+            				type:'line',
+            				data:[80, 65, 78, 90, 50, 90],
+            				smooth:true,
+            				markLine : {
+                				data : [
+                    				{type : 'average', name : '平均值'}
+                				]
+            				}
+        			}
+    				]
+				};
+				$(function(c) {
+					var myCharts = echarts.init(document.getElementById('mainLine1'));  
+            		myCharts.setOption(options1, true);   //为echarts对象加载数据
+				});
+				
+    	</script>
+       
+        
+        
+        </div>
+    </div>
+    <!--级距落点 end-->
+    
+    
+    
+    
+	</div>
+    
+    
+    <!--底部-->
+    <div class="index_bottom">
+    	<div class="idnex_bottom_width">
+    		<div class="index_bottom_left">
+        		<p>帮助中心</p>
+            	<ul>
+            		<li><a href="javascript:void();">常见问题</a></li>
+                	<li><a href="javascript:void();">新手注册</a></li>
+                	<li><a href="javascript:void();">选课流程</a></li>
+                	<li><a href="javascript:void();">积分消费密码</a></li>
+            	</ul>
+        	</div>
+            <div class="index_bottom_mid">
+        		<p>关于write 12</p>
+            	<ul>
+            		<li><a href="javascript:void();">发展历程</a></li>
+                	<li><a href="javascript:void();">企业文化</a></li>
+                	<li><a href="javascript:void();">社会责任</a></li>
+                	<li><a href="javascript:void();">洽谈合作</a></li>
+        	</div>
+            <div class="index_bottom_right">
+        		<p>联系我们</p>
+            	<ul>
+            		<li>联系电话：4008-777-888</li>
+                	<li>QQ客服：815707707</li>
+                	<li>E-mail：ellisy@sina.com</li>
+                	<li>微信：zhuangyuantang</li>
+            	</ul>
+        	</div>
+            <div class="index_qcode">
+            	<img src="images/qcode.png" width="120">
+            </div>        
+         </div>
+         <div class="index_bottom_under">
+         	<p>Copyright © 2013-2015 jikexueyuan.com All Rights Reversed. 沪ICP备 11018032号-8 沪公网安备 11010802013056</p>
+         </div>
+    </div>
+    <!--底部 end-->
+
+
+    <!--side-->
+    <div class="side1">
+		<ul>
+			<li style="border:none;">
+        	<a href="javascript:goTop();" class="sidetop1">
+            	<img src="./images/side_top.png" width="42" height="42">
+            </a>
+        	</li>
+		</ul>
+	</div>
+    <!--side end-->     
+    
+    
+<!--全选-->    
+<script language=javascript>
+$('.text_box').on('ifChecked', function(event){
+		$('input').iCheck('check');
+	});
+	$('.text_box').on('ifUnchecked', function(event){
+		$('input').iCheck('uncheck');
+	});
+
+</script>
+<!--全选 end-->    
+<!--该段js必须在加载在最底部才有效-->
+    
+</body>
+</html>

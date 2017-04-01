@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>write12 - 在线作文教育平台</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--nav+bg-->
+<script type="text/javascript" src="js/jquery.movebg.js"></script>
+<!--nav+bg end-->
+<!--侧边栏推广-->
+<script type="text/javascript" src="js/index_side.js"></script>
+<!--侧边栏推广 end-->
+<!--导航滑动模块-->
+<script type="text/javascript">
+$(function(){
+	$(".nav").movebg({
+		width:120/*滑块的大小*/,
+		extra:0/*额外反弹的距离*/,
+		speed:300/*滑块移动的速度*/,
+		rebound_speed:400/*滑块反弹的速度*/
+	});
+})
+</script>
+<!--导航滑动模块 end-->
+<!--tab切换-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".ex_left_info .ex_list").bind("click",function(e){
+		var index=$(".ex_list").index(this);
+		var lilength =$(".ex_list").length;
+		for(var i=0;i<lilength;i++){
+			if(i==index){
+				$(".ex_list").eq(i).css({"color":"#3a99d8"});
+				$(".ex_box").eq(i).show();
+				}
+			else{
+				$(".ex_list").eq(i).css({"color":"#666"});
+				$(".ex_box").eq(i).hide();
+				}
+		}
+		});
+});
+</script>
+<!--tab切换 end-->
+
+</head>
+
+<body bgcolor="#e9eaec">
+
+	<!--header-->
+    <div class="header_bg">
+    <div class="header_top">
+    	<div class="header_text">
+    		<p>您好，欢迎来到作文状元堂</p>
+        </div>
+        <div class="header_user" >
+        	<img src="images/icon_user.png" width="100%" height="34px"></a>
+            <div class="header_user_list">
+            	<ul> 
+                	<a href=""><li class="list_img1"><span>修&nbsp;改&nbsp;资&nbsp;料</span></li></a>
+                    <a href=""><li class="list_img2"><span>我&nbsp;的&nbsp;历&nbsp;程</span></li></a>
+                    <a href=""><li class="list_img3"><span>我&nbsp;的&nbsp;订&nbsp;单</span></li></a>
+                    <a href=""><li class="list_img4"><span>我&nbsp;的&nbsp;收&nbsp;藏</span></li></a>
+                    <a href=""><li class="list_img5"><span>退&nbsp;出&nbsp;登&nbsp;录</span></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bell header_border">
+        	<img src="images/icon_bell.png" width="100%" height="34px">
+        </div>
+    </div>
+    </div>
+    
+    <div class="header_mid_bg">
+    <div class="header_mid">
+    	<div class="header_logo">
+        	<img src="images/icon_logo.png" height="50px">
+        </div>
+    	<div class="header_right">
+    		<div class="nav">
+        	<ul>
+            <li class="nav-item cur">
+            	<a href="index.html">首页<span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">品牌介绍<span>INTRODUCTION</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="news.html">最新消息<span>NEWS</span></a>
+            </li>
+            <li class="nav-item">
+            	<a href="javascript:void();">作文资源库<span>RESOURCE POOL</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>练功房</span></li></a>
+                    <a href=""><li class="list_second"><span>发表天地</span></li></a>
+                    <a href=""><li class="list_second"><span>互动教室</span></li></a>
+                    <a href=""><li class="list_second"><span>精品课程</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">作文批改<span>CORRECTING</span></a>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();">在线家教<span>ONLINE TUTORING</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>一对一教学</span></li></a>
+                    <a href=""><li class="list_second"><span>名人课堂</span></li></a>
+                </ul>
+            	</div>
+            </li> 
+            <li class="nav-item">
+            	<a href="javascript:void();" target="_blank">分析中心<span>ANALYSIS</span></a>
+                <div class="nav-item-second">
+            	<ul> 
+                	<a href=""><li class="list_second"><span>排行榜</span></li></a>
+                    <a href=""><li class="list_second"><span>学习历程</span></li></a>
+                </ul>
+            	</div>
+            </li>
+        	</ul>
+        <!--移动的滑动-->
+        <div class="move-bg" style="display: block; left: 0px;"></div>
+        <!--移动的滑动 end-->
+    		</div>
+  		</div>
+  	</div> 
+    </div>
+  	<!--header end-->
+
+    <!--banner-->
+    <div class="banner">
+    	<img src="images/news_banner.png" width="100%">
+    </div>
+    <!--banner end-->
+    
+    <!--position-->
+    <div class="position">
+    	<div class="position_text">
+    	<p>您的位置：</p>
+        <span><a href="index.html">首页</a></span>
+        <div style="color:#666;display:inline">&gt;</div>
+        <span><a href="#">练功房</a></span>
+        </div>
+    </div>
+    <!--position end-->
+    
+    <div class="ex_contain">
+
+	<!--左边tab层-->
+    	<div class="ex_left">
+        	<div class="ex_left_info">
+            	<p><strong>高中考试</strong></p>
+                <ul>
+                	<a><li class="ex_list">高三一模</li></a>
+                    <a><li class="ex_list">高三二模</li></a>
+                    <a><li class="ex_list">高三一模</li></a>
+                    <a><li class="ex_list">高三二模</li></a>
+                </ul>
+            </div>
+
+  			<hr class="hr_line">
+            
+            <div class="ex_left_info">
+            	<p><strong>初中考试</strong></p>
+                <ul>
+                	<a><li class="ex_list">初三一模</li></a>
+                    <a><li class="ex_list">初三二模</li></a>
+                    <a><li class="ex_list">初三一模</li></a>
+                    <a><li class="ex_list">初三二模</li></a>
+                    <a><li class="ex_list">初三一模</li></a>
+                    <a><li class="ex_list">初三二模</li></a>
+                </ul>
+            </div>
+            
+            <hr class="hr_line">
+            
+            <div class="ex_left_info">
+            	<p><strong>小学考试</strong></p>
+                <ul>
+                	<a><li class="ex_list">小学一模</li></a>
+                    <a><li class="ex_list">小学二模</li></a>
+                    <a><li class="ex_list">小学一模</li></a>
+                    <a><li class="ex_list">小学二模</li></a>
+                </ul>
+            </div>
+
+
+
+    	</div>   
+    <!--左边tab层 end-->
+
+	<!--搜索区域-->
+    	<div class="ex_right_top">
+        	<div class="ex_search">
+            	<input type="text" required class="ex_search_cc" placeholder="搜索">
+                <img src="images/icon_rightarrow.png" width="27px">
+            </div>
+            <div class="ex_text">
+            	<p>热搜词汇：</p>
+                <a><span>江南十校</span></a>
+                <a><span>湖北黄冈</span></a>
+                <a><span>一模原题</span></a>            
+            </div>
+        </div>
+    <!--搜索区域 end-->
+	
+    <!--高中考试 高三一模-->
+    	<div class="ex_box">
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div> 
+                
+        </div>   
+        
+    <!--高中考试 高三一模 end-->
+    
+    <!--高中考试 高三二模-->
+    	<div class="ex_box" style="display:none;">
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+
+        </div>   
+        
+    <!--高中考试 高三二模 end-->
+
+	<!--高中考试 高三一模-->
+    	<div class="ex_box" style="display:none;">
+        </div>
+    <!--高中考试 高三一模 end-->
+    
+    <!--高中考试 高三二模-->
+    	<div class="ex_box" style="display:none;">
+        </div>
+    <!--高中考试 高三二模 end-->
+    
+    <!--初中考试 初三一模-->
+    	<div class="ex_box" style="display:none;">
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+
+        </div>   
+    <!--初中考试 初三一模 end-->
+    
+    <!--初中考试 初三二模-->
+    	<div class="ex_box" style="display:none;">
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+        	<div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+            
+            <div class="ex_box_info">
+            	<div class="ex_info_textcc">
+                	<div class="ex_info_title">
+                    	<a href=""><p><strong>江南十校＋黄冈中学二模，文言文题库合集</strong></p></a>
+                    </div>	
+                    <div class="ex_info_date">
+                    	<p>2015/10/24 21:27</p>
+                    </div>
+                    <div class="ex_info_word">
+                    	<p>皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。凄凄⑨复凄凄,皑①如山上雪，皎②若云间月。闻君有两意③，故来相决④绝。今日斗⑤酒会，明旦⑥沟水头。躞蹀⑦御沟⑧上， 沟水东西流。</p>
+                    </div>
+                </div>
+                <div class="ex_info_button">
+                	<a href=""><span>开始答题</span></a>
+                </div>
+            </div>
+        
+            <div class="news_loadmore">
+            	<a href="javascript:void();"><p>加载更多＋</p></a>
+            </div> 
+                
+        </div>   
+    <!--初中考试 初三二模 end-->
+    
+
+
+
+	</div>
+    
+    <!--底部-->
+    <div class="index_bottom">
+    	<div class="idnex_bottom_width">
+    		<div class="index_bottom_left">
+        		<p>帮助中心</p>
+            	<ul>
+            		<li><a href="javascript:void();">常见问题</a></li>
+                	<li><a href="javascript:void();">新手注册</a></li>
+                	<li><a href="javascript:void();">选课流程</a></li>
+                	<li><a href="javascript:void();">积分消费密码</a></li>
+            	</ul>
+        	</div>
+            <div class="index_bottom_mid">
+        		<p>关于write 12</p>
+            	<ul>
+            		<li><a href="javascript:void();">发展历程</a></li>
+                	<li><a href="javascript:void();">企业文化</a></li>
+                	<li><a href="javascript:void();">社会责任</a></li>
+                	<li><a href="javascript:void();">洽谈合作</a></li>
+        	</div>
+            <div class="index_bottom_right">
+        		<p>联系我们</p>
+            	<ul>
+            		<li>联系电话：4008-777-888</li>
+                	<li>QQ客服：815707707</li>
+                	<li>E-mail：ellisy@sina.com</li>
+                	<li>微信：zhuangyuantang</li>
+            	</ul>
+        	</div>
+            <div class="index_qcode">
+            	<img src="images/qcode.png" width="120">
+            </div>        
+         </div>
+         <div class="index_bottom_under">
+         	<p>Copyright © 2013-2015 jikexueyuan.com All Rights Reversed. 沪ICP备 11018032号-8 沪公网安备 11010802013056</p>
+         </div>
+    </div>
+    <!--底部 end-->
+
+
+    <!--side-->
+    <div class="side1">
+		<ul>
+			<li style="border:none;">
+        	<a href="javascript:goTop();" class="sidetop1">
+            	<img src="./images/side_top.png" width="42" height="42">
+            </a>
+        	</li>
+		</ul>
+	</div>
+    <!--side end-->  
+
+
+</body>
+</html>
