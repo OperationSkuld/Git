@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>申请合作</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/vip_coop.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<!--申请合作操作js-->
+<script>
+$(function(){
+	layer.config({
+    	extend: 'extend/layer.ext.js'
+	});
+	$(".coop_operation a span").click(function(){
+		layer.prompt({
+			formType: 0,
+			value: ' ',
+			title: '请填写拒绝理由'
+		}, function(value, index, elem){
+			//alert(value); //得到value
+			layer.close(index);
+			$(".coop_operation a span").addClass("addclass")
+										   .text("已拒绝");
+			$(".coop_operation a p").remove();
+		});
+	});
+	/*$(".coop_operation a span").click(function(){
+		layer.msg('您确定要拒绝吗？', {
+    		btn: ['是','否'] //按钮
+			,yes:function(index){
+    			layer.close(index);
+				$(".coop_operation a span").addClass("addclass")
+										   .text("已拒绝");
+				$(".coop_operation a p").remove();
+				
+			}
+		});
+	});*/
+	$(".coop_operation a p").click(function(){
+		layer.msg('您确定要同意吗？', {
+    		btn: ['是','否'] //按钮
+			,yes:function(index){
+    			layer.close(index);
+				$(".coop_operation a p").addClass("addclass")
+										.text("已同意");
+				$(".coop_operation a span").remove();
+				
+			}
+		});
+	});
+});
+</script>
+<!--申请合作操作js end-->
+</head>
+
+<body bgcolor="#eff2f6">
+	<div class="contain">
+    	<div class="coop_each">
+        	<div class="coop_top">
+            	<div class="coop_img" style="background-image:url(images/user_img1.png)"></div>
+                <div class="coop_name">
+                	<a href="vip_info.html"><p>王凯力</p></a>
+                    <span>申请合作</span>
+                </div>
+                <div class="coop_project">
+					<p>C端产品HUD X1to C项目</p>
+                </div>
+            </div>
+            <div class="coop_mid">
+            	<p>合作方式：面谈</p>
+                <p>我是某某某，上次见过面的，想要和你合作做这个项目</p>
+            </div>
+            <div class="coop_operation">
+            	<a><span>拒绝</span></a>
+            	<a><p>同意</p></a>            
+            </div>
+        </div>
+        
+        <hr style="border:15px solid #eff2f6">
+        
+    </div>
+</body>
+</html>
