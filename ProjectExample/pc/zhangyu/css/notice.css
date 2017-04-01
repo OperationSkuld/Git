@@ -1,0 +1,10 @@
+/*公告详情*/
+.noticeBox{width: 1200px;margin-top: 15px;margin-left: auto;margin-right: auto;overflow: hidden;}
+.noticeLeftBox{float: left;padding: 30px;border: 1px solid #d8d8d8;border-radius: 3px;width: 718px;background: #FFF;min-height: 300px;}
+.noticeTitle{height: 30px;line-height: 30px;}
+.noticeTitle p{color: #333;font-size: 20px;font-weight: bold;letter-spacing: 1px;}
+.noticeDate{height: 20px;line-height: 20px;margin: 10px 0;}
+.noticeDate p{color: #999;font-size: 12px;}
+.noticeEditBox{line-height: 1.5;overflow: hidden;}
+.noticeEditBox img{width: 100%;}
+.noticeRightBox{background:#FFF;overflow: hidden;padding: 10px 20px;width: 358px;border: 1px solid #d8d8d8;border-radius: 3px;margin-left: 20px;float: left;}
