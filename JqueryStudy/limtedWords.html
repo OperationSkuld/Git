@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<meta http-equiv="Content-Type" charset="UTF-8"/>
+<title>无标题文档</title> 
+<script src="js/jquery-1.9.1.min.js"></script>
+<SCRIPT language=JavaScript>   
+function limtedLength(obj,length) {
+	var inputValue = $(obj).val(), 
+		inputNum = inputValue.replace(/[^\x00-\xff]/g, "**").length; //得到输入的字节数
+    if(inputNum <= length){
+        matchWords = inputValue.length;
+        $(obj).attr("value",inputValue);
+    }
+    else{
+    	$(obj).val(inputValue.substring(0, matchWords)) //截断超出部分的字节
+    	$(obj).attr("value",inputValue.substring(0, matchWords));
+    }    
+}
+</SCRIPT>  
+</head>  
+  
+<body>  
+<input type="text" oninput="limtedLength(this,10);" />
+
+  
+</body>  
+</html>  

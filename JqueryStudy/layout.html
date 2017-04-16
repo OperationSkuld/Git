@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.col1 {
+				width: 30%;
+				float: left;
+				position: relative;
+				left: 70%;
+			}
+			
+			.col2 {
+				width: 40%;
+				float: left;
+				position: relative;
+				left: 70%;
+			}
+			
+			.col3 {
+				width: 30%;
+				float: left;
+				position: relative;
+				left: 70%;
+			}
+			
+			.container1 {
+				background-color: yellow;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.container2 {
+				background-color: blue;
+				float: left;
+				position: relative;
+				right: 30%;
+				
+			}
+			
+			.container3 {
+				background-color: red;
+				float: left;
+				position: relative;
+				right: 40%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div style="margin: 0 auto;">
+			<div style="width: 200px; height: 100px; float: left; background-color: #95f49e;">left</div>
+			<div style="background-color: #fff; height: 100px; border: 1px solid #ccc;">right</div>
+		</div>
+
+		<div id="demoLayout" style="width: 1200px;">
+			<div style="min-height: 170px; padding: 10px;">
+				<div class="demoShowPic"><img src="http://www.hicss.net/wp-content/uploads/2011/toygersKittens.jpg" alt="toygers kittens" width="200" height="166" /></div>
+				<div style="margin: -170px 0 0 215px;">负margin能够替代float浮动布局，进行左右布局规划，并且拥有float所没有的自适应效果。你可以尝试点击变宽和变窄按钮来查看本例。现如今，负margin技术的应用可谓越来越广，任一个大型站点惊鸿一瞥之下都会有其身影所在。</div>
+			</div>
+		</div>
+
+		<div class="container1">
+			<div class="container2">
+				<div class="container3">
+					<div class="col1">this is first col Heroku和Morph实验室是Ruby on Rails的托管提供商，提供运行Ruby on Rails应用的整套环境。和传统的托管商相比，他们并不仅仅是提供一个服务器给你，而且提供有趣的工具和接口来帮助你更加容易的工作，使你从繁重的安 装、配置、管理和保证服务器安全中解脱出来。两者皆是使用Amazon的EC2网格计算技术来运行应用，因此你可以毫不担心可伸缩性与性</div>
+					<div class="col2">this is second col</div>
+					<div class="col3">this is third col</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="display: table;">
+			<div style="width: 30%;background-color: red;display: table-cell;vertical-align: baseline;">
+				<p>this is first col Heroku和Morph实验室是Ruby on Rails的托管提供商，提供运行Ruby on Rails应用的整套环境。和传统的托管商相比，他们并不仅仅是提供一个服务器给你，而且提供有趣的工具和接口来帮助你更加容易的工作，使你从繁重的安 装、配置、管理和保证服务器安全中解脱出来。两者皆是使用Amazon的EC2网格计算技术来运行应用，因此你可以毫不担心可伸缩性与性</p>
+			</div>
+			<div style="width: 40%;background-color: blue;display: table-cell;vertical-align: baseline;">
+				<p>this is second col</p>
+			</div>
+			<div style="width: 30%;background-color: yellow;display: table-cell;vertical-align: baseline;">
+				<p>this is third col</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

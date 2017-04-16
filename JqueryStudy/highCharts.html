@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+		<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+		<!--<script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>-->
+	</head>
+
+	<body>
+		<div id="container" style="width:400px;"></div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			Highcharts.chart('container', {
+				chart: {
+					type: 'column'
+				},
+				xAxis: {
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+				},
+
+				plotOptions: {
+					series: {
+						dataLabels: {
+							enabled: true,
+							format: '{x}',
+							style: {
+								position: 'absolute',
+								bottom: '20px',
+								color: 'red',
+								transform: 'translateY(250px)',
+							}
+						}
+
+					}
+				},
+
+				series: [{
+					data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+				}]
+			});
+		});
+	</script>
+
+</html>

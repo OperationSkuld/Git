@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8" />
+<title> js滑块 </title>
+<style type='text/css'>
+#rangeBox{position:relative;width:316px;height:10px;font-size:0;line-height:0;background:#efefef;border:1px solid #dddddd;border-radius: 10px;float: left;margin: 3px 0;float: left;}
+#pointer{position:absolute;top:-4px;left:0;width:15px;height:15px;border:1px solid #d2d2d2;background: #FFF;border-radius: 15px;cursor: pointer;}
+.rangeValueBox{float: left;margin-left: 10px;}
+#rangeValue{font-size: 16px;color: #333333;}
+</style>
+</head>
+<body>
+<div id='rangeBox'>
+     <div id='pointer' onmousedown="range(this,event)" ></div>
+</div>
+<div class="rangeValueBox">
+	<span id="rangeValue">0px</span>
+</div>
+	
+<script type='text/javascript'>
+function range(o,e){
+	var e = e ? e : window.event;
+	if(!window.event) {e.preventDefault();}
+	var tX=o.offsetLeft,
+		dx=e.clientX;
+	document.onmousemove=function(e){
+		var e = e ? e : window.event;
+		var len=tX+e.clientX-dx;
+		if(len>=0 && len<=300){
+			o.style.left=len+"px";
+			document.getElementById('rangeValue').innerHTML =0 + Math.round(len/10)+'px';
+		}
+	}
+	document.onmouseup=function(){
+		document.onmousemove=null;
+		document.onmouseup=null;
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery UI 拖动（Draggable） + 排序（Sortable）</title>
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/simpScroller.css">
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--<script src="js/simpScroller.js"></script>-->
+		<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 10px;
+				height: 150px;
+				overflow: auto;
+			}
+			
+			li {
+				margin: 5px;
+				padding: 5px;
+				width: 150px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<!--<ul>
+  <li id="draggable" class="ui-state-highlight">请拖拽我</li>
+</ul>-->
+
+		<ul id="sortable" class="noScrollbar">
+			<li class="ui-state-default">Item 1</li>
+			<li class="ui-state-default">Item 2</li>
+			<li class="ui-state-default">Item 3</li>
+			<li class="ui-state-default">Item 4</li>
+			<li class="ui-state-default">Item 5</li>
+			<li class="ui-state-default">Item 6</li>
+			<li class="ui-state-default">Item 7</li>
+			<li class="ui-state-default">Item 8</li>
+		</ul>
+
+	</body>
+	<!--simpScroller config-->
+	<!--<script>
+		if(window.addEventListener) {
+			simpScroller(document.querySelector(".noScrollbar"), {
+				verticalScroll: true, // 默认垂直滚动
+				horizontalScroll: false, // 水平滚动，默认false，不水平滚动
+				hideScrollBar: true, // 是否隐藏滚动条
+				onScroll: function(event) { // 滚动时候的回调
+					console.log("type: " + event.type);
+					
+				}
+			});
+		}
+	</script>-->
+	<!--simpScroller config end-->
+	<script>
+		$(function() {
+			$("#sortable").sortable({
+				revert: true
+			});
+			$("#draggable").draggable({
+				connectToSortable: "#sortable",
+				helper: "clone",
+				revert: "invalid"
+			});
+			$("ul, li").disableSelection();
+		});
+	</script>
+
+</html>
